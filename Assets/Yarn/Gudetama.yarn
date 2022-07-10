@@ -1,0 +1,39 @@
+﻿title: Gudetama
+tags:
+---
+Gudetama: Hello, lowly being.
+Gudetama: 'Tis I, the Great Gude.
+Villainess: Uh... Hello to you too?
+Gudetama: Oh lowly being, you must prove yourself to me.
+
+-> Villainess: And what do I even get out of it?
+    Gudetama: The greatest honour beneath the heavens, of course.
+    Villainess: So the answer is nothing?
+-> Villainess: Sure, why not?
+-> Villainess: I need not prove myself to anyone but myself.
+    <<jump GudetamaRejection>>
+
+Gudetama: Excellent! No more dilly-dallying, O Silly Crumb of Existence. Come now!
+<<jump GudetamaTrial>>
+===
+title: GudetamaTrial
+---
+Gudetama: ...
+Gudetama: So, O Tiniest Speck, tell me, who has the jiggliest butt and the most luscious yolk of all?
+
+-> Villainess: ...
+    Villainess: I'm leaving.
+    <<jump GudetamaRejection>>
+-> Villainess: Oh, why, it could only be you, my liege.
+    <<jump GudetamaAcceptance>>
+===
+title: GudetamaRejection
+---
+Gudetama: Humph, I'll have you know you missed out on the opportunity of a lifetime.
+===
+title: GudetamaAcceptance
+---
+Gudetama: Human, you are the first to ever validate my holiness and recognize me as the one true yolk.
+Gudetama: I am eternally filled with gratitude, and henceforth, you shall be gifted the name...
+Gudetama: Egg.
+===
