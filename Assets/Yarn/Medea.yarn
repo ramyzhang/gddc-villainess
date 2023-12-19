@@ -1,0 +1,28 @@
+title: Medea_19
+tags:
+---
+<<if visited("Medea_19")>>
+    Medea: Catherine, are you enjoying the ball?
+    Catherine: Yes! It’s a total blast.
+    Medea: Wonderful. Well, I have some business to attend to, so pardon me.
+<<else>>
+    Medea: Ah, Catherine, I see you’ve successfully survived the academy huh?
+    Catherine: Haha, yeah, I never thought I’d be able to make it until the very end without making too many enemies.
+    Medea: Mm, in this world of nobility we live in, enemies do seem to be everywhere, even if we aren’t aware of it.
+    Catherine: You’ve got that right, but I’m glad that I managed to change a lot of people’s views on me before we graduated.
+    Medea: You did brilliantly. Here, take this ceremonial dagger, it was a common tradition in the academy to graduate these, although I’m afraid I’m the only one who remembers after my brother’s year was the last to uphold it.
+    // TODO: Game notification Item retrieved: Ceremonial Dagger 
+    <<addInventoryItem InventoryManager ceremonialDagger>>
+    Catherine: Thanks Medea!
+
+    -> Catherine: But what about yours? Don’t you want to celebrate the tradition and graduation?
+    -> Catherine: Since when was carrying weapons like this allowed though? Although, if it’s you I’m sure if there’s a will, there’s a way. You don’t need it, just in case?
+
+    Medea: I have no use for a ceremonial dagger when I have ones that are better. I only came to celebrate because of my reputation and besides, my friend Psyche would have dragged me here either way.
+    Catherine: Haha, I can relate, Alice can be like that too.
+    Medea: Ah yes, the saintess. I was quite surprised that you and her almost seemed to be glued at the hip despite the... circumstances.
+    Catherine: But I’m sure you know what it’s like, huh?
+    Medea: Haha, yes, you’re not wrong about that. Well, speak of the devil, Psyche’s looking for me. Enjoy the rest of the ball, Catherine.
+    Catherine: You too!
+<<endif>>
+===

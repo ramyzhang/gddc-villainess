@@ -1,0 +1,234 @@
+title: JealousClassmate_9
+tags:
+---
+Jealous Classmate: Oh! Uh, hey, Catherine! What are you up to?
+<<changeExpression Catherine excited>>
+Catherine: I heard that Alice was kidnapped! I’m here to take down the villain and save her.
+<<moveCharacter Melissa Catherine >>
+<<if inventoryIncludes("complexArrow")>>
+    Jealous Classmate: Whoa, uh, that’s terrible! Here, let me hold on to that arrow for you, I’m a really good shot! I can help out.
+
+    -> Catherine: Heck yeah, the more the better!
+        Jealous Classmate: Great! So, uh, just hand it over, yeah?
+        <<changeExpression Melissa worried>>
+        Melissa: Whoa whoa whoa wait a second! Catherine, don’t you think she’s a little suspicious?
+
+        -> Catherine: Really? How so?
+        -> Catherine: You’re right, she’s acting super sus.
+
+        <<moveCharacter Ripley Melissa>>
+        Ripley: Mhm, she’s a little <i>too</i> ready to help, especially after just hearing about it.
+        
+        -> Catherine: Ripley? When did you get here?
+        -> Catherine: I mean... Didn’t you help after I explained it once?
+        -> Catherine: I don’t know where you came from just now, but you’re right!
+
+        Ripley: Shhhh, don’t worry about it! Just don’t hand over that arrow.
+    -> Catherine: Really? Didn’t you get, like, a negative grade in archery?
+        <<changeExpression Melissa exasperated>>
+        Melissa: Why would you remember someone else’s grade?
+        <<moveCharacter Ripley Melissa>>
+        <<changeExpression Ripley happy>>
+        Ripley: I think it’s because the grade was so bad it was hard to forget.
+        
+        -> Catherine: Ripley? When did you get here?
+        -> Catherine: I don’t know whether you’re in a place to say anything when you got second-to-last in our year, Ripley...
+        -> Catherine: I don’t know where you came from just now, but you’re right!
+
+        Melissa: Either way, it’s suspicious that you want the arrow so badly even though you can’t even use it...
+        Jealous Classmate: It’s just, that I, I mean—
+    -> Catherine: Oh, thanks, but I’m good! I’d rather not trouble anyone any more and do this myself.
+        Jealous Classmate: Come on! It sounds like you don’t actually want to save Alice! Don’t you know the more the merrier? Power in numbers? Are you actually the villain we always thought you were?
+        <<moveCharacter Ripley Melissa>>
+        <<changeExpression Ripley angry>>
+        Ripley: You’re pretty suspicious, escalating the situation like that.
+        
+        -> Catherine: Ripley? When did you get here?
+        -> Catherine: I don’t know where you came from just now, but you’re right!
+<<endif>>
+Melissa: Hey! Yeah, err, so we actually already found where Alice was from the clues we found, so we’ll just be on our way now. Haha! Ha!
+Jealous Classmate: Wait! No! How did you find out where I hid her?
+<<moveCharacter Ripley Melissa>>
+<<changeExpression Catherine angry>>
+Catherine: So you did kidnap her!
+<<changeExpression Ripley angry>>
+Ripley: Tell us where she is!
+// TODO: <<moveCharacter jc lunges at m, making m fall, and runs away >>
+Melissa: Oof!
+Catherine: Oh no, Melissa!
+Ripley: Don’t worry, Catherine! I can help Melissa, you just go after that wench!
+
+-> Catherine: No! We never leave a friend behind.
+    <<changeExpression Melissa sad>>
+    Melissa: It’s fine... we’ll meet up... on the other side...
+    Catherine: ...That sounds like you’re about to die, but alright. Catch up soon!
+-> Catherine: Got it!
+    Ripley: Good luck!
+
+// TODO: battle start!
+<<updateState GameStateManager 10 >>
+===
+title: JealousClassmate_10
+tags:
+---
+<<if battleWon(1) == true>>
+    <<jump JealousClassmate_10_2>>
+<<else>>
+    <<jump JealousClassmate_10_3>>
+<<endif>>
+===
+title: JealousClassmate_10_2
+tags:
+---
+Jealous Classmate: No! No... My plan to put that dirty little commoner in her place is all ruined now...
+<<changeExpression Alice crying>>
+Alice: What... what have I ever done to you?
+<<moveCharacter Oliver Frame>>
+<<moveCharacter Everett Frame>>
+Oliver: Alice! Alice! Are you all right?!
+Everett: Who do you think you are, looking down on Alice when you’re just some mob!
+<<changeExpression Catherine exasperated>>
+Catherine: How many times do I have to say this? You guys gotta stop with the main character syndrome! You’re not wrong though... She doesn’t even have a name nor a face... Huh...
+Catherine: ANYWAYS! That’s not even important right now! Guys, this girl and her posse were the ones who kidnapped Alice.
+<<changeExpression LoveInterest surprised>>
+Love Interest: Catherine, you... you saved Alice?
+<<if battleWon(0) == true>>
+    Love Interest: You never fail to surprise me. I’ve never met a girl as brave and as...
+    Catherine: <i>OMG he’s going to say it!</i>
+    Love Interest: A girl as interesting as you!
+    Catherine: <i>It’s here! The trope of all tropes! The not-like-other girls trope! In the flesh! Kyaaaa!!!</i>
+
+    -> Catherine: For some reason, that makes me happy to hear...
+    -> Catherine: I mean, Alice and the other girls are also plenty interesting.
+
+    <<moveCharacter Alice Catherine>>
+    // TODO: animateCharacter: alice hugs catherine
+    Alice: Thank you for helping me, Catherine! You’re so cool! I thought I was a goner. Can we stay friends forever?
+    <<changeExpression Catherine happy>>
+    Everett: Yes, you did an amazing job, Catherine. I’ll have to tell my father about how you kept our kingdom’s future saintess safe.
+    Jealous Classmate: Guys... I’m still here. Guys?
+    Oliver: Let’s get back to class now, everyone. We should hang out after school to celebrate!
+    Everett: That sounds excellent. Sometimes I forget we actually have classes to take, with all this running around we do all the time.
+    Catherine: Ugh, get me out of here... All I wanted was just an ordinary school life...
+    Jealous Classmate: GUYS?!
+    <<jump JealousClassmate_10_Exit>>
+<<else>>
+    Love Interest: You know... you’re better than I thought. You seemed like just some sheltered villainess out to get Alice, but you’re actually not a bad person.
+    Catherine: Wow, high praise, thanks! I went through all this just to get a few backhanded compliments - I’m sooooo grateful!
+    Love Interest: Yes, as you should be.
+    Catherine: ...
+
+    -> Catherine: Ugh,that face though... I could never hold a grudge against a face like that.
+    -> Catherine: *sighs*  Why do handsome men get away with everything...
+
+    Jealous Classmate: Uh... guys? I’m still here. Guys?
+    Love Interest: Come on, Catherine. You must be tired after all this. Let’s go to the infirmary and help you and Alice patch up, then go back to class.
+    Catherine: <i>He’s actually being nice...?</i>
+    Alice: Yay! Let’s all be nice to each other from now on, okay? [hugs Catherine] Thanks so much for saving me, Catherine.
+    <<jump JealousClassmate_10_Exit>>
+<<endif>>
+===
+title: JealousClassmate_10_3
+tags:
+---
+<<if battleWon(0) == true>>
+    // TODO: <<moveCharacter duke & crown prince burst into the classroom >>
+    // TODO: <<moveCharacter li knocks jc away and brandishes his sword >>
+    Jealous Classmate: No! No... My plan to put that dirty little commoner in her place is all ruined now...
+    <<changeExpression Alice crying>>
+    Alice: What have I ever done to you?
+    <<changeExpression Oliver surprised>>
+    Oliver: Alice! Alice! Are you all right?!
+    <<changeExpression Everett angry>>
+    Everett: Who do you think you are, looking down on Alice when you’re just some mob!
+    Catherine: How many times do I have to say this? You guys gotta stop with the main character syndrome! You’re not wrong though... She doesn’t even have a name nor a face... Huh...
+    Catherine: ANYWAYS! That’s not even important right now! Guys, I wasn’t a part of the kidnappers. This girl and her posse were the ones who kidnapped Alice.
+    <<changeExpression Alice crying>>
+    Alice: T-that’s right! Look at how beat up and weak Catherine looks right now! She tried to save me!
+
+    -> Catherine: I know you mean well, but couldn’t you have worded it better?
+        Everett: Yeah, emphasis on tried.
+        Oliver: It seems like Alice isn’t wrong though.
+    -> Catherine: Yeah, I’m one of the good guys!
+        Everett: That sounds like an oxymoron.
+        Oliver: It does seem as though she was fighting JC.
+    -> Catherine: That’s right... couldn’t you help me up too?
+        <<moveCharacter Oliver Alice>>
+        // TODO: animateCharacter: oliver helps alice up
+        Everett: I think you’re well enough to stand on your own...
+
+    Love Interest: But it does seem like Catherine tried to save Alice...
+    Love Interest: You never fail to surprise me. I’ve never met a girl as brave and as...
+    Catherine: <i>OMG he’s going to say it!</i>
+    Love Interest: A girl as interesting as you!
+    Catherine: <i>It’s here! The trope of all tropes! The not-like-other-girls trope! In the flesh! Kyaaaa!!!</i>
+    <<changeExpression Catherine exasperated>>
+    Catherine: H-haha, thanks, $liName. I do my best. I just wanted to make sure Alice was okay.
+    <<moveCharacter Alice Catherine>>
+    // TODO: animateCharacter: alice hugs catherine
+    Alice: Thank you for helping me, Catherine! You’re so cool! I thought I was a goner. Can we stay friends forever?
+    <<changeExpression Everett happy>>
+    Everett: Yes, you did an amazing job, Catherine. I’ll have to tell my father about how you kept our kingdom’s future saintess safe.
+    Jealous Classmate: Guys... I’m still here. Guys?
+    Oliver: Let’s get back to class now, everyone. We should hang out after school to celebrate!
+    Everett: That sounds excellent. Sometimes I forget we actually have classes to take, with all this running around we do all the time.
+    Catherine: *sighs* Get me out of here... All I wanted was just an ordinary school life...
+    Jealous Classmate: GUYS?!
+    <<jump JealousClassmate_10_Exit>>
+<<else>>
+    // TODO: <<moveCharacter duke & crown prince burst into the classroom >>
+    // TODO: <<moveCharacter li knocks jc away and brandishes his sword >>
+    Jealous Classmate: No! No... My plan to put that dirty little commoner in her place is all ruined now...
+    <<changeExpression Alice crying>>
+    Alice: What have I ever done to you?
+    Oliver: Alice! Alice! Are you all right?!
+    Everett: Who do you and Catherine think you are, looking down on Alice when you’re just some mob!
+    <<changeExpression Catherine exasperated>>
+    Catherine: How many times do I have to say this? You guys gotta stop with the main character syndrome... I mean, you’re not wrong though... She doesn’t even have a name nor a face...
+    Catherine: ANYWAYS! That’s not even important right now! Guys, I wasn’t a part of the kidnappers. This girl and her posse were the ones who kidnapped Alice.
+    Alice: T-that’s right! Look at how beat up and weak Catherine looks right now! She tried to save me!
+
+    -> Catherine: I know you mean well, but couldn’t you have worded it better?
+        Everett: Yeah, emphasis on tried.
+        Oliver: It seems like Alice isn’t wrong though.
+    -> Catherine: Yeah, I’m one of the good guys!
+        Everett: That sounds like an oxymoron.
+        Oliver: It does seem as though she was fighting JC.
+    -> Catherine: That’s right... couldn’t you help me up too?
+        Oliver: [Moves to help Alice up first]
+        Everett: I think you’re well enough to stand on your own...
+
+    Love Interest: But it does seem like Catherine tried to save Alice...
+    Love Interest: You know... you’re better than I thought. You seemed like just some sheltered villainess out to get Alice, but you’re actually not a bad person.
+    Catherine: Wow, high praise. I went through all this just to get a few backhanded compliments—I’m sooooo grateful!
+    Love Interest: Mhm, as you should be.
+    Catherine: ...
+    Catherine: *sighs* That face though... I could never hold a grudge against a face like that.
+    Jealous Classmate: Uh... guys? I’m still here. Guys?
+    <<changeExpression LoveInterest happy>>
+    Love Interest: Come on, Catherine. You must be tired after all this. Let’s go to the infirmary and help you and Alice patch up, then go back to class.
+    Catherine: <i>He’s actually being nice...?</i>
+    Alice: Yay! Let’s all be nice to each other from now on, okay? Thanks so much for saving me, Catherine.
+    Jealous Classmate: GUYS???
+    <<jump JealousClassmate_10_Exit>>
+<<endif>>
+===
+title: JealousClassmate_10_Exit
+tags:
+---
+<<screenEffect fadeBlack>>
+// TODO: catherine is alone in the scene
+???: <i>G... out... Get... Get... Out...</i>
+Catherine: Huh? Who’s there?
+???: GET OUT!!!
+Catherine: Who are you?!
+???: <i>This... not... yours... Give... back... Give it... back... Imp... o... Impost... er...</i>
+???: <i>A... ice... Al... ice... Gi... ve... it... ba...</i>
+Catherine: Why are you in my head?! I don’t want this! Please, I didn’t mean for any of this to happen.
+???: <i>No... no... no!</i>
+???: ...
+Catherine: Is it... is it finally gone? Who was that?
+Catherine: How did they know I’m an imposter?
+Catherine: I have to be careful...
+<<updateState GameStateManager 11 >>
+===

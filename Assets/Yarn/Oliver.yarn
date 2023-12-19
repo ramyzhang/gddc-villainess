@@ -1,0 +1,152 @@
+title: Oliver_19
+tags:
+---
+<<if $liName != "Oliver">>
+    Oliver: Good evening, my lady.
+    Catherine: Good evening, duke.
+    Narrator: Silence.
+    Catherine: [laughs] Come on now, you can’t say that after all these years together, you’re still so stiff and stoic?
+    Oliver: Apologies.
+    Catherine: Mm, although I did notice that the one person you did open up to recently other than Prince Everett is a certain blonde-haired saintess...
+    Oliver: [flushes] Please don’t tease me, Lady Catherine.
+    Catherine: How can I not when it’s so easy to? Besides, that’s what friends do.
+    Oliver: Friends... really?
+    Catherine: Yes really. Did we not establish this two arcs ago? I know we had our ups and downs, especially when you would always take Everett’s side over mine as we grew up-
+    Oliver: <i>His Highness, Prince</i> Everett. Decorum, my lady.
+    Catherine: Yeah yeah, you’re always like that. But I do believe that all of our relationships have improved, no?
+
+    -> Catherine: I’d hate for us to be so cold to each other after all this time.
+    -> Catherine: I mean, you don’t want to cut my head off (like how you did in the original ending of the game), right?
+
+    Oliver: ...You may be correct.
+    Catherine: When am I not?
+    Oliver: Should I start listing?
+    Catherine: [laughs] Hahaha, see? You do know how to tease someone other than the prince! Don’t you think we make a good pair of friends?
+    Oliver: [smiles] Possibly.
+
+    -> Catherine: Gasp! A smile! From the duke... to me? The world truly must be ending.
+    -> Catherine: Damn, with that smile I might have to break off my engagement with the prince just to get with you.
+
+    Oliver: [stone-faced] Alright, that’s enough, go bother someone else, I have to go-
+    Catherine: Go look for someone whose name starts with an A and ends with "ice" to ask for a dance?
+    Oliver: ...I will not be answering that.
+    Catherine: That’s as good as an answer in and of itself!
+<<elseif $liName == "Oliver" and romancePoints >= 3>>
+    Oliver: Good evening, my lady.
+    Catherine: Good evening, duke.
+    Narrator: lence
+    Oliver: A-apologies, I know I should be more conscious of our difference in positions as well as your relationship with the prince, but...
+    Catherine: But...?
+    Oliver: If I may—I mean, if you’re willing to share, I just-
+    Narrator: He takes a deep breath, almost like mustering for courage.
+    Oliver: Did you... dislike my actions at the tournament? Did I betray your trust, is that why I did not hear from you over the summer?
+    Catherine: Of course not! I was simply... taken aback. I did not know you could be so forward and it shocked me.
+    Oliver: Oh, so that was a bad thing...
+    Catherine: No no no, not at all! You... you swept me off my feet quite a bit, I was just too flustered to spend time with you alone...
+    Oliver: [groans] So I did betray your trust, at least a little in my chivalry.
+    Catherine: It’s less losing my trust in you and not trusting myself to hold back... I am most definitely not opposed to you being forward.
+    Oliver: Then since you like it so much, w-would, you grace me with the honour for a dance?
+    Catherine: <i>How cute, he’s acting so boldly that he stuttered! That face just makes me want to tease him more.</i>
+    Catherine: Wow... you finally break that stone-cold wall of yours huh? You don’t need to apologize, my lord. After all, we already shared a kiss, so what is a dance after that?
+    Oliver: [turns red] Ah...
+    Catherine: [laughs] I can’t believe I managed to uproot the Crown Prince’s number one spot in your heart.
+    Narrator: As you take his hand, you can feel his pulse racing and the two of you start to dance.
+    Oliver: You jest, my lady. He never had first place, that spot was just waiting for you. It feels as though I have been frozen in time, following the same routines and same lessons that I learned, where my entire life revolved around His Highness’.
+    Oliver: But you uproot all of that and turn my life into something exciting, something that feels like mine. You make me feel like I’m living. You make life shine bright every time I lay my eyes on you. Your warmth melts all of the coldness away with every teasing joke or act of bravery I see you make.
+    Oliver: You’re so full of life, you inspire me to love the world with as much passion as you do.
+    Narrator:  spins you into his arms and you turn red
+
+    -> Catherine: That was so cheesy, I didn’t know you had it in you.
+    -> Catherine: You’re so cringey... why is it endearing...
+    -> Catherine: Damn right I am! It’s only deserved that you recognised as much.
+
+    <<changeExpression Oliver happy>>
+    Oliver: Are you blushing from the spin or from my lines, my lady?
+    Catherine: I can have my romantic moments too! Like this:
+    Catherine: Don’t call me ‘my lady’ anymore. Call me by my name.
+    Narrator: The duke stumbles and you adjust the dance’s movements to accommodate.
+    Oliver: I don’t know if I can-
+    Catherine: Just try. I want to hear you say it.
+    <<changeExpression Oliver blushing>>
+    Oliver:  ...Lady Catherine.
+    Catherine: Sorry, I didn’t quite catch that?
+    Oliver: ...Lady Catherine.
+    Catherine: Hm? Did you say something?
+    Oliver: CATHERINE! There I said it, Catherine Catherine Cath-
+    Narrator: You stop and rise onto your tiptoes to give him a kiss.
+    Catherine: [smirks] Haha, you’re a cutie, aren’t you?
+    Oliver: [flushed] My lady, we’re in public...
+
+    -> Catherine: That didn’t stop you at the knight tournament.
+        Oliver: ...One of the very few times I had a moment of spontaneity.
+    -> Catherine: What, so we’re having a closed door romance? [gasp] How scandalous...
+        Oliver: Of course not! I was willing at the knight tournament... although I got teased endlessly for it...
+    -> Catherine: We’re becoming a PDA couple! Got a problem with that?
+        Oliver: I suppose it’s my fault since I started it at the tournament...
+
+    Catherine: Well I for one think it was romantic.
+    Oliver: ...Good. I’m glad.
+    Narrator: The academy headmaster’s voice suddenly rings through the speakers.
+    Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
+    Catherine: Come on, Duke Oliver. Let's finish our last year at the academy!
+    Oliver: [smiles] Yes, Lady Catherine.
+<<elseif $liName == "Oliver" and romancePoints < 3>>
+    Oliver: Good evening, my lady.
+    Catherine: Good evening, duke.
+    Narrator: Silence.
+
+    -> Catherine: Do you not have a partner for the dance?
+        Oliver: ...No.
+        Catherine: No one asked?
+        Oliver: ...
+        Catherine: Ah, so they did, but you turned them down, huh? [laughs]You’re quite popular aren’t you?
+        <<changeExpression Oliver blushing>>
+        Oliver: I’m sure it was just to get close to the Crown Prince, since I am his official guard.
+        Catherine: Well, you can take my word for it, that I am here for you, so, may I have this dance?
+    -> Catherine: What are you doing, looking like a wallflower when you should be dancing?
+        Oliver: I must keep a vigilant eye on the prince at all times.
+        Catherine: Come on, the only thing you’re keeping an eye on is a glutton who’s stuffing his face with free food even though he’s rich.
+        Oliver: [dismayed] You shouldn’t speak of him so crudely.
+        Catherine: Am I wrong?
+        Oliver: ...
+        Catherine: [laughs] Even you can’t deny it! Just dance with me, he doesn’t need a babysitter all the time, even if he acts like he does.
+
+    Oliver: ...Alright.
+    Narrator: You want to ask if Alice asked him for a dance, but you can’t bring yourself to do it
+    Catherine: You dance quite well, my lord.
+    Oliver: Well, all nobles are required to take etiquette classes and I had to keep up with his highness at events as well. You’re quite talented yourself.
+    Catherine: [smile] Thank you, you’re very kind.
+    Oliver: Ah.
+    Narrator: From the way he averts his eyes, you can tell he doesn’t believe it.
+    Catherine: Truly, you are. It’s hard to tell under the stoic mannerisms you uphold, but ever since I’ve gotten closer to you over these years, I’ve noticed your kind heart and all the good you’ve done for the people around you. Even when they haven’t realised it.
+    <<changeExpression Oliver blushing>>
+    Oliver: You exaggerate.
+
+    -> Catherine: No. I don’t.
+    -> Catherine: In what world do you think what I just said isn’t true?
+    -> Catherine: What’s exaggerated is how much you don’t see it.
+
+    Narrator: Your firm voice brings his attention to you.
+    Catherine: Believe me when I say this, you are the most warm-hearted and genuine person I have ever known and anyone who does not see it is blind.
+    Oliver: Thank you, my lady...
+    Catherine: Please, I hope we are beyond that now. You can call me Catherine.
+    Oliver: How could I-
+    Alice: Duke Oliver! Catherine!
+    Narrator: At the sound of Alice’s voice, the duke breaks away from the dance.
+    Oliver: Ah, Lady Alice.
+    Catherine: Alice!
+
+    -> Catherine: You look amazing!
+    -> Catherine: Right when he was going to say it! Ah well, how can I stay mad at someone who looks as radiant as you do?
+
+    Alice: Aw, thanks Cath! You do too!
+    Oliver: [belated] Yes.... Alice, you look... stunning.
+    <<changeExpression Alice blushing>>
+    Alice: Ah, thank you, Lord Oliver.
+    Alice: If I may be so bold, would you like to dance with me?
+    Narrator: The Duke briefly glances at you, but looking at Alice’s shining face, you make a waving motion to him.
+    Catherine: Have fun!
+    Narrator: After a few dances where you drink the punch and try not to look at Alice and the Duke dancing, you hear the academy’s headmaster over the speakers.
+    Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
+<<endif>>
+===

@@ -1,0 +1,87 @@
+title: Navier_15
+tags:
+---
+Navier: Oh! Cath! So lovely to see you.
+Catherine: Navier! It’s been so long! I heard you’ve been journeying in the Western Empire with a friend!
+<<changeExpression Navier blushing>>
+Navier: *coughs* Oh yes, a... good friend.
+Catherine: ...
+Catherine: Yeah, I’m not about to get myself involved in that one.
+Catherine: Uh, cool! So, are you ready for the upcoming Knight Tournament?
+Navier: Ah, yes. Though I must admit, I’m not keen on supporting anyone in particular this time around...
+Catherine: Things aren’t going well with Sovieshu, I guess?
+Narrator: Navier smiles wanly in response.
+Catherine: Sorry, I probably shouldn’t prod you too much.
+Navier: No need to apologise, Cath. I know you always have my best interests in mind. Anyhow, who do you have your eye on this year?
+Catherine: Well... Not so much that I have my eye on them, but I do really wanna make a good impression.
+<<if $tassellearned == false>>
+    Navier: Oho! In that case, dare I suggest making a feathered tassel?
+
+    -> Catherine: A... tassel? Doesn’t seem like a bad idea... It sounds so old-school, though...
+        Navier: It’s not old-school, it’s a classic! And I have just the thing for you to decorate it with.
+        Catherine: Ooh, what’s this?
+        Navier: It’s a feather from an exotic bird, found only in the Western Empire. Look at those gorgeous beige specks, and that royal blue! It’s so dignified, as if it came from the Queen of birds herself!
+        Catherine: Uh... I mean, yeah, it’s definitely a pretty feather. Are you sure you want to give this to me? You seem... really attached.
+        Navier: Oh! Oh, no, not at all. Please take it. I can’t wait to see your adorable cheeks blush as you give your completed tassel to your knight!
+        Catherine: Oh, stop it. Thanks for the feather, Navier. It’s gorgeous.
+        // TODO: <<gameNotification you’ve received a queen feather from navier trovi! >>
+        <<addInventoryItem InventoryManager queenFeather>>
+        Navier: My pleasure, lovely. Listen, I must go to my history class now. I shall meet you at lunch!
+        Catherine: Sure, Nav. I’ll see you later!
+    -> Catherine: Something so... so innocent and pure-hearted? They would all just laugh at me. I’m the villainess, after all.
+        Navier: Nonsense! No matter your reputation, a student’s gift of a tassel to their chosen knight is a sacred ritual! If anyone dares to even let the slightest chortle escape from their lips, they’ll have me to deal with!
+        Catherine: Aw, Nav. Thanks. But simply even imagining myself humming domestically as I tie it with these clumsy fingers of mine... Ugh. I just can’t.
+        Navier: Don’t be like that, Catherine. What matters most is the feelings you hold in your heart while making it, not how it makes you seem.
+        Catherine: ...
+        Navier: Come now, take this blue-beige feather. My... pet bird dropped it a few days ago. He’s quite the magical bird, so it has some special properties. I think it’ll look striking on a tassel.
+        Catherine: Navier...
+        Navier: Take it! You’ll be fine.
+        // TODO: <<gameNotification your warm friendship with navier has awarded you a defence buff! >>
+        Catherine: Thanks, Navier.
+        Navier: No need. Go now!
+
+    <<set $tassellearned to true>>
+<<else>>
+    Navier: So you’re going to make a tassel?
+    Catherine: Yes, but... honestly, I’m not even sure where to start. I had some help from the other girls, but I feel like I’m missing something.
+    Navier: Good thing you’ve come to me, then! I’ve been, well... I’ve been... raising birds recently! And one of them dropped this gorgeous blue-beige feather.
+    Catherine: Ooh, pretty! It’s like it came from the queen of birds.
+    Narrator: Navier bursts into surprised laughter.
+    Navier: Yes, Catherine, you’re exactly right. From the Queen.
+    Catherine: Thank you, Navier. This is lovely! I’m sure it’ll look great on—
+    Catherine: ...
+    Navier: Oh? On who, exactly?
+    Catherine: No one! No one. You’re getting nothing out of me!
+    Navier: Come on! Not even a hint?
+    Catherine: No way! I’ll see you later, Navier!
+    Navier: Use the feather well, okay?
+<<endif>>
+===
+title: Navier_19
+tags:
+---
+<<if visited("Navier_19")>>
+    Navier: What is wrong?
+    Catherine: Oh, nothing. Enjoy the ball!
+    Navier: Thank you. There are many well-reputed officials present today—best for me to greet them.
+    Catherine: You do that!
+<<else>>
+    Catherine: Hi, Navier! I see you’ve come back to attend this year’s graduation ball!
+    Navier: Oh, yes. This graduation class has the infamous Saintess, after all. I mustn’t miss something so important, for the future of all our nations.
+    Catherine: Come to nurture the future generation, huh? Admirable as always, Navier.
+    Navier: It’s simply my responsibility—nothing more, nothing less.
+    Catherine: So how are things with your pet bird Queen these days?
+    Navier: Oh, wonderful, We’ve been seeing breathtaking sights together, journeying across the Western Empire. You must come visit us after graduation.
+    Catherine: The Western Empire, huh? Sounds like a dream. It feels just as unattainable as one, too.
+    Navier: I know you must be overwhelmed with the demands of the present, but don’t be afraid to harbour hopes for the future as well. It is this hope that keeps us afloat in hard times.
+    Navier: On that note, I didn’t just come to see the Saintess—I came to congratulate you, too. Here, I baked these cookies myself. I’m sure the flavour will be to your liking.
+    Catherine: These are... Earl Grey shortbread cookies! How did you know?
+    Navier: [smiles]
+    // TODO:<<gameNotification item received: navier’s earl grey cookies! >>
+    <<addInventoryItem InventoryManager earlGreyCookies>>
+    Catherine: Thank you, Navier. I’ll be sure to share these with everyone. They’ll love them! I can’t believe I get to eat THE Lady Navier’s home-made sweets—the kids will be so jealous.
+    Navier: Now, now, don’t be like that. Do enjoy them with everyone. You must go now, the ball has already begun.
+    Catherine: Yes, I must make my rounds. I shall speak with you later!
+    Navier: See you, my dear.
+<<endif>>
+===

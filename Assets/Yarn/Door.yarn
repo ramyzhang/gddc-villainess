@@ -1,0 +1,18 @@
+title: Door_7
+tags:
+---
+???: …
+???: Y… ou…
+Catherine: ?
+Catherine: Did you guys hear that?
+Alice: Uh… no? I’m… I think I’m going to head out now. Bye…?
+Catherine: Ah! Yeah, sure. Bye, Alice!
+<<updateState GameStateManager 8 >>
+===
+title: Door_15
+tags:
+---
+Catherine: Alright, let’s do this…
+Catherine: Manifest it! This year will be my year! I will burn all of Catherine’s death flags, for good!
+<<updateState GameStateManager 16>>
+===

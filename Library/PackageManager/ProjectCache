@@ -5,29 +5,29 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637930698100000000
-    m_Hash: 4008383740
+      ticks: 638334360290000000
+    m_Hash: 1772735136
   m_LockFileStatus:
     m_FilePath: /Users/ramyzhang/Code/gddc-villainess/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637930698100000000
-    m_Hash: 2607240972
+      ticks: 638334360290000000
+    m_Hash: 4010348461
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: /Users/ramyzhang/Code/gddc-villainess/Packages
-m_EditorVersion: 2021.1.24f1 (6667702a1e7c)
+m_EditorVersion: 2021.3.3f1 (af2e63e8f9bd)
 m_ResolvedPackages:
-- packageId: com.unity.2d.animation@6.0.7
+- packageId: com.unity.2d.animation@7.0.11
   testable: 0
   isDirectDependency: 1
-  version: 6.0.7
+  version: 7.0.11
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.animation@6.0.7
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.animation@7.0.11
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -36,7 +36,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: 2D Animation provides all the necessary tooling and runtime components
     for skeletal animation using Sprites.
   status: 4
@@ -114,6 +114,9 @@ m_ResolvedPackages:
     - 5.2.0
     - 5.2.1
     - 5.2.3
+    - 5.2.4
+    - 5.2.6
+    - 5.2.7
     - 6.0.0-pre.1
     - 6.0.0-pre.2
     - 6.0.1
@@ -130,22 +133,46 @@ m_ResolvedPackages:
     - 7.0.4
     - 7.0.5
     - 7.0.6
+    - 7.0.7
+    - 7.0.8
+    - 7.0.9
+    - 7.0.10
+    - 7.0.11
+    - 7.0.12
     - 8.0.0-pre.3
     - 8.0.0-pre.4
     - 8.0.0
     - 8.0.1
     - 8.0.2
+    - 8.0.3
+    - 8.0.4
+    - 8.0.5
     - 9.0.0-pre.1
     - 9.0.0-pre.3
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 10.0.0-pre.1
+    - 10.0.0-pre.2
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
+    - 10.0.3
     compatible:
-    - 6.0.5
-    - 6.0.7
-    verified: 6.0.7
+    - 7.0.5
+    - 7.0.6
+    - 7.0.7
+    - 7.0.8
+    - 7.0.9
+    - 7.0.10
+    - 7.0.11
+    - 7.0.12
+    verified: 7.0.12
   dependencies:
   - name: com.unity.2d.common
-    version: 5.0.0
-  - name: com.unity.mathematics
-    version: 1.1.0
+    version: 6.0.6
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.modules.animation
@@ -154,9 +181,11 @@ m_ResolvedPackages:
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.2d.common
-    version: 5.0.0
+    version: 6.0.6
   - name: com.unity.2d.sprite
     version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -167,8 +196,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.2.1
+  - name: com.unity.burst
+    version: 1.6.5
   - name: com.unity.modules.animation
     version: 1.0.0
   keywords:
@@ -181,28 +210,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637692088370000000
-  documentationUrl: 
+  datePublishedTicks: 638194782730000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@7.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 1be138dca8dc9f0655fe7bde7969af10893d0ff4
+    revision: 9cc2f2e9b975c4194859b8922cb13f1d9b4bff7d
     path: 
   unityLifecycle:
-    version: 6.0.5
+    version: 7.0.5
     nextVersion: 
-- packageId: com.unity.2d.psdimporter@5.0.6
+- packageId: com.unity.2d.psdimporter@6.0.7
   testable: 0
   isDirectDependency: 1
-  version: 5.0.6
+  version: 6.0.7
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.psdimporter@5.0.6
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.psdimporter@6.0.7
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -211,7 +237,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: A ScriptedImporter for importing Adobe Photoshop PSB (Photoshop Big)
     file format. The ScriptedImporter is currently targeted for users who wants to
     create multi Sprite character animation using Unity 2D Animation Package.
@@ -258,6 +284,7 @@ m_ResolvedPackages:
     - 4.1.3
     - 4.2.0
     - 4.3.0
+    - 4.3.1
     - 5.0.0-pre.1
     - 5.0.0-pre.2
     - 5.0.1
@@ -272,28 +299,47 @@ m_ResolvedPackages:
     - 6.0.2
     - 6.0.3
     - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.0.7
     - 7.0.0-pre.3
     - 7.0.0-pre.4
     - 7.0.0
     - 7.0.1
+    - 7.0.2
+    - 7.0.3
     - 8.0.0-pre.1
     - 8.0.0-pre.3
+    - 8.0.0
+    - 8.0.1
+    - 8.0.2
+    - 9.0.0-pre.1
+    - 9.0.0-pre.2
+    - 9.0.0
+    - 9.0.1
     compatible:
-    - 5.0.4
-    - 5.0.6
-    verified: 5.0.6
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    - 6.0.7
+    verified: 6.0.7
   dependencies:
-  - name: com.unity.2d.common
-    version: 5.0.0
   - name: com.unity.2d.animation
-    version: 6.0.7
+    version: 7.0.9
+  - name: com.unity.2d.common
+    version: 6.0.6
   - name: com.unity.2d.sprite
     version: 1.0.0
   resolvedDependencies:
+  - name: com.unity.2d.animation
+    version: 7.0.11
   - name: com.unity.2d.common
-    version: 5.0.0
+    version: 6.0.6
   - name: com.unity.2d.sprite
     version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -304,10 +350,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
-  - name: com.unity.2d.animation
-    version: 6.0.7
-  - name: com.unity.mathematics
-    version: 1.2.1
+  - name: com.unity.burst
+    version: 1.6.5
   - name: com.unity.modules.animation
     version: 1.0.0
   keywords:
@@ -321,21 +365,18 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637692088430000000
-  documentationUrl: 
+  datePublishedTicks: 638067887380000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.psdimporter@6.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 1be138dca8dc9f0655fe7bde7969af10893d0ff4
+    revision: 911204bb63dcf2da80b6063d54c4ec8737ad13dc
     path: 
   unityLifecycle:
-    version: 5.0.4
+    version: 6.0.3
     nextVersion: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -375,10 +416,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -391,12 +429,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.2d.spriteshape@6.0.2
+- packageId: com.unity.2d.spriteshape@7.0.7
   testable: 0
   isDirectDependency: 1
-  version: 6.0.2
+  version: 7.0.7
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.spriteshape@6.0.2
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.spriteshape@7.0.7
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -405,7 +443,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: SpriteShape Runtime & Editor Package contains the tooling and the
     runtime component that allows you to create very organic looking spline based
     2D worlds. It comes with intuitive configurator and a highly performant renderer.
@@ -480,28 +518,41 @@ m_ResolvedPackages:
     - 7.0.3
     - 7.0.4
     - 7.0.5
+    - 7.0.6
+    - 7.0.7
     - 8.0.0-pre.4
     - 8.0.0-pre.5
     - 8.0.0
+    - 8.0.1
     - 9.0.0-pre.1
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
+    - 10.0.0-pre.1
+    - 10.0.0-pre.2
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
     compatible:
-    - 6.0.1
-    - 6.0.2
-    verified: 6.0.2
+    - 7.0.4
+    - 7.0.5
+    - 7.0.6
+    - 7.0.7
+    verified: 7.0.7
   dependencies:
   - name: com.unity.mathematics
     version: 1.1.0
   - name: com.unity.2d.common
-    version: 5.0.0
+    version: 6.0.6
   - name: com.unity.2d.path
-    version: 5.0.1
+    version: 5.0.2
   - name: com.unity.modules.physics2d
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.mathematics
-    version: 1.2.1
+    version: 1.2.6
   - name: com.unity.2d.common
-    version: 5.0.0
+    version: 6.0.6
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.modules.uielements
@@ -514,8 +565,10 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
+  - name: com.unity.burst
+    version: 1.6.5
   - name: com.unity.2d.path
-    version: 5.0.1
+    version: 5.0.2
   - name: com.unity.modules.physics2d
     version: 1.0.0
   keywords:
@@ -532,21 +585,18 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637692088520000000
-  documentationUrl: 
+  datePublishedTicks: 638140403060000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@7.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: dc06716385df1e86502c8ed354138f6562ea6e0a
+    revision: 2dba3153b5c4ffa75993dfca0bd0df8cbc28809c
     path: 
   unityLifecycle:
-    version: 6.0.1
+    version: 7.0.4
     nextVersion: 
 - packageId: com.unity.2d.tilemap@1.0.0
   testable: 0
@@ -585,10 +635,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -615,7 +662,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: 
+  type: asset
   description: The Version Control package gives you the ability to use either Collaborate
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
@@ -673,6 +720,9 @@ m_ResolvedPackages:
     - 1.15.18
     - 1.17.0
     - 1.17.1
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -680,35 +730,26 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
     compatible:
-    - 1.11.2
-    - 1.12.5
-    - 1.13.5
-    - 1.14.1
-    - 1.14.4
-    - 1.14.7
-    - 1.14.9
-    - 1.14.12
-    - 1.14.13
-    - 1.14.15
-    - 1.14.16
-    - 1.14.17
-    - 1.14.18
-    - 1.15.1
-    - 1.15.4
-    - 1.15.7
-    - 1.15.9
-    - 1.15.12
-    - 1.15.13
-    - 1.15.15
     - 1.15.16
     - 1.15.17
     - 1.15.18
     - 1.17.0
     - 1.17.1
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -716,17 +757,29 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    verified: 1.11.2
+    - 2.1.0
+    - 2.2.0
+    verified: 1.15.18
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.0.1
+    version: 1.3.1
   - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords:
   - backup
@@ -749,10 +802,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637916644700000000
   documentationUrl: 
@@ -763,14 +813,14 @@ m_ResolvedPackages:
     revision: 2346af88036ac7256d898e0bb536f60220ce6e18
     path: 
   unityLifecycle:
-    version: 1.11.2
+    version: 1.15.16
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.7
+- packageId: com.unity.ide.rider@3.0.14
   testable: 0
   isDirectDependency: 1
-  version: 3.0.7
+  version: 3.0.14
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.rider@3.0.7
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.rider@3.0.14
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -779,7 +829,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
@@ -818,21 +868,34 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
+    - 3.0.16
+    - 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
     compatible:
-    - 3.0.7
-    - 3.0.9
-    - 3.0.10
-    - 3.0.12
-    - 3.0.13
     - 3.0.14
     - 3.0.15
-    verified: 3.0.15
+    - 3.0.16
+    - 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    verified: 3.0.26
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.0.3
   keywords: []
   registry:
     id: main
@@ -841,28 +904,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637572251600000000
+  datePublishedTicks: 637861245770000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 3007c42a679bbe2c082c276e8d79279110964553
+    revision: e6bfc84a08a0876a2c20ec2ee0883b5ece331dfd
     path: 
   unityLifecycle:
-    version: 3.0.7
+    version: 3.0.14
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.11
+- packageId: com.unity.ide.visualstudio@2.0.20
   testable: 0
   isDirectDependency: 1
-  version: 2.0.11
+  version: 2.0.20
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.visualstudio@2.0.11
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.visualstudio@2.0.20
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -871,7 +931,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -898,21 +958,28 @@ m_ResolvedPackages:
     - 2.0.14
     - 2.0.15
     - 2.0.16
+    - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
     compatible:
-    - 2.0.11
-    - 2.0.12
-    - 2.0.14
     - 2.0.15
     - 2.0.16
-    verified: 2.0.16
+    - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    verified: 2.0.22
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.29
+    version: 1.3.9
   - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.0.3
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -925,28 +992,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637613656180000000
-  documentationUrl: 
+  datePublishedTicks: 638265007710000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+    revision: b7bf23d23806ac75645bfa12acadcfc11468a383
     path: 
   unityLifecycle:
-    version: 2.0.11
+    version: 2.0.15
     nextVersion: 
-- packageId: com.unity.ide.vscode@1.2.4
+- packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
-  version: 1.2.4
+  version: 1.2.5
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.vscode@1.2.4
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -955,7 +1019,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -977,7 +1041,6 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     compatible:
-    - 1.2.4
     - 1.2.5
     verified: 1.2.5
   dependencies: []
@@ -990,28 +1053,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637660806170000000
+  datePublishedTicks: 637800255360000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
-    revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+    url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+    revision: b0740c80bfc2440527c317109f7c3d9100132722
     path: 
   unityLifecycle:
-    version: 1.2.4
+    version: 1.2.5
     nextVersion: 
-- packageId: com.unity.render-pipelines.universal@11.0.0
+- packageId: com.unity.render-pipelines.universal@12.1.6
   testable: 0
   isDirectDependency: 1
-  version: 11.0.0
+  version: 12.1.6
   source: 2
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.render-pipelines.universal@11.0.0
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.render-pipelines.universal@12.1.6
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -1072,22 +1132,28 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 11.0.0
+    - 10.10.0
+    - 10.10.1
+    - 12.1.6
     compatible:
-    - 11.0.0
-    verified: 11.0.0
+    - 12.1.6
+    verified: 12.1.6
   dependencies:
   - name: com.unity.mathematics
-    version: 1.1.0
+    version: 1.2.1
+  - name: com.unity.burst
+    version: 1.5.0
   - name: com.unity.render-pipelines.core
-    version: 11.0.0
+    version: 12.1.6
   - name: com.unity.shadergraph
-    version: 11.0.0
+    version: 12.1.6
   resolvedDependencies:
   - name: com.unity.mathematics
-    version: 1.2.1
+    version: 1.2.6
+  - name: com.unity.burst
+    version: 1.6.5
   - name: com.unity.render-pipelines.core
-    version: 11.0.0
+    version: 12.1.6
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -1096,10 +1162,12 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.shadergraph
-    version: 11.0.0
+    version: 12.1.6
   - name: com.unity.searcher
-    version: 4.3.2
+    version: 4.9.1
   keywords:
   - graphics
   - performance
@@ -1114,10 +1182,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1128,14 +1193,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 11.0.0
+    version: 12.1.6
     nextVersion: 
-- packageId: com.unity.test-framework@1.1.29
+- packageId: com.unity.test-framework@1.3.9
   testable: 0
   isDirectDependency: 1
-  version: 1.1.29
+  version: 1.3.9
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.test-framework@1.1.29
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.test-framework@1.3.9
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1144,7 +1209,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: 
+  type: assets
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 4
   errors: []
@@ -1183,27 +1248,47 @@ m_ResolvedPackages:
     - 1.1.29
     - 1.1.30
     - 1.1.31
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
-    - 1.1.29
-    - 1.1.30
     - 1.1.31
+    - 1.1.33
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    verified: 1.1.31
+    verified: 1.1.33
   dependencies:
   - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.0.3
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ext.nunit
-    version: 1.0.6
+    version: 2.0.3
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -1218,21 +1303,18 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637647922650000000
-  documentationUrl: 
+  datePublishedTicks: 638283169810000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: dac53542acdab7a12e9ebf111ac588d0e53cf483
+    url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+    revision: 5c8a1448cee4d7607be0d60dceb66703b0cfe016
     path: 
   unityLifecycle:
-    version: 1.1.29
+    version: 1.1.31
     nextVersion: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
@@ -1248,7 +1330,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: 
+  type: asset
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -1356,12 +1438,19 @@ m_ResolvedPackages:
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
+    - 3.2.0-pre.4
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
+    - 3.2.0-pre.4
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
     verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
@@ -1386,10 +1475,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637547111200000000
   documentationUrl: 
@@ -1402,12 +1488,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
-- packageId: com.unity.timeline@1.5.6
+- packageId: com.unity.timeline@1.8.5
   testable: 0
   isDirectDependency: 1
-  version: 1.5.6
+  version: 1.8.5
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.timeline@1.5.6
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.timeline@1.8.5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1416,7 +1502,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
   status: 4
@@ -1491,26 +1577,43 @@ m_ResolvedPackages:
     - 1.6.2
     - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
     compatible:
-    - 1.5.6
-    - 1.5.7
-    - 1.6.0-pre.1
-    - 1.6.0-pre.3
-    - 1.6.0-pre.4
-    - 1.6.0-pre.5
-    - 1.6.1
-    - 1.6.2
-    - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
-    verified: 1.5.7
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    verified: 1.6.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -1542,21 +1645,18 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637613662510000000
-  documentationUrl: 
+  datePublishedTicks: 638290078460000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: bba45362fa74fde39bfa14d05688da527254b39f
+    revision: adf26616812f0b35ad32a28597af1213199265c2
     path: 
   unityLifecycle:
-    version: 1.5.6
+    version: 1.6.4
     nextVersion: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
@@ -1582,6 +1682,8 @@ m_ResolvedPackages:
   versions:
     all:
     - 1.0.0
+    - 3.0.0-exp.1
+    - 3.0.0-exp.3
     compatible:
     - 1.0.0
     verified: 1.0.0
@@ -1607,10 +1709,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1623,12 +1722,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.visualscripting@1.6.1
+- packageId: com.unity.visualscripting@1.9.1
   testable: 0
   isDirectDependency: 1
-  version: 1.6.1
+  version: 1.9.1
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.visualscripting@1.6.1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.visualscripting@1.9.1
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1637,14 +1736,19 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
-  description: "Visual Scripting, previously known as BOLT, is an alternative workflow
-    to design behaviours. Instead of the classic method of writing a C# script, visual
-    scripting offers a way to design behaviours intuitively without code, by connecting
-    events, actions, and data together in a graph. \n\nBoth programmers and non-programmers
-    can use node-based graphs to design final logic or to quickly create prototypes.
-    This package also features an API that programmers can use for more advanced
-    tasks, or to create custom nodes that can be used by other team members."
+  type: tool
+  description: 'Visual scripting is a workflow that uses visual, node-based graphs
+    to design behaviors rather than write lines of C# script.
+
+
+    Enabling artists,
+    designers and programmers alike, visual scripting can be used to design final
+    logic, quickly create prototypes, iterate on gameplay and create custom nodes
+    to help streamline collaboration.
+
+
+    Visual scripting is compatible with third-party
+    APIs, including most packages, assets and custom libraries.'
   status: 4
   errors: []
   versions:
@@ -1665,30 +1769,21 @@ m_ResolvedPackages:
     - 1.7.7
     - 1.7.8
     - 1.8.0-pre.1
+    - 1.8.0
+    - 1.9.0
+    - 1.9.1
     compatible:
-    - 1.6.1
-    - 1.7.1
-    - 1.7.2
-    - 1.7.3
-    - 1.7.5
     - 1.7.6
     - 1.7.7
     - 1.7.8
-    verified: 1.6.1
+    - 1.8.0
+    - 1.9.0
+    - 1.9.1
+    verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
-  - name: com.unity.modules.ai
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.physics2d
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ugui
@@ -1697,17 +1792,7 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.ai
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.particlesystem
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.physics2d
     version: 1.0.0
   keywords: []
   registry:
@@ -1717,28 +1802,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637547228050000000
+  datePublishedTicks: 638284821510000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: d2dc8205ed231b4fc18289dddb14c0a92c76154f
+    revision: 5e78e9c354ed1567dbcea08e2bd9992e4a473cfb
     path: 
   unityLifecycle:
-    version: 1.6.1
+    version: 1.7.6
     nextVersion: 
-- packageId: dev.yarnspinner.unity@2.0.1
+- packageId: dev.yarnspinner.unity@2.3.1
   testable: 0
   isDirectDependency: 1
-  version: 2.0.1
+  version: 2.3.1
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/dev.yarnspinner.unity@2.0.1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/dev.yarnspinner.unity@2.3.1
   assetPath: Packages/dev.yarnspinner.unity
   name: dev.yarnspinner.unity
   displayName: Yarn Spinner
@@ -1768,6 +1850,10 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.2.1
+    - 2.2.2
+    - 2.2.3
+    - 2.2.4
+    - 2.3.1
     compatible:
     - 1.2.2
     - 1.2.4
@@ -1781,6 +1867,10 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.2.1
+    - 2.2.2
+    - 2.2.3
+    - 2.2.4
+    - 2.3.1
     verified: 
   dependencies:
   - name: com.unity.textmeshpro
@@ -1805,12 +1895,9 @@ m_ResolvedPackages:
     - dev.yarnspinner
     isDefault: 0
     capabilities: 0
-  hasRegistry: 1
   hideInEditor: 0
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637758607307020000
+  datePublishedTicks: 638243029804920000
   documentationUrl: https://docs.yarnspinner.dev/
   hasRepository: 0
   repository:
@@ -1856,10 +1943,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1906,10 +1990,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -1957,10 +2038,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2008,10 +2086,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2059,10 +2134,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2114,10 +2186,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2173,10 +2242,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2225,10 +2291,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2276,10 +2339,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2327,10 +2387,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2378,10 +2435,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2429,10 +2483,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2480,10 +2531,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2535,10 +2583,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2586,10 +2631,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2645,10 +2687,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2699,10 +2738,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2750,10 +2786,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2817,10 +2850,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2868,10 +2898,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2927,10 +2954,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -2978,10 +3002,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3037,10 +3058,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3096,10 +3114,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3155,10 +3170,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3230,10 +3242,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3285,10 +3294,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3348,10 +3354,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3413,10 +3416,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3464,10 +3464,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3527,10 +3524,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3582,10 +3576,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3644,10 +3635,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3660,12 +3648,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.ext.nunit@1.0.6
+- packageId: com.unity.ext.nunit@2.0.3
   testable: 0
   isDirectDependency: 0
-  version: 1.0.6
+  version: 2.0.3
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ext.nunit@1.0.6
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.ext.nunit@2.0.3
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3674,9 +3662,9 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: 
-  description: Custom version of the nunit package build to work with Unity. Used
-    by the Unity Test Framework.
+  type: asset
+  description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
+    version 3.5 and works with all platforms, il2cpp and Mono AOT.
   status: 4
   errors: []
   versions:
@@ -3687,8 +3675,16 @@ m_ResolvedPackages:
     - 1.0.0
     - 1.0.5
     - 1.0.6
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
     compatible:
     - 1.0.6
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3703,28 +3699,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637429759280000000
+  datePublishedTicks: 637920402200000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
-    revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
+    revision: 2e41147762790f2a221103bff840a0138ca01b57
     path: 
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-- packageId: com.unity.mathematics@1.2.1
+- packageId: com.unity.mathematics@1.2.6
   testable: 0
   isDirectDependency: 0
-  version: 1.2.1
+  version: 1.2.6
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.mathematics@1.2.1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.mathematics@1.2.6
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -3733,7 +3726,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Unity's C# SIMD math library providing vector types and math functions
     with a shader like syntax.
   status: 4
@@ -3756,11 +3749,12 @@ m_ResolvedPackages:
     - 1.2.1
     - 1.2.4
     - 1.2.5
+    - 1.2.6
+    - 1.3.1
     compatible:
-    - 1.2.1
-    - 1.2.4
-    - 1.2.5
-    verified: 1.2.5
+    - 1.2.6
+    - 1.3.1
+    verified: 1.2.6
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -3772,28 +3766,217 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637324062630000000
+  datePublishedTicks: 637841876140000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: git+https://github.com/Unity-Technologies/Unity.Mathematics.git
-    revision: 71412d94b7a0b0fdbb3195a5e6559bf6a761e91a
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: f110c8c230d253654afed153569030a587cc7557
     path: 
   unityLifecycle:
-    version: 1.2.1
+    version: 1.2.6
     nextVersion: 
-- packageId: com.unity.render-pipelines.core@11.0.0
+- packageId: com.unity.burst@1.6.5
   testable: 0
   isDirectDependency: 0
-  version: 11.0.0
+  version: 1.6.5
+  source: 1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.burst@1.6.5
+  assetPath: Packages/com.unity.burst
+  name: com.unity.burst
+  displayName: Burst
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Burst is a compiler that translates from IL/.NET bytecode to highly
+    optimized native code using LLVM.
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 0.2.4-preview.5
+    - 0.2.4-preview.7
+    - 0.2.4-preview.11
+    - 0.2.4-preview.12
+    - 0.2.4-preview.13
+    - 0.2.4-preview.14
+    - 0.2.4-preview.15
+    - 0.2.4-preview.16
+    - 0.2.4-preview.17
+    - 0.2.4-preview.18
+    - 0.2.4-preview.19
+    - 0.2.4-preview.20
+    - 0.2.4-preview.21
+    - 0.2.4-preview.22
+    - 0.2.4-preview.23
+    - 0.2.4-preview.24
+    - 0.2.4-preview.25
+    - 0.2.4-preview.30
+    - 0.2.4-preview.31
+    - 0.2.4-preview.33
+    - 0.2.4-preview.34
+    - 0.2.4-preview.37
+    - 0.2.4-preview.41
+    - 0.2.4-preview.45
+    - 0.2.4-preview.48
+    - 0.2.4-preview.50
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.0-preview.4
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3-preview.3
+    - 1.2.0-preview.1
+    - 1.2.0-preview.5
+    - 1.2.0-preview.6
+    - 1.2.0-preview.8
+    - 1.2.0-preview.9
+    - 1.2.0-preview.10
+    - 1.2.0-preview.11
+    - 1.2.0-preview.12
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.3.0-preview.1
+    - 1.3.0-preview.2
+    - 1.3.0-preview.3
+    - 1.3.0-preview.4
+    - 1.3.0-preview.5
+    - 1.3.0-preview.6
+    - 1.3.0-preview.7
+    - 1.3.0-preview.8
+    - 1.3.0-preview.9
+    - 1.3.0-preview.10
+    - 1.3.0-preview.11
+    - 1.3.0-preview.12
+    - 1.3.0-preview.13
+    - 1.3.0
+    - 1.3.1
+    - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.6
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0-pre.1
+    - 1.4.0-preview.1
+    - 1.4.0-preview.2
+    - 1.4.0-preview.3
+    - 1.4.0-preview.4
+    - 1.4.0-preview.5
+    - 1.4.1-pre.1
+    - 1.4.1-pre.2
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4-preview.1
+    - 1.4.4-preview.2
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
+    - 1.4.7
+    - 1.4.8
+    - 1.4.9
+    - 1.4.11
+    - 1.5.0-pre.3
+    - 1.5.0-pre.4
+    - 1.5.0-pre.5
+    - 1.5.0
+    - 1.5.1
+    - 1.5.2
+    - 1.5.3
+    - 1.5.4
+    - 1.5.5
+    - 1.5.6-preview.1
+    - 1.5.6
+    - 1.6.0-pre.2
+    - 1.6.0-pre.3
+    - 1.6.0-pre.4
+    - 1.6.0
+    - 1.6.1
+    - 1.6.2
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+    - 1.6.6
+    - 1.7.0-pre.1
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
+    compatible:
+    - 1.6.5
+    - 1.6.6
+    - 1.7.0-pre.1
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.7
+    - 1.8.8
+    - 1.8.9
+    verified: 1.6.6
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.2.6
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637835629630000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/burst.git
+    revision: 370080478647882de41c08e5ca4b4ec26032d9c7
+    path: 
+  unityLifecycle:
+    version: 1.6.5
+    nextVersion: 
+- packageId: com.unity.render-pipelines.core@12.1.6
+  testable: 0
+  isDirectDependency: 0
+  version: 12.1.6
   source: 2
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.render-pipelines.core@11.0.0
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.render-pipelines.core@12.1.6
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -3910,14 +4093,18 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 11.0.0
+    - 10.10.0
+    - 10.10.1
+    - 12.1.6
     compatible:
-    - 11.0.0
-    verified: 11.0.0
+    - 12.1.6
+    verified: 12.1.6
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
   - name: com.unity.ugui
@@ -3928,6 +4115,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   keywords: []
   registry:
     id: main
@@ -3936,10 +4125,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -3950,14 +4136,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 11.0.0
+    version: 12.1.6
     nextVersion: 
-- packageId: com.unity.shadergraph@11.0.0
+- packageId: com.unity.shadergraph@12.1.6
   testable: 0
   isDirectDependency: 0
-  version: 11.0.0
+  version: 12.1.6
   source: 2
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.shadergraph@11.0.0
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.shadergraph@12.1.6
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -4071,18 +4257,20 @@ m_ResolvedPackages:
     - 10.8.0
     - 10.8.1
     - 10.9.0
-    - 11.0.0
+    - 10.10.0
+    - 10.10.1
+    - 12.1.6
     compatible:
-    - 11.0.0
-    verified: 11.0.0
+    - 12.1.6
+    verified: 12.1.6
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 11.0.0
+    version: 12.1.6
   - name: com.unity.searcher
-    version: 4.3.1
+    version: 4.9.1
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 11.0.0
+    version: 12.1.6
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -4091,8 +4279,10 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.searcher
-    version: 4.3.2
+    version: 4.9.1
   keywords: []
   registry:
     id: main
@@ -4101,10 +4291,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
   hideInEditor: 1
-  entitlements:
-    isAllowed: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -4115,14 +4302,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 11.0.0
+    version: 12.1.6
     nextVersion: 
-- packageId: com.unity.services.core@1.0.1
+- packageId: com.unity.services.core@1.3.1
   testable: 0
   isDirectDependency: 0
-  version: 1.0.1
+  version: 1.3.1
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.services.core@1.0.1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.services.core@1.3.1
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -4131,25 +4318,70 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'This package defines common components used by multiple Game Service
     packages.
 
     These are standardized and aim to unify the overall experience
-    of working with Game Services packages.'
+    of working with Game Services SDK.'
   status: 4
   errors: []
   versions:
     all:
     - 1.0.1
+    - 1.1.0-pre.7
+    - 1.1.0-pre.8
+    - 1.1.0-pre.9
+    - 1.1.0-pre.10
+    - 1.1.0-pre.11
+    - 1.1.0-pre.41
+    - 1.1.0-pre.69
+    - 1.2.0
+    - 1.3.1
+    - 1.3.2
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
     compatible:
-    - 1.0.1
-    verified: 1.0.1
+    - 1.3.1
+    - 1.3.2
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    verified: 1.3.2
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   keywords: []
   registry:
@@ -4159,28 +4391,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637846828270000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+    revision: a1cf55a5ba0e2555d508263fa48837ff56c4654a
     path: 
   unityLifecycle:
-    version: 1.0.1
-    nextVersion: 1.1.0-pre.8
-- packageId: com.unity.2d.common@5.0.0
+    version: 1.3.1
+    nextVersion: 
+- packageId: com.unity.2d.common@6.0.6
   testable: 0
   isDirectDependency: 0
-  version: 5.0.0
+  version: 6.0.6
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.common@5.0.0
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.common@6.0.6
   assetPath: Packages/com.unity.2d.common
   name: com.unity.2d.common
   displayName: 2D Common
@@ -4189,7 +4418,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: 2D Common is a package that contains shared functionalities that are
     used by most of the other 2D packages.
   status: 4
@@ -4206,6 +4435,8 @@ m_ResolvedPackages:
     - 2.0.1
     - 2.0.2
     - 2.1.0
+    - 2.1.1
+    - 2.1.2
     - 3.0.0
     - 3.0.1
     - 4.0.0
@@ -4213,6 +4444,9 @@ m_ResolvedPackages:
     - 4.0.2
     - 4.0.3
     - 4.0.4
+    - 4.1.0
+    - 4.2.0
+    - 4.2.1
     - 5.0.0-pre.1
     - 5.0.0-pre.2
     - 5.0.0
@@ -4222,19 +4456,45 @@ m_ResolvedPackages:
     - 6.0.0
     - 6.0.1
     - 6.0.2
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
     - 7.0.0-pre.3
     - 7.0.0-pre.4
+    - 7.0.0
+    - 7.0.1
+    - 7.0.2
+    - 7.0.3
+    - 8.0.0-pre.1
+    - 8.0.0-pre.2
+    - 8.0.0
+    - 8.0.1
+    - 9.0.0-pre.1
+    - 9.0.0-pre.2
+    - 9.0.0
+    - 9.0.1
+    - 9.0.2
     compatible:
-    - 5.0.0
-    verified: 5.0.0
+    - 6.0.3
+    - 6.0.4
+    - 6.0.5
+    - 6.0.6
+    verified: 6.0.6
   dependencies:
   - name: com.unity.2d.sprite
     version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.1.0
   - name: com.unity.modules.uielements
     version: 1.0.0
+  - name: com.unity.burst
+    version: 1.5.1
   resolvedDependencies:
   - name: com.unity.2d.sprite
     version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -4245,6 +4505,8 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
+  - name: com.unity.burst
+    version: 1.6.5
   keywords:
   - 2d
   registry:
@@ -4254,28 +4516,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637526395060000000
+  datePublishedTicks: 638035874770000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: 82ee1598c2f1270bc1081c1f908364e528335bd5
+    revision: aebc9b022b1d3ecdcc734e0ee8f139df3f3fe3dd
     path: 
   unityLifecycle:
-    version: 5.0.0
+    version: 6.0.3
     nextVersion: 
-- packageId: com.unity.2d.path@5.0.1
+- packageId: com.unity.2d.path@5.0.2
   testable: 0
   isDirectDependency: 0
-  version: 5.0.1
+  version: 5.0.2
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.path@5.0.1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.2d.path@5.0.2
   assetPath: Packages/com.unity.2d.path
   name: com.unity.2d.path
   displayName: 2D Path
@@ -4284,7 +4543,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: asset
   description: "2D Path provides tooling to edit shapes (polygons and B\xE9zier splines)
     in EditorWindows and the SceneView."
   status: 4
@@ -4311,10 +4570,10 @@ m_ResolvedPackages:
     - 5.0.0-pre.2
     - 5.0.0
     - 5.0.1
+    - 5.0.2
     compatible:
-    - 5.0.0
-    - 5.0.1
-    verified: 5.0.1
+    - 5.0.2
+    verified: 5.0.2
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -4327,28 +4586,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637661771910000000
+  datePublishedTicks: 637817447940000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: bcbc5fb1cb18a1a4cf6e15325550ed4b8fbb21bc
+    revision: 41fd674f8e4b2265bdbc50291dced1bd86c590ee
     path: 
   unityLifecycle:
-    version: 5.0.0
+    version: 5.0.2
     nextVersion: 
-- packageId: com.unity.searcher@4.3.2
+- packageId: com.unity.searcher@4.9.1
   testable: 0
   isDirectDependency: 0
-  version: 4.3.2
+  version: 4.9.1
   source: 1
-  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.searcher@4.3.2
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.searcher@4.9.1
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -4357,7 +4613,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: General search window for use in the Editor. First target use is for
     GraphView node search.
   status: 4
@@ -4379,12 +4635,11 @@ m_ResolvedPackages:
     - 4.6.0-preview
     - 4.7.0-preview
     - 4.9.1
+    - 4.9.2
     compatible:
-    - 4.3.2
-    - 4.6.0-preview
-    - 4.7.0-preview
     - 4.9.1
-    verified: 4.3.2
+    - 4.9.2
+    verified: 4.9.2
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -4397,19 +4652,90 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hasRegistry: 1
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637509898070000000
+  datePublishedTicks: 637695653650000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
-    revision: 798bfb84c8f09f7788a3a88c3c16d72c50451530
+    revision: 9e68a2a9ba29bd6783bc91d15ff82bbd459f2163
     path: 
   unityLifecycle:
-    version: 4.3.2
+    version: 4.9.1
+    nextVersion: 
+- packageId: com.unity.nuget.newtonsoft-json@3.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 3.0.2
+  source: 1
+  resolvedPath: /Users/ramyzhang/Code/gddc-villainess/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.1.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    compatible:
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    verified: 3.0.2
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637846828220000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: 8f66870a71ad3f2cdd46330b5c482dfd138ffc64
+    path: 
+  unityLifecycle:
+    version: 3.0.2
     nextVersion: 

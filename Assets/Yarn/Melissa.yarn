@@ -1,0 +1,90 @@
+title: Melissa_9
+tags:
+---
+Catherine: Melissa! It’s you! I need your help - did you see anyone suspicious with Alice today?
+Melissa: Oh! That cute little one—I think I did. What about it?
+<<changeExpression Catherine crying>>
+Catherine: She’s gone! We can’t find her anywhere. We think she got kidnapped!
+<<changeExpression Melissa worried>>
+Melissa: Oh my, how horrible. But what can I do? I don’t really want to get mixed up in any business with that Prince and Duke of yours...
+Catherine: Please, Melissa, just this once. Alice is really important to me! Something really bad could happen to her...
+<<changeExpression Melissa sad>>
+Melissa: It makes me feel bad to make you beg like this... Alright, I’ll help you. But do a little something in exchange for me first...
+
+-> Catherine: Sure! I’ll do anything, just tell me!
+-> Catherine: Aw, Melissa... Can’t you do me a favour, no strings attached,  just this once?
+    Melissa: Sorry, no can do. I have to protect myself, you know?
+    Catherine: Fine... Tell me what you need.
+
+Melissa: You know Yuri Elizabeth, right? She’s a sweet girl, just like Alice...
+<<changeExpression Melissa blushing>>
+Melissa: Actually, she reminds me quite a lot of her...
+<<changeExpression Catherine exasperated>>
+Catherine: Yeah, yeah, get on with it already!
+<<changeExpression Melissa neutral>>
+Melissa: Okay, okay! So, Yuri has these three guys constantly orbiting around her... I need you to help me get rid of them somehow. They’re suffocating her and have no sense of respect for women—trash of the lowest tier.
+Catherine: Yikes, that sounds like a bad romance webtoon.
+Melissa: Yup, it’s as bad as you can imagine. I want you to help me spread some rumours about them, and expose their true selves to the school. I’m sick of seeing all the girls worship them when they have no idea how horrible they really are!
+<<changeExpression Catherine excited>>
+Catherine: Ooh, you got any tea on them?
+<<changeExpression Melissa happy>>
+Melissa: Legends say Jack Forton, the oh-so-powerful werewolf, is actually deathly afraid of the mailman!
+<<changeExpression Catherine neutral>>
+Catherine: ...
+Catherine: He’s afraid of WHO?
+Melissa: Yeah, you heard it. I think spreading this on ClikClok would make him completely unable to show his furry mug around Yuri for a while.
+
+-> Catherine: Oh, that’s so mean of you! LET’S DO IT.
+-> Catherine: Melissa, I would never want to be your enemy. I’m posting it now!
+
+// TODO: <<triggerCG video of a dog barking at the mailman. comments scroll: lol who is this. >>
+Melissa: Catherine, you are an absolute GEM. I’m sharing this with all my friends. Yona’s gonna have a field day with this one.
+<<changeExpression Catherine happy>>
+Catherine: You got it, Mel. So... about Alice?
+Melissa: Don’t worry, I haven’t forgotten. I saw some girls dragging Alice around in the classroom earlier. They didn’t seem to be up to any good.
+Melissa: Those silly things... They think they’re so important, when they’re just some NPCs.
+Catherine: Hey hey! No matter how petty they are, you can’t just call real life people NPCs, Melissa.
+Catherine: Anyhow, thanks—I’m gonna head out right now.
+Melissa: Wait! Before you go, take this inferiority complex arrow. I hand-enchanted it myself during Spells class. I’m sure it’ll help you put those kids in their places!
+// TODO: Game notification you’ve received a special item: {inferiority complex arrow}!
+<<addInventoryItem InventoryManager inferiorityComplexArrow>>
+Catherine: Thanks. You’re the coolest!
+Melissa: Don’t worry. You go in first! I’ll be right behind you!
+===
+title: Melissa_10
+tags:
+---
+<<if battleWon(1) == true>>
+    Melissa: You killed it, Catherine! Literally! I mean, not really, but you get it!
+    Catherine: Thanks, Mel. I couldn’t have done it without your support.
+<<else>>
+    Melissa: Are you alright, Catherine? That didn’t look too good...
+    Catherine: I’m... I’m okay, Melissa. Thanks for worrying about me.
+<<endif>>
+===
+title: Melissa_19
+tags:
+---
+<<if visited("Melissa_19")>>
+    Catherine: Whoa, Melissa, you look a bit str-
+    Melissa: Nine’s brother is here, sorry I have to excuse myself and punc- i mean, talk some sense into him.
+<<else>>
+    Catherine: Melissa! You look stunning.
+    Melissa: Thank you, Catherine! You do too.
+    Catherine: Where’s your partner, Nine? He’s usually stuck to you like glue!
+    Melissa: Ah, he’s grabbing us some drinks right now. I got a little thirsty keeping my brother and some other suitors away from Yuri... public humiliation can only go so far.
+    Catherine: Sounds tough.
+    Melissa: Yes, and now I have way too many of their things in my bag, it’s getting so burdensome! Here, could you help me carry something? Keep it safe, it’s dangerous!
+    // TODO: Game notification Item retrieved: Enchanted Sniper Rifle
+    <<addInventoryItem InventoryManager enchantedSniperRifle>>
+
+    -> Catherine: Uh, are you sure it’s ok for me to hold onto this?
+        Melissa: Of course it’s alright!
+    -> Catherine: How did that fit inside your tiny evening purse?
+        Melissa: Friends in magical places gets you far, Catherine as I’m sure you know [winks]
+
+    Melissa: Oh, Nine is coming with the drinks, finally. I’m going to go and check up on Yuri again to make sure the suitors still aren’t chasing her.
+    Catherine: Haha, I’m sure you scared them off enough times.
+    Melissa: You can never be too certain! Thanks for lightening my load, have a good rest of the night!
+<<endif>>
+===

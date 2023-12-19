@@ -1,0 +1,68 @@
+title: Calliope_4
+tags:
+---
+<<if visited("Calliope_4")>>
+    <<jump Calliope_4_2>>
+<<endif>>
+Calliope: Hi, I'm the youngest student to ever be a first year at the Academy!
+<<changeExpression Calliope excited>>
+Calliope: Why yes, it is I, your lcal genius reincarnated baby, Calliope! Some even call me... Lady Baby.
+Calliope: Ahem. Do you need anything?
+<<changeExpression Catherine surprised>>
+Catherine: That is... that is quite the introduction.
+<<if inventoryIncludes("calliopePamphlets")>>
+    <<removeInventoryItem InventoryManager calliopePamphlets>>
+    <<changeExpression Catherine neutral>>
+    Catherine: I saw these pamphlets earlier... are these yours?
+    Calliope: Oh my goodness, thank you so much, I was looking for these!
+    Catherine: It's no problem at all, just... you know... cleaning up the area or soemthing.
+    Calliope: Let me thank you. Here, from one first year to another, doing an activity or joining a club might help you make some friends!
+    // TODO: Game notification for new item
+    <<addInventoryItem InventoryManager graveyardLullabySheet>>
+    Catherine: Oh! Thanks...
+
+    -> Catherine: I'm not really into singing though...
+        Calliope: Who knows? Singing it, no matter how off-key, might just help you in your time of need.
+    -> Catherine: I don't need friends. Friends disappoint me.
+        Calliope: That might just change soon. Besides, even if not, singing it might just help you in your time of need.
+    -> Catherine: Can I blow people away with this? You know, some people say I sound like Ariana Venti herself.
+        Calliope: ...Who?
+        Catherine: Anyway, thanks!
+        Calliope: Uh... well, it's no trouble for me. Singing it might even just help you in a time of need should it ever arise.
+    <<if visited("Katarina_4")>>
+        <<updateState GameStateManager 5>>
+    <<endif>>
+<<else>>
+    Catherine: I heard that the Saintess would be attending the academy. Do you happen to know where she might be?
+    Calliope: The Saintess? I heard that she was in the hallway!
+    Catherine: Thanks! See you later, Calliope!
+    <<if visited("Katarina_4")>>
+        <<updateState GameStateManager 5>>
+    <<endif>>
+<<endif>>
+===
+title: Calliope_4_2
+tags:
+---
+Calliope: Oh my, did you want to come to my exclusive lounge? I'm sorry, I'm afraid you don't quite have the qualificatio-
+Catherine: Oh, don't worry. I'm not too interested in your lounge! See ya!
+===
+title: Calliope_17
+tags:
+---
+<<if visited("Calliope_17")>>
+    Calliope: Did you still need anything?
+    Catherine: Oh, nothing, sorry! I’ll definitely come to your afterparty.
+    Calliope: You must!
+<<else>>
+    Calliope: Catherine, lovely to see you.
+    Catherine: It’s been so long! How’s your salon doing?
+    Calliope: Better than ever. Why don’t you come and show your face sometime?
+    Catherine: Oh, I wouldn’t dare. I’m sure I’d sour the mood.
+    Calliope: Nonsense. Here, I’ll invite you personally. We’ll be having a party to celebrate our graduation after the ball. You must come! Each invitation even comes with a ceremonial pin!
+    // TODO: Game notification for new item
+    <<addInventoryItem InventoryManager ceremonialPin>>
+    Catherine: Aw, thanks Calliope. I’ll see you at the ball and the afterparty!
+    Calliope: See you!
+<<endif>>
+===

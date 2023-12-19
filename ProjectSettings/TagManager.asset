@@ -3,21 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Character
+  - GameTrigger
+  - Sticker
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CGs
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Mobs
+  - NPC
+  - Oliver
+  - Everett
+  - Alice
+  - Catherine
+  - GameTriggers
   - 
   - 
   - 
@@ -43,4 +46,25 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Mobs
+    uniqueID: 2471951805
+    locked: 0
+  - name: NPC
+    uniqueID: 212794023
+    locked: 0
+  - name: Oliver
+    uniqueID: 933486657
+    locked: 0
+  - name: Everett
+    uniqueID: 3844279757
+    locked: 0
+  - name: Alice
+    uniqueID: 3749710551
+    locked: 0
+  - name: Catherine
+    uniqueID: 3901185961
+    locked: 0
+  - name: CG
+    uniqueID: 340024293
     locked: 0

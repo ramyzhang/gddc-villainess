@@ -1,0 +1,100 @@
+title: Yerenika_15
+tags:
+---
+Catherine: Yenni!
+Yerenika: Catherine! How was your summer?
+Catherine: Well, just like any other summer. You, on the other hand... I’ve heard you did a sabbatical at the temple, of all things?
+Yerenika: Oh, you know. Just the same old. Trying not to die from an allergic reaction to this world’s magic... and maybe win a war in the underworld... with my dog who’s actually an ancient god...
+Catherine: What did you say? I didn’t quite hear that last part...
+Yerenika: Nothing! Just talking to myself. Haha! Ha!
+Catherine: Man, is it just me or do all my friends have some insane baggage?
+<<if $tassellearned == true>>
+    Catherine: By the way, Yerenika—are you going to be watching the Knight Tournament this year?
+    Yerenika: Of course, Erudian will be fighting after all!
+    Catherine: Are you... going to make a tassel for him?
+    Yerenika: Mhm! Why the sudden interest?
+    Yerenika: ...
+    Yerenika: Don’t tell me... You have your eye on someone? You, the greatest villainess who treats even the Crown Prince like a dog?
+    Catherine: Hey! You know those are just rumours. You think someone like me could really do that?
+    Yerenika: Aw, of course not. Well, maybe the other you. But not anymore!
+    Catherine: ?!
+    Yerenika: Ignore that! Anyways, you’ve probably never made a tassel before, right? Is it for Alice?
+    Catherine: Oh... no, not her, though I will be accompanying her before the tournament. Someone else...
+    Yerenika: Oh? Well, no matter. I have just the thing for you. Take this!
+    // TODO: <<gameNotification you’ve received a cross-shaped pin from yerenika lebovny! >>
+    <<addInventoryItem InventoryManager crossShapedPin>>
+    Catherine: Oh, I couldn’t... Isn’t this something precious to you?
+    Yerenika: Don’t worry about that, I can get something like this anytime again from the Church. Erudian will understand—it was for a dear friend! Besides, your chosen Knight will need the extra protection during the tournament.
+    Catherine: Yerenika...
+    Yerenika: Come on, just take it! I’m just glad you’re finally livening up—you used to look like you had the burden of the world’s destiny on your shoulders.
+    Catherine: Thank you. I’ll be sure to use it well!
+<<else>>
+    Catherine: Um... Alright.
+
+    -> Catherine: Hey, are you sure things are okay?
+        Yerenika: Oh, it’s fine, everything’s fine. I just have a lot on my plate right now, I guess.
+    -> Catherine: It can’t be easy, being the princess of Lebovny.
+        Yerenika: Being a princess is the easy part, I assure you. But... thanks for asking, Catherine. It’s nice to know there’s people I can trust. Sometimes it can be a lonely road.
+
+    Catherine: I may not know exactly what you’re going through, but I understand what you mean. It feels like there’s no one else but you fighting the fight, most days.
+    Narrator: 
+    Yerenika: It’s just what’s destined for people like us, I guess.
+    //TODO: <<gameNotification your warm friendship with yerenika has awarded you an attack buff! >>
+    Yerenika: Enough about me! Are you looking forward to anything this year?
+    Catherine: Oh! Right, the Knight Tournament. I wanted to ask you about it... Will you be watching?
+    Catherine: Uh, the Tournament! Are you planning on watching it this year?
+    Yerenika: Of course! Erudian’s fighting this year, after all. I’m going to be making a tassel, too.
+    Catherine: A... tassel?
+    Yerenika: You’re not familiar with the legend of the Knight Tournament Tassel?
+    Catherine: Only vaguely.
+    Yerenika: Well, it’s promised that a student who gifts their lover with a protective talisman before the tournament will not only see their loved one win, but also their love endure until the end of time.
+    Yerenika: It started with the first headmaster’s daughter who received a tassel from her future husband when she was to compete in the tournament! Isn’t it so romantic?
+    Catherine: That really is pretty cute.
+    Catherine: If nothing else helps me, then maybe some romance-obsessed ancient Academy spirit’s blessing will.
+    Yerenika: Hm... Since it’s your first one, you should make it a little special. Something with a bit of extra protection... Oh! I know! Here, take the charm from my earring.
+    // TODO: <<gameNotification you’ve received a cross-shaped pin from yerenika lebovny! >>
+    <<addInventoryItem InventoryManager crossShapedPin>>
+    Catherine: Huh? Wait, hold on! That’s something precious to you, isn’t it?
+    Yerenika: Don’t worry about that, I can get something like this anytime again from the Church. Erudian will understand—it was for a dear friend! Besides, your chosen Knight will need the extra protection during the tournament.
+    Catherine: Yerenika...
+    Yerenika: Come on, just take it! I’m just glad you’re finally livening up—you used to look like you had the burden of the world’s destiny on your shoulders.
+    Catherine: Thank you. I’ll be sure to use it well!
+    <<set $tassellearned to true>>
+<<endif>>
+===
+title: Yerenika_17
+tags:
+---
+<<if visited("Yerenika_17")>>
+    Catherine: Hey Yerenika, I think I saw a really pretty woman with red hair pass by earlier—
+    Yerenika: Where! Who?! When?! Oh no!
+    Catherine: I’m joking. I’ll see you later?
+    Yerenika: Mean joke, Cath!
+<<else>>
+    Catherine: Yeni! How are things? It’s been a while!
+    Yerenika: It really has! Oh, things are wonderful. Erudian and I managed to solve my, well, my allergy to magic!
+    Catherine: There’s no better time! This way, you’ll be able to safely enter the magical workforce after graduation.
+    Yerenika: Mhm! I’m totally over the moon!
+    Catherine: I’m so glad for you! You’ll be going to the ball, won’t you?
+    Yerenika: I would never miss an opportunity to see my Erudian all cleaned up! Of course I’m going.
+    Catherine: Ohhhh... Well, that’s great! I’m... happy for you?
+
+    -> Catherine: [Muttering under breath] Ugh, these lovebirds—they’re so adorable it makes me sick.
+    -> Catherine: [Muttering under breath] I know I had my own cringe moments since I’ve reincarnated, but really...? That’s so sweet, I’m getting toothaches...!
+
+    Yerenika: [beams] Thanks!
+    Yerenika: By the way, remember the cross-shaped earring I gifted you last year?
+    Catherine: How could I? I still keep it safe in my drawers, it’s too pretty to wear out.
+    Yerenika: Well, you should! Now that I’m free from my magical affliction, you should take the other one and complete your set.
+    Catherine: Oh come on, you really don’t have to.
+    Yerenika: Hey, just take it! Neither of us are the type to go for the edgy asymmetrical look, anyway.
+    // TODO: <<gameNotification item received: yerenika’s cross earrings! >>
+    <<addInventoryItem InventoryManager crossEarrings>>
+    Yerenika: The most arduous parts of my story are over now—I was able to overcome them, thanks to my friends and Erudian. I have a feeling yours still has yet to be over, though. Having the full pair will protect you, believe me.
+    Catherine: What is with everyone and me needing to be protected...? Are people seeing a bad omen over my head or something?
+    Yerenika: Hm? Sorry, I didn’t quite catch that.
+    Catherine: Nothing, nothing. Thank you, Yeni. I’ll be sure to treasure these earrings forever. I’ll keep them safe.
+    Yerenika: You must! Okay, I think I hear someone calling me, saying something about a crumb? Must be about the ball’s food. I gotta go—I’ll catch you later!
+    Catherine: Huh, weird. I’ll see you later!
+<<endif>>
+===

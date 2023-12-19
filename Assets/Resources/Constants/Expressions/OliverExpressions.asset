@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add6b7b1d0664404b93b247ccf8174fc, type: 3}
+  m_Name: OliverExpressions
+  m_EditorClassIdentifier: 
+  neutral:
+    eyebrows: {fileID: 21300000, guid: 2242ea28d2c554db3a4bbbf50789e929, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: 4bdfd0558efd24375b728a19d40952a0, type: 3}
+  happy:
+    eyebrows: {fileID: 21300000, guid: 2242ea28d2c554db3a4bbbf50789e929, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: 5335b2741ede840aca7b56db44f35370, type: 3}
+  excited:
+    eyebrows: {fileID: 21300000, guid: 02b7e5d23c6f54f348e2a83477653b2b, type: 3}
+    eyes: {fileID: 21300000, guid: bfc0d59ad33d148b89e231541c50c302, type: 3}
+    nosemouth: {fileID: 21300000, guid: d7f9d62c3fc714d4e9fe366fb4b86921, type: 3}
+  surprised:
+    eyebrows: {fileID: 21300000, guid: 02b7e5d23c6f54f348e2a83477653b2b, type: 3}
+    eyes: {fileID: 21300000, guid: f2cfe3a3857a54ea18c198d37733c388, type: 3}
+    nosemouth: {fileID: 21300000, guid: a4a5a27ddba194f009934491c9d12cc7, type: 3}
+  blushing:
+    eyebrows: {fileID: 21300000, guid: a401c68a156ea4dac9c17304c4a2437a, type: 3}
+    eyes: {fileID: 21300000, guid: 2b79af3138e984a11a21727023f15b26, type: 3}
+    nosemouth: {fileID: 21300000, guid: 6f45734aaa202427e9d22480b1497087, type: 3}
+  sad:
+    eyebrows: {fileID: 21300000, guid: a401c68a156ea4dac9c17304c4a2437a, type: 3}
+    eyes: {fileID: 21300000, guid: 23e2aa7ef77534c149b2dfdea545ab7a, type: 3}
+    nosemouth: {fileID: 21300000, guid: 6f45734aaa202427e9d22480b1497087, type: 3}
+  crying:
+    eyebrows: {fileID: 21300000, guid: a401c68a156ea4dac9c17304c4a2437a, type: 3}
+    eyes: {fileID: 21300000, guid: 8cd6ab3230c854e5e80c0b6324f55319, type: 3}
+    nosemouth: {fileID: 21300000, guid: a4a5a27ddba194f009934491c9d12cc7, type: 3}
+  worried:
+    eyebrows: {fileID: 21300000, guid: a401c68a156ea4dac9c17304c4a2437a, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: 6f45734aaa202427e9d22480b1497087, type: 3}
+  angry:
+    eyebrows: {fileID: 21300000, guid: 94c72742bc135424684aefeb8acfca13, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: a4a5a27ddba194f009934491c9d12cc7, type: 3}
+  determined:
+    eyebrows: {fileID: 21300000, guid: 94c72742bc135424684aefeb8acfca13, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: 6f45734aaa202427e9d22480b1497087, type: 3}
+  exasperated:
+    eyebrows: {fileID: 21300000, guid: 94c72742bc135424684aefeb8acfca13, type: 3}
+    eyes: {fileID: 21300000, guid: 51694e5ce113148bf92ba9ed81872882, type: 3}
+    nosemouth: {fileID: 21300000, guid: 4bdfd0558efd24375b728a19d40952a0, type: 3}

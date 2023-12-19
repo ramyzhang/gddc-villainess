@@ -1,0 +1,336 @@
+title: Alice_5
+tags:
+---
+<<if inventoryIncludes("aliceScript")>>
+    <<changeExpression Alice worried>>    
+    Alice: Hey! What are you holding? That looks my script!
+
+    -> Catherine: No, it's not.
+        Alice: Why are you lying? Look, it has the official seal of approval from the Headmaster.
+        Alice: Could I please have it back? My speech is about to start.
+        <<changeExpression Catherine blushing>>
+        Catherine: Oh, sure, of course! Sorry to lie to you, I really didn't mean it. I just wanted to make sure... uh... that you were really the correct owner! Here...
+        <<changeExpression Catherin excited>>
+        Catherine: SIKE!
+        MOB: <i>GASP!</i>
+        MOB 1: Everyone, look! Catherine stole Alice's script!
+        // TODO: Notification: A crowd has gathered.
+        MOB 2: Alice, get her!
+        MOB 3: How dare you!
+        MOB 1: Catherine's such a villainess!
+        MOB 2: You're ruining our ceremony!
+        MOB: Fight! Fight!
+    -> Catherine: Oh, is this yours I thought this was, like, a napkin or something.
+        <<changeExpression Alice sad>>
+        Alice: Is... is my speech that bad?
+        Alice: Oh no, could you hand it to me so I could revise it quickly and get it approved before my speech starts?
+        Catherine: Uh... No, you can't.
+        Alice: ...?
+        Catherine: ...
+        Alice: ...
+    -> Catherine: Oh, yeah, my bad, my hand just slipped, haha! Here you go, ma'am.
+        Alice: Thanks!
+        Alice: ...
+        Alice: Uh...
+        Alice: Why aren't you letting go?
+        <<changeExpression Catherine blushing>>
+        Catherine: Uh, uhm...z
+        Catherine: I just, y'know, don't let go Jack-
+        <<changeExpression Alice surprised>>
+        Alice: It's going to rip! Let go!
+        <<changeExpression Catherine surprised>>
+        Catherine: Ack!
+        // TODO: Notification: A loud rip echoes through the hall.
+        <<changeExpression Alice neutral>>
+        Alice: ...
+        <<changeExpression Catherine netural>>
+        Catherine: ...
+        Alice: I... I didn't sleep over writing that script... for two weeks.
+        <<changeExpression Alice crying>>
+        Alice: How... How could you do this?!
+    <<changeExpression Catherine worried>>
+    Catherine: <i>Oh, how did I mess up</i> this <i>badly already?! What should I even say?!</i>
+    Catherine: Uh... Uh.. Actually, it's... it's not what you think!
+    Catherine: <i>I mean, it totally</i> is <i>what she thinks, though?</i>
+    Catherine: <i>Argh, it's not the time! I'm panicking! Quick. Catherine, think!
+
+    -> Catherine: You know what...? Pull up, Alice! Fight me, I'm not afraid of you!
+    -> Catherine: Alice, I'm sorry, but if you want to do your speech, you're gonna have to get through me first.
+
+    <<changeExpression Alice worried>>
+    Alice: W-w-what? How did it get to this?!
+    <<changeExpression Catherine excited>>
+    Catherine: <i>I DON'T KNOW EITHER!!!</i>
+    Catherine: I...
+    <<changeExpression Alice determined>>
+    Alice: Fine, if this is really what you wanted, I have no choice!
+    <<changeExpression Alice angry>>
+    Alice: Let me show you what the top student is made of.
+    <<updateState GameStateManager 6>>
+<<else>>
+    Alice: Hi, sorry! I'm a bit busy right now, I need to hurry and prepare for my welcome speech! Can we talk later?
+<<endif>>
+===
+title: Alice_7
+tags:
+---
+<<if battleWon(0) == true>>
+    <<changeExpression Catherine sad>>
+    Catherine: Alice, I didn’t want to hurt you. That’s why I have the script in the first place. You see... you see...
+    Catherine: <i>Oh, you silly silly idiot, are you really doing this?!</i>
+    <<changeExpression Catherine blushing>>
+    Catherine: ... I’ve reincarnated into this world, so I know how this story goes!
+
+    -> Catherine: If you go on stage and perform the speech, then the male leads will fall in love with you and then we’ll have a bitter rivalry and in the end I’ll die because of their stupid alpha male possessiveness over you!
+    -> Catherine: You live out the classic isekai life of making a grand entrance, in your case it’s the speech, and then fifteen novels, ten anime seasons, five spin-off stories, three live-action reboots, and one stage play worth of content where you fall in love with a harem of male leads that ends with my death in every single plotline!
+
+    <<moveCharacter Alice Catherine>>
+    <<changeExpression Alice worried>>
+    Alice: Wait a second... you’ve... also reincarnated into this world?
+    <<changeExpression Catherine excited>>
+    Catherine: Yes! Except my reincarnation is a reincarnation into your world. It’s reincarnation squared! Or, something like that...?
+    <<changeExpression Alice worried>>
+    Alice: Wait, so I’m... a story in your world?
+    Catherine: Well... yea... sorry.
+    <<changeExpression Alice blushing>>
+    Alice: Ok... well... I think I’ll need some time to get used to that, but...
+    Alice: I promise you, there’s no reason that I would ever want you to die...
+    <<changeExpression Catherine blushing>>
+    Catherine: Really?
+    Alice: Really.
+    <<changeExpression Catherine neutral>>
+    Catherine: Alright... uh, sorry about stealing your script and fighting with you and stuff...
+    <<changeExpression Alice happy>>
+    Alice: Hahaha! It’s alright, I might have done the same if I was in your shoes.
+    Catherine: Truly a saintess, look at you being all empathetic! Appalling! Be more of a villainess like me.
+    <<changeExpression Alice neutral>>
+    Alice: Oh, stop it.
+    Alice: But do tell me... what was that about some male leads falling in love with me?
+    <<moveCharacter Everett Frame>>
+    Everett: What’s going on here?
+    <<changeExpression Alice happy>>
+    Alice: Ah, it’s his highness!
+    Mob: Oh, it’s the PRINCE!
+    Mob: Look at his gleaming, clear skin that reflects almost as beautifully as a lake, perfectly set strands of hair that are dark as the midnight, and blinding blue eyes richer than the treasury he has complete access to! He looks just as perfect as his refined and poised personality as the crown prince!
+    <<moveCharacter Oliver Frame>>
+    Oliver: I heard that your fiancée got into a fight.
+    Alice: And his royal guard!
+    Mob: Do you see those perfectly sculpted muscles and bone structure that could cut an enemy sharper than his sword on the battlefield, strong and unwavering gaze of those emerald green eyes that strikes fear and lust in any who looks into them, with fiery hair that contrasts so wildly with his stoic and loyal demeanour to the crown prince as his right-hand man?
+    Catherine: Damn, how fast does word spread?
+    Everett: Sorry everybody, could you all please clear out of the room? Sir Oliver Conrad and I will clean the rubble, won’t we?
+    Oliver: Yes, His Highness Everett Aulus and I will make sure everything is in order, so if you may all leave...
+    Catherine: <i>Wow... they’re even introducing their full names as exposition... This really is the world of</i> Saintess!
+    <<screenEffect fadeBlack>>
+    <<screenEffect fadeIn>>
+    Everett: Lady Catherine, you dunce, are you already creating a mess on our first day at the academy?
+    Oliver: It does look like whatever the argument was about, she won the bout.
+    Catherine: Can we not talk about me as if I’m not here, you absolute stick in the mud?
+    Alice: Thank you for coming in to help clean up! However, I think we both injured each other a little too much to get up ourselves...
+    Oliver: Apologies, my lady. Your highness?
+    Everett: Yes, yes, here, let us help you up.
+    // TODO: game notification: choose your love interest!
+    
+    -> Take Oliver's hand!
+        <<set $liName to "Oliver">>
+        <<set $notLIName to "Everett">>
+    -> Take Everett's hand!
+        <<set $liName to "Everett">>
+        <<set $notLIName to "Oliver">>
+
+    Love Interest: Come on, let’s get you two to the nurse’s office.
+<<else>>
+    <<jump Alice_7_2>>
+===
+title: Alice_7_2
+tags:
+---
+Alice: Lady Catherine Beckett, you have lost this fight, but I don’t want our first day of the academy to be spoiled. Tell me, why did you do this?
+<<changeExpression Catherine worried>>
+Catherine: You see... Er...
+Catherine: <i>Oh, she leaves me no choice, does she?</i>
+Catherine: ... I’ve reincarnated into this world, so I know how this story goes!
+
+-> Catherine: If you go on stage and perform the speech, then the male leads will fall in love with you and then we’ll have a bitter rivalry and in the end I’ll die because of their defence over you!
+-> Catherine: You live out the classic isekai life of making a grand entrance, in your case it’s the speech, and then fifteen novels, ten anime seasons, five spin-off stories, three live-action reboots, and one stage play worth of content where you fall in love with a harem of male leads that end with my death in every single plotline!
+
+<<changeExpression Alice worried>>
+Alice: ... Did I hit you too hard with my magic? What in the world are you talking about?
+<<moveCharacter Everett Frame>>
+Everett: What’s going on here?
+<<changeExpression Alice happy>>
+Alice: Ah, it’s his highness!
+Mob: Look at his gleaming, clear skin that reflects almost as beautifully as a lake, perfectly set strands of hair that are dark as the midnight, and blinding blue eyes richer than the treasury he has complete access to! He looks just as perfect as his refined and charming personality as the crown prince!
+<<moveCharacter Oliver Frame>>
+Oliver: I heard that your fiancée got into a fight.
+Alice: And his royal guard!
+Mob: Do you see those perfectly sculpted muscles and bone structure that could cut an enemy sharper than his sword on the battlefield, strong and unwavering gaze of those emerald green eyes that strikes fear and lust in any who looks into them, with fiery hair that contrasts so wildly with his stoic and loyal demeanour to the crown prince as his right-hand man?
+Catherine: Damn, how fast does word spread?
+Everett: Sorry everybody, could you all please clear out of the room? Sir Oliver Conrad and I will clean the rubble, won’t we?
+Oliver: Yes, His Highness Everett Aulus and I will make sure everything is in order, so if you may all leave...
+Catherine: <i>Wow... they’re even introducing their full names as exposition... This really is the world of</i> Saintess!
+<<screenEffect fadeBlack>>
+<<screenEffect fadeIn>>
+Everett: Lady Catherine, you dunce, are you already creating a mess on our first day at the academy?
+Oliver: And her state after that fight... it seems as though she has lost face.
+<<changeExpression Catherine neutral>>
+Catherine: Can we not talk about me as if I’m not here?
+<<changeExpression Alice sad>>
+Alice: It’s alright, I just hope that no more troubles occur between us.
+<<changeExpression Catherine crying>>
+Catherine: I really didn’t want to steal your script! I just... had to! For my safety!
+Oliver: Lady Catherine, stealing is a serious crime, what safety are you speaking of that necessitates thievery?
+Everett: Don’t think that your title as my fiancée will let you get away with whatever you want.
+Catherine: Wow, how two-faced could you be, acting so nice to everyone else, but directing your true colours to me, your highness! Always assuming that I’m in the wrong without hearing me out for why I do the things I do.
+Catherine: And you, Mr. Bodyguard, why are you always seeing everything in such black or white?! I had my reasons! Even if the prince does something wrong, you’d still side with him! You’re just a stick in the mud who follows Everett around like a puppy!
+Oliver: Need I remind you that it is treason to speak ill of the royal family like that?
+<<changeExpression Alice worried>>
+Alice: Uh, sorry to interrupt but...
+<<changeExpression Everett blushing>>
+Everett: *Ahem* Deepest apologies for causing such a fuss without realising, please pardon my uncouth behaviour...
+<<changeExpression Oliver blushing>>
+Oliver: Y-yes... sorry, we’ll get everything back in order right away, Lady Alice.
+<<changeExpression Alice neutral>>
+Alice: Thank you for coming in to help clean up, however, I think Catherine and I both injured each other a little too much to get up ourselves...
+Oliver: Apologies, my lady. Your highness?
+Everett: Yes, yes, here, let us help you up.
+// TODO choose your love interest!
+-> Take Oliver's hand!
+    <<set $liName to "Oliver">>
+    <<set $notLIName to "Everett">>
+-> Take Everett's hand!
+    <<set $liName to "Everett">>
+    <<set $notLIName to "Oliver">>
+
+Love Interest: Come on, let’s get you two to the nurse’s office.
+===
+title: Alice_11
+tags:
+---
+Alice: Finally, after all our hard work preparing, we can finally enjoy the festival together!
+Everett: The students did an excellent job. I’ll have to report this to the chairman—he’ll be delighted by our work!
+Catherine: Why is there always a Japanese festival in a historical-fantasy European style setting?
+Oliver: Your Highness, I think it would be prudent for us to stay low given recent events, but you and Alice are...
+// triggerCG alice and crown prince, sparkly sparkly>>
+Alice: We’re what?
+Oliver: A little... bright.
+
+-> Catherine: Let’s buy some yukata at the stall over there!
+    <<changeExpression Alice happy>>
+    Alice: Yes, they look so cute!
+    <<changeExpression Everett blushing>>
+    Everett: Cute... in a yukata...
+    Alice: Hm? Did you say something?
+    Oliver: Ahem, I don’t think that’s a good disguise, but if it makes you happy...
+    Catherine: Come on!
+    // TODO: Game notification: You’ve received a special item: {yukata}!
+    <<addInventoryItem InventoryManager yukata>>
+-> Catherine: Here, let’s wear matching headbands!
+    <<changeExpression Alice happy>>
+    Alice: Haha! Catherine, these fox ears match you perfectly!
+    // TODO: Game notification: You’ve received a special item: {fox headband}!
+    <<addInventoryItem InventoryManager foxHeadBand>>
+    Everett: Yeah, I agree.
+    <<changeExpression Catherine blushing>>
+    Catherine: Are you trying to say something about me? Huh?
+    <<changeExpression Oliver happy>>
+    Oliver: They look good on you. Alice has good judgement.
+    <<changeExpression Catherine determined>>
+    Catherine: Oh yeah? Fine, but I have to choose all of yours!
+    Catherine: Alice! Bunny ears! Your Highness can wear the wolf one, and Duke, you’ll fit the bear ears for sure.
+    <<changeExpression Alice determined>>
+    Alice: Now that we’re disguised up, let’s go have fun!
+-> Catherine: It’s fine, let’s just go have fun already!
+    <<changeExpression Alice happy>>
+    Alice: Dressing up is part of the fun, Catherine!
+    Everett: Yeah, at least wear these glasses.
+    // TODO: Game notification: You’ve received a special item: {goofy glasses}!
+    <<addInventoryItem InventoryManager goofyGlasses>>
+    <<changeExpression Catherine determined>>
+    Catherine: Oh you’re asking for it now.
+    Oliver: It actually does disguise you quite well.
+    <<changeExpression Alice excited>>
+    Alice: I found a cute wig! Your Highness, this hat will cover up your hair quite well, and Duke Oliver, this moustache looks adorable on you.
+    Catherine: That is the ugliest hat I’ve ever seen... and what do you mean a glue-on moustache is cute?
+    <<changeExpression Everett blushing>>
+    Everett: Ah... you think?
+    <<changeExpression Oliver blushing>>
+    Oliver: I mean... if that’s what you say...
+    Catherine: Clearly I underestimated the power of the female lead...
+    Catherine: OK, now that we’re done, let’s get going!
+    // TODO: <<triggerCG>> montage of gun shooting range game, buying taiyaki, goldfish scooping, talking with katherine at the vegetable stall
+<<updateState GameStateManager 12>>
+===
+title: Alice_16
+tags:
+---
+Alice: Catherine! How was your summer?
+Catherine: Alice, it was great! What about yours?
+Alice: I had so much fun, although none as much as when we went to the festival.
+Catherine: Haha, but back to school we are ;-;
+Alice: I love being here with everyone, I kind of missed this place to be honest. The academy is one of my favourite places.
+
+-> Catherine: You are probably the only one who would think that way, Alice.
+    Alice: What do you mean?
+-> Catherine: I used to think otherwise, but you know, you might be right...
+    Alice: Of course I am!
+
+Alice: The academy is the only place that I get to compete in tournaments like this against other great magicians and warriors.
+Catherine: That’s true... good luck Alice. You’re going to destroy them all, of course you’re always the winner in my heart.
+Alice: Thank you Catherine! I’ll do my best. We have to finish the pre-competition traditions first though. Look! It’s already starting.
+Catherine: Whoa... look at all of the knights going up to their couples swearing their loyalty...
+Alice: [gasp] Is.... Everett and Oliver walking towards us...?
+Catherine: [fiddles with the tassel] Do you think...?
+<<changeExpression Alice blushing>>
+Alice: I don’t know...
+<<changeExpression LoveInterest blushing>>
+Love Interest:  Uh, hey...
+Alice: ...Hey...
+Catherine: What brings you two here?
+Love Interest: *ahem* Uh.... so.... [stutters]
+Catherine: <i>Look at how nervous he is... he’s definitely going to kneel for Alice.</i>
+<<if $romancePoints == 3>>
+    Love Interest: [kneels] Catherine. I swear my fealty to you.
+    Catherine: [gasp] ...$liName...?
+    Love Interest: Your bravery, passion, wit, strength, beauty, and earnestness. They are all things I admire and over the course of these years that I’ve known you... I’ve grown to love you more than I ever would have imagined. Will you accept my loyalty and cheer me on for the tournament?
+    <<changeExpression Catherine crying>>
+    Catherine: Yes, of course I will.
+    <<changeExpression Catherine blushing>>
+    Catherine: [Gifts tassel] I made this for you. I am truly rooting for your victory... and hope that you can come back to me with your tassel after you win.
+    Love Interest: [stands abruptly] I won’t let you down, Catherine!
+    Catherine: [smiling] I trust that you won’t.
+    Love Interest: [tearing up] Thank you... thank you so much for accepting me.
+    // TODO: <<triggerCG>> splash art of LI winning tournament. End with a kiss
+<<elseif $romancePoints < 3>>
+    Love Interest: [kneels] Alice, I swear my fealty to you.
+    Catherine: <i>Of course... I don’t know why I was expecting anything different...</i>
+    Narrator: $liName kept talking, but everything was swimming around you and you couldn’t focus on what he was saying to Alice. Then out of the corner of your eye, you notice.
+    Narrator: $notLIName turned and walked away with hunched shoulders with an air of defeat around him.
+    Catherine: <i>I guess it’s not just me...</i>
+    Narrator: Cheerful sounds from the crowd and the brand new couple burst from beside you. Not wanting to ruin their moment, you also leave.
+    // TODO: <<triggerCG>> splash art of li winning tournament. end with a kiss between alice and li
+<<endif>>
+<<screenEffect fadeBlack>>
+???: <i>Sho...d h... b.....een m...</i>
+===
+title: Alice_18
+tags:
+---
+Alice: Oh, there you are! I was waiting for you forever!
+Catherine: Hey, we originally planned to meet outside, not in the hallway, you know.
+Alice: Whatever! You were going to get here eventually, anyway. The boys are already inside!
+
+-> Catherine: Alright, alright, I’m coming. You seem excited, don’t you?
+-> Catherine: So we’re calling them the boys now, huh? You’re certainly all revved up for tonight.
+
+Alice: Well, yeah! This is the moment we’ve all been looking forward to for the past four years! The ball every student dreams of, where we’ll get to dress fancily, eat delicate snacks, and be praised by the Dean himself!
+Catherine: Seems like you’re more excited about the fabled graduation ball appetisers than anything else, huh?
+Alice: D-d-don’t say something so foolish! I’m the Saintess, what could be more important than the honour of graduating from the kingdom’s most prestigious academy?
+Catherine: Yeah yeah, you’re only the honourable Saintess in times like these.
+Alice: Catherine, you—
+
+-> Catherine: Hey, Alice, check it out! It looks like they’re serving pine nut tarts, your favourite!
+-> Catherine: Hey Alice, the boys are calling us! They really have been waiting a while, huh? They’re starting to look antsy.
+
+Alice: Really?! Let’s go, quickly!
+Catherine: Oh, Alice. I’m coming, I’m coming!
+===

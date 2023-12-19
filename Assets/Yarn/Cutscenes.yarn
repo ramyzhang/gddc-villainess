@@ -1,0 +1,711 @@
+﻿title: Cutscene_0
+tags:
+---
+MobMC: Who’s that girl with a slice of toast in her mouth, running to school because she’s gonna be late, but still staring at her phone?
+<<changeExpression MobMC surprised>>
+MobMC: ...
+MobMC: Oh yeah, that’s me.
+<<changeExpression MobMC excited>>
+MobMC: Don’t look at those dark circles and eyebags, I just stayed up late playing through all of the routes in a new visual novel game I’m obsessed with!
+<<changeExpression MobMC neutral>>
+MobMC: Hold on, let me get the name... Oh, yeah!
+<<changeExpression MobMC excited>>
+MobMC:「Doki☆Doki! Caught Between Two Handsome Men, the Prince and his Guard, While Evading the Villainess as the Reincarnated Saintess of this World~ ☆ !!」
+MobMC: But us fans like to call it「Saintess」for short.
+<<changeExpression MobMC worried>>
+MobMC: Even though I stayed up all night, I only just started to reach the end of the story...!
+MobMC: The Crown Prince, Everett Aulus, annuls his engagement with the villainess, Lady Catherine Beckett, and his personal guard and best friend, Duke Oliver Conrad, is about to behead her...
+<<changeExpression MobMC surprised>>
+MobMC: ...but just as I’m about to cross the street to the gates of my school...!
+<<addSticker Truck-kun>>
+MOB: Hey, watch out!
+<<screenEffect screenShake>>
+<<changeExpression MobMC crying>>
+MobMC: There’s no way I’m getting isekai’d by Truck-kun?!
+<<screenEffect fadeBlack>>
+<<updateState GameStateManager 1>>
+===
+title: Cutscene_1
+tags:
+---
+<<animateCharacter Catherine vi_lying>>
+<<changeExpression Catherine worried>>
+MobMC: What... What just happened?
+MobMC: ...
+<<changeExpression Catherine surprised>>
+<<animateCharacter Catherine vi_getup>>
+MobMC: I’m... I’m alive...?
+Narrator: <i>You pat yourself all over.</i>
+<<changeExpression Catherine excited>>
+MobMC: I’m... I’m alive! Haha, let’s go!!!
+<<moveCharacter Ibelina Bedside>>
+MobMC: ... 
+???: My lady...? Are you alright?
+<<changeExpression Catherine surprised>>
+MobMC: What... who are you? And why are you dressed like that?
+???: Pardon? Is something wrong with my uniform?
+MobMC: H-hold on... and why does my room look like this?!
+???: D-did you want me to change your decor...?
+<<changeExpression Catherine worried>>
+MobMC: Strange... you kind of look like...
+Narrator: <i>You inspect the maid and try to remember...</i>
+<<changeExpression Catherine surprised>>
+MobMC: That’s right! Ibelina! From「Sincerely: I Became a Duke’s Maid」!
+Ibelina: Yes...? I’m Ibelina...? But what do you mean a duke’s maid? I’m <i>your maid</i>, my lady.
+MobMC: Wait a second...
+<<moveCharacter Catherine Mirror>>
+<<changeExpression Catherine blushing>>
+MobMC: <i>Gorgeous, shiny hair even after just waking up... clear skin that’s never seen a pimple in its life... 
+<<changeExpression Catherine excited>>
+MobMC: <i>This beauty that can only exist in the 2D plane... I’ve reincarnated! This is my isekai moment!</i>
+<<changeExpression Catherine surprised>>
+MobMC: Oh my gosh! I recognise this character!
+MobMC: She’s from「Doki☆Doki! Caught Between Two Handsome Men, the Prince and his Guard, While Evading the Villainess as the Reincarnated Saintess of this World~ ☆ !!」
+<<changeExpression Catherine worried>>
+MobMC: But... my hair isn’t blonde... huh?
+MobMC: Ibelina...
+
+-> Catherine: my lovely maid...
+-> Catherine: light of my life...
+-> Catherine: can do no wrong...
+
+MobMC: ...please tell me my name isn't Catherine from the Beckett family!
+Ibelina: Why? Oh my, did your fall down the stairwell cause you to lose some memory? 
+Ibelina: I know you were distraught because of your spat with the Crown Prince about the engagement, but I didn’t think it would be this severe.
+Catherine: ...
+<<changeExpression Catherine crying>>
+Catherine: NooOOOOO!!!!!
+<<screenEffect screenShake>>
+Narrator: <i>...and this is my story of how I reincarnated and, well, will eventually die, as a villaine—</i>
+<<changeExpression Catherine determined>>
+Catherine: Hold it, narrator! Don’t go there, I’m going to change this ending! I’m not about to die a second time—not like this!
+<<screenEffect fadeBlack>>
+<<triggerCG titleCard>>
+// TODO: remove waits and handle them exclusively via triggerCG coroutine
+<<wait 5>>
+<<takedownCG>>
+<<changeExpression Catherine neutral>>
+<<updateState GameStateManager 2>>
+===
+title: Cutscene_2
+tags:
+---
+Catherine: Wow, I can't believe it’s already been one year since I woke up as the villainess in「Saintess」!
+Catherine: The first thing I did was make sure I knew exactly what happened in my past.
+<<changeExpression Catherine happy>>
+Catherine: Good thing little miss Beckett's parents are <i>obsessed</i> and spoiled her a <i>ton</i>!
+Catherine: They even had a whole diary detailing every little thing she's done ever since she was born.
+Catherine: I mean, geez, now I know why Catherine turned out the way she did! Anyhow...
+<<changeExpression Catherine worried>>
+Catherine: The only thing I’m worried about now is that today's my first day at Born Privileged Academy.
+Catherine: This can only mean one thing: the beginning of the otome game's story!
+<<changeExpression Catherine determined>>
+Catherine: Yep, this is where the plotline that’s set up to get me killed starts! I <i>have</i> to make sure I’m on good terms with the heroine, so that the male leads can’t find any reason to kill me in her name!
+Catherine: Alright! <b>NEW GAMEPLAN:</b> become best friends with Alice Langway! 
+<<changeExpression Catherine crying>>
+Catherine: She’s my only hope to stay alive!
+<<changeExpression Catherine neutral>>
+===
+title: Cutscene_3
+tags:
+---
+Headmaster: Welcome one, welcome all, esteemed students of Born Privileged Academy!
+Headmaster: You, scions of the most powerful persons in our Kingdom, are here to study from the most prestigious scholars around the world.
+Headmaster: Here is where you shall learn the knowledge needed to propel our Kingdom into a new generation. For four years, you shall exert yourself in the disciplines of Spells, Magic History, Swordsmanship, Kingdom Administration, and more!
+Headmaster: Today is the first day of your orientation. Feel free to converse with your professors-to-be and your fellow classmates. Enjoy the refreshments our world-renowned kitchen has provided!
+Headmaster: And lastly, don't leave before the end of the ceremony, when the valedictorian of the Young Mages Elementary Academy shall make her welcome speech.
+<<changeExpression Catherine worried>>
+Catherine: <i>Oh no, isn't this where the heroine first meets and makes an impression on the male leads? I can't let her do that, because...</i>
+
+-> Catherine: <i>I want those hotties to myself!</i>
+-> Catherine: <i>That will lead to my death!</i>
+
+Catherine: <i>I</i> have <i>to make sure I ruin her speech and destroy her script before she goes up there!</i>
+// TODO: Input game notif and new quest to the backend here
+// New quest: [Orientation Capitulation]!
+Catherine: <i>Come on, Catherine Beckett. Muster your best villainess-style schemes! We have to do something!</i>
+Catherine: What should I do first...
+
+-> Catherine: I know! I'll stay in the auditorium to ask around about her!
+-> Catherine: Maybe I should explore the hallway first, then come back later for more clues...
+
+<<updateState GameStateManager 4>>
+===
+title: Cutscene_8
+tags:
+---
+<<screenEffect fadeblack>>
+<<if battleWon(0) is true>>
+  Narrator: After amends were made, you spent a happy school year with Alice, Everett, and Oliver.
+  Narrator: Dazzling memories of your youth were made; including, of course, the quintessential beach episode...
+  // TODO: <<triggerCG beach episode!>>
+  Narrator: But it’s no time to bask in victory... After all, if the story plotline hasn’t changed, the beginning of second year is when Alice’s kidnapping happens!
+  <<screenEffect fadein>>
+  Catherine: I have to make sure I’m prepared for it.
+  <<moveCharacter LoveInterest Catherine>>
+  Love Interest: Catherine! Catherine, listen... Something horrible has occurred!
+  Love Interest: Alice just got kidnapped! We haven’t been able to find her anywhere.
+  Catherine: <i>That can’t be true... It’s way too early for this to happen! Have I been enjoying my school life too much? I’ve forgotten about my main mission!</i>
+  Catherine: This won’t do. I have to get it together.
+  Catherine: Don’t panic, {$liName}. Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
+  // TODO: gameNotification: "New Quest: A Case of Kidnapping!"
+  // TODO: <<newQuest QuestManager 0>>
+  <<updateState GameStateManager 9>>
+<<else>>
+    <<jump Cutscene_8_2>>
+<<endif>>
+===
+title: Cutscene_8_2
+tags:
+---
+<<screenEffect fadeblack>>
+Narrator: Despite Alice’s graceful attitude towards the events that transpired earlier in the year, your classmates proved to be much less forgiving; you endured two unhappy semesters of countless lonesome lunches and relentless bullying (of course, with the quintessential dramatically staged staircase fall!)
+Narrator: The summer of that year, you were subjected to supplementary classes (oh, the horror!) Constant rumours surrounded you about your reputation as a jealous, loathsome villainess...
+Narrator: But you knew that if you could save Alice’s life, you could redeem your reputation... After all, according to the story’s plot line, the beginning of second year is when Alice’s kidnapping happens!
+<<screenEffect fadein>>
+Catherine: I have to make sure I’m prepared for it.
+<<moveCharacter LoveInterest Catherine>>
+Love Interest: Did you do it?!
+<<changeExpression Catherine worried>>
+Catherine: Do what? What did I do?
+<<changeExpression LoveInterest worried>>
+Love Interest: Don’t play dumb! Alice! Did you kidnap her?! Your jealousy is going too far!
+Catherine: I didn’t do it! Let me prove it to you.
+Love Interest: Fine, but I won’t believe you until you find who did hurt her.
+<<changeExpression Catherine neutral>>
+Catherine: <i>This won’t do. I have to get it together.</i>
+Catherine: Come on, stop staring at me hatefully like that.
+Catherine: Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
+// TODO: gameNotification "New Quest: A Case of Kidnapping!"
+// TODO: <<newQuest QuestManager 0>>
+<<updateState GameStateManager 9>>
+===
+title: Cutscene_13
+tags:
+---
+<<if miniGameWon(0) is true and miniGameWon(1) is true>>
+    Love Interest: Hey, not so bad at this after all, aren’t you, Catherine?
+    <<changeExpression Alice angry>>
+    Alice: What are you saying? She isn’t just “not bad”, she just destroyed all of us! You’re amazing, Catherine!
+    <<changeExpression Catherine exasperated>>
+    Catherine: <i>I guess all that time spent loitering at the arcade in my past life did amount to something, huh?</i>
+    <<changeExpression Catherine determined>>
+    Catherine: Sure, I’m good at games, but I think Alice can stand out way more at the festival tonight.
+    Alice: What do you mean?
+    <<changeExpression Catherine excited>>
+    Catherine: By joining the beauty pageant, of course! Oh, come on, you have to do it. Don’t you wanna get all dressed up for once after wearing those uniforms all year? Show all these wannabes who’s boss?
+    <<jump Cutscene_13_2>>
+<<elseif miniGameWon(0) is false and miniGameWon(1) is false>>
+    Love Interest: Well, I can’t say I expected much else from you, Catherine.
+    <<changeExpression Catherine angry>>
+    Catherine: What did you just say, you little brat?!
+    <<changeExpression LoveInterest happy>>
+    Love Interest: I’m just kidding, it’s great to see everyone having fun.
+    Catherine: Yes, seeing Alice smile like this, without a care in the world, reminds me that it’s all worth it.
+    Love Interest: ...?
+    <<changeExpression Catherine blushing>>
+    Catherine: I mean school! School! That all our hard work for our studies is worth it when we get to celebrate together like this. Speaking of Alice, don’t you think she should join the beauty pageant?
+    Everett: Sounds like fun. What do you think, Alice?
+    <<jump Cutscene_13_2>>
+<<endif>>
+===
+title: Cutscene_13_2
+tags:
+---
+Alice: Oh come on, stop playing around!
+<<changeExpression Oliver excited>>
+Oliver: The witch is right, my lady! You’d shine so brightly!
+
+-> Catherine: Huh?! At least being a witch is magnitudes cooler than that whole Cold-Duke-of-the-North schtick of yours.
+-> Catherine: What the *** did you just ****ing say about me, you little *****? I'll have you know I graduated top of my class in the Young Mages Academy, and I've been involved in numerous secret raids on - mmpfgh! Alice, let me go!
+
+Everett: ...
+Everett: Indeed, you’re the pride of our school, Alice. I’m sure everyone would love to see our saintess up on stage.
+Catherine: Alright, come on, no more blubbering. Let’s get to that registration booth, pronto!
+<<screenEffect fadeBlack>>
+<<updateState GameStateManager 14>>
+===
+title: Cutscene_14
+tags:
+---
+Medea: Welcome one, welcome all, to the annual Academy beauty pageant! Come round to squee at the dresses and rest your undeserving gazes upon the greatest beauties of our school—nay, our kingdom!
+Everett: She’s kinda,,, intense, isn’t she?
+Catherine: Oh yeah, you should definitely consider yourself lucky that you weren’t the crown prince of her story.
+Everett: ...I’m sorry?
+Medea: ...And last but certainly not least, the beautiful, the one and only Saintess of the Holy Light of our academy—Alice Langway!
+<<changeExpression Catherine excited>>
+Catherine: Woo! Alice! That’s my girl! Blow me a kiss! Over here!
+Oliver: ...
+Everett: ...
+Catherine: What? Isn’t she the most precious thing you’ve ever laid eyes on? You lot are such party poopers.
+Medea: After much difficult consideration from our judge panel... we are delighted to announce that we have a tie for first place between our lovely Alice and the dark horse of this competition—Katarina of the vegetable stall!
+Medea: As such, the winner will be decided by the supporting team who can gather the largest number of tokens for their lovely lady during this school festival. Now, gather it up!
+<<if $tokensWon > 4>>
+    <<changeExpression Catherine determined>>
+    Catherine: Oho, are you truly approaching me, the undefeated queen of festival games? Take it, filthy peasants! Ohoho! Alice shall be crowned queen of the school festival this very evening!
+    Oliver: I was pretty impressed by your plays, but you don’t have to be that proud of it, you know?
+    <<changeExpression Everett exasperated>>
+    Everett: Let her be, she doesn’t have much to be proud of in her life.
+
+    -> Catherine: Oh yeah? And I wonder why that is, after a certain fiancé decided to pretend I didn’t exist and threw me to the wolves of high society?
+        Everett: Hey, it’s not like you even really liked me at the beginning either!
+    -> Catherine: Say what you want - I’ve decided to live for the present, and right now, I’m about to wallop these plebs with my riches!
+
+    Oliver: Now, now, you two. Let's all get along for Alice’s sake tonight.
+    Everett and Catherine: You can SHUT IT!!!
+    Medea: The tokens have been counted! The votes are in! The winner is... Alice Langway, the revered saintess hailing from faraway lands to lend her powers to our country!!!
+    <<screenEffect confetti effects>>
+    <<changeExpression Catherine excited>>
+    Catherine: THAT’S MY GIRL!
+    <<changeExpression LoveInterest exasperated>>
+    Love Interest: Wow... I’m amazed. I can’t believe your fanaticism for festival games really turned out to be useful in the end.
+    Catherine: Hey hey, watch your tone! Who’s the one who helped Alice win this whole thing?
+    <<changeExpression LoveInterest happy>>
+    Love Interest: You’re right, I’m sorry, Thank you, really. You didn’t have to do all this—I know we were never gentle with you. Thank you for putting that radiant smile on Alice’s face. She’s lived a life of hardship, and this was her first festival. I’m glad you’re her friend.
+    Catherine: I love her—we all do. I’m glad we could get together to have fun like this.
+    Love Interest: Well...
+    Love Interest: ...
+    Love Interest: I’m not just glad you’re her friend... I’m also...
+    Catherine: ...?
+    Love Interest: I’malsogladyou’remyfriendnowtoo!
+    Catherine: Oh! Oh, um... Me too, I’m glad we’ve gotten so close, {$liName}.
+    <<changeExpression LoveInterest blushing>>
+    Love Interest: ...
+    Catherine: ...? You okay?
+    Love Interest: Yeah. Yep. Cool as a cucumber. Hey, why don’t we go meet up with Alice backstage now?
+    Catherine: Ooh, great idea!
+    Catherine: <i>Huh. It seems like my death flags have faded a bit.</i>
+    <<screenEffect fadeWhite>>
+<<else>>
+    Catherine: Oh no... I don’t think we won enough tokens to help Alice win...
+    Everett: Well, it can’t be helped. Katarina is just absurdly popular with the girls for some reason I cannot fathom...
+    Oliver: She does have charms of her own.
+    <<changeExpression Catherine sad>>
+    Catherine: Alice will be so disappointed.
+    <<if battleWon(0) is false>>
+        Love Interest: Well, if you just followed my lead for the minigames, maybe we would’ve been able to win more tokens.
+        Catherine: Oh you—
+        <<changeExpression Medea determined>>
+        Medea: The tokens have been counted! The votes are in! The winner is... Katarina Claes, everybody’s favourite big-foreheaded vegetable seller!
+        <<changeExpression Catherine exasperated>>
+        Catherine: This has got to have been the most... unconventional beauty pageant I’ve ever witnessed.
+        Everett and Oliver: ...
+        Everett: I’m disappointed, but it’s a waste of our time to be upset over someone like Catherine. Let’s regain our spirits to go greet Alice with cheery smiles.
+        Catherine: ...
+        Catherine: I’ll ignore that first part. You’re right, let’s go see her.
+        <<jump Cutscene_14_Exit>>
+    <<else>>
+        Medea: The tokens have been counted! The votes are in! The winner is... Katarina Claes, everybody’s favourite big-foreheaded vegetable seller!
+        Love Interest: It’s alright, Catherine. We all did our best—the important thing is that we all had a fun time tonight!
+        <<changeExpression Catherine sad>>
+        Catherine: I know, I just wish we could’ve gotten this for Alice. You know she has a hard time at school, with all the attention she gets.
+        Everett: Alice is stronger than we think. Besides, look at how brightly she’s smiling up there!
+        Oliver: She’s the Saintess for sure.
+        Catherine: You two shine pretty brightly yourselves...
+        Everett and Oliver: Huh?
+        Catherine: Oh, nothing. Let’s go backstage to meet up with Alice! I wanna end the night off with <i>ice cream.</i>
+        Love Interest: Aw yeah.
+        <<jump Cutscene_14_Exit>>
+    <<endif>>
+<<endif>>
+===
+title: Cutscene_14_Exit
+tags:
+---
+???: <i>ine... mine... n... ot... yours... my b... ody...</i>
+Love Interest: ... Catherine? What’s up?
+???: <i>MINE!!! Give it BA...ck.... My b...ody... my... {$liName}...</i>
+Love Interest: Hey, Catherine! Snap out of it! Are you okay?!
+???: <i>Don’t... don’t... don-</i>
+???: ...
+Catherine: ...
+Catherine: The whispers... they came back... Her voice... She sounds like she’s in so much pain...
+Love Interest: Catherine?
+Catherine: ...
+Catherine: Oh! I’m sorry. I, uh...
+
+-> Catherine: It’s... it’s this voice. I’ve been hearing the whispers more and more often these days... I don’t know what’s happening. I’m scared...
+    Love Interest: ... That sounds really concerning, Catherine. Have you talked to the archmage?
+    Catherine: No! Of course not. Please, don’t tell anyone. I just... I just want to enjoy a regular school life with you guys.
+    <<changeExpression Catherine sad>>
+    Catherine: I promise, it’s nothing serious. It’s just a couple whispers. It won’t hurt me.
+    <<changeExpression LoveInterest sad>>
+    Love Interest: ... Okay, but promise you’ll tell me if things get worse.
+    Catherine: I... yes. Sure.
+    Love Interest: Come on now, let’s go.
+    <<set $li_knows to true>>
+-> Catherine: It’s... nothing! I was just thinking about this really good fantasy book I’ve been reading. I wanted to... scare you a little, haha!
+    Love Interest: Are you sure there isn’t something you’re not telling me? I feel like you’re always worrying about stuff that you never share with us...
+    Catherine: Don’t worry! I promise, it’s nothing. I’ll lend you the book later if you really want to know so badly, okay?
+    Love Interest: Okay...
+    Catherine: Alright, come on. Let’s go!
+     <<set $li_knows to false>>
+
+<<updateState GameStateManager 15>>
+===
+title: Cutscene_15
+tags:
+---
+<<set $tassellearned to false>>
+<<if battleWon(1) is false>>
+    <<changeExpression Catherine angry>>
+    <<moveCharacter Catherine HallwayEnd>>
+    Catherine: We’re more than halfway there to the Graduation Ball... Things haven’t been looking good ever since the festival. I need to hurry up and improve the situation somehow.
+    Catherine: What’s next, what’s next...
+    Catherine: I remember now! The 3rd Years’ Knight Tournament! Our Academy’s most prestigious event, where the future great knights of the kingdom are discovered!
+    <<moveCharacter Catherine HallwayBegin>>
+    Catherine: There’s no way I can fail this. I <i>have</i> to cement my place in the friend group so they can’t exile me... or worse...
+    Catherine: No! Keep it together, Catherine. I’ve already come so far. Let’s gather some information and create a game plan.
+<<else>>
+    Catherine: Well, my school life is rolling out better than expected. The boys don’t seem to hate my guts anymore...
+    Catherine: Not that I can relax! 3rd year is when the Knight Tournament happens, and the whole kingdom will be watching to discover our next great knight. I must make a good impression on either the Duke or the Crown Prince while they’re preparing!
+    Catherine: Hmm... But what to do? Maybe I should gather some information first.
+<<endif>>
+===
+title: Cutscene_17
+tags:
+---
+Catherine: It’s been another year! I can’t believe we’re almost finished with school.
+Love Interest: Yes. And you know what? I’m really glad to have gotten to know you better.
+Catherine: Me... me too.
+Alice: Alright, alright, break it up you flirts! Come on, we have to discuss what we’re going to wear for the graduation ball.
+Love Interest: W-w-w-what do you mean, we weren’t doing anything!
+Alice: Yeah, maybe that’s the problem. It’s been a year, you both should be getting a move on with it!
+Love Interest: *sputtering*
+Everett: Can we stop bullying each other?
+Catherine: What he said! Alice, how could a bully like you be the oh-so-pure Saintess? I swear, the folks at the Church will have an aneurysm if they ever heard you like this.
+Alice: Oh, stop exaggerating! I do my job well, don’t I?
+Oliver: That you most certainly do.
+Catherine: Alright, stop that. Come on. Let’s go back to the dorms and get ready.
+Catherine: I can’t believe we’re almost done with school...
+Love Interest: You know, despite all the ups and downs, it’s been a weirdly fun time with you around.
+Catherine: You don’t mean that.
+Love Interest: Yeah, I don’t!
+Catherine: You little --
+Alice: Alright, alright, break it up!
+Love Interest: Oh! H-h-hey Alice.
+Alice: Uh, hey! Uh...
+Catherine: No, you two break it up! Come on, it’s been a year and you’re still tiptoeing around like this?
+Alice: Catherine!!!
+Catherine: What? You know I’m right. Come on you silly ducks, let’s go!
+Everett: We should definitely go and get ready for the ball soon.
+Oliver: Are all your outfits ready?
+Alice: Yes, Catherine and I just have to go back to the dorms to get changed!
+Oliver: We do too. Shall we meet up here once we’re ready, your Highness?
+Everett: That’s a plan. See you guys later!
+===
+title: Cutscene_20
+tags:
+---
+Headmaster: Catherine Beckett!
+Narrator: You cross the stage, and just as you’re about to take your diploma, lightning strikes...
+<<screenEffect lightning>>
+<<screenEffect screenShake>>
+???: <i>N... Y..RS! MOM.......NT......VIL.........ENGE</i>
+Catherine: What... what’s going on?
+Headmaster: Catherine? Come now, take your certificate!
+???: <i>N... YOU... RS! MY.... MINE.... MINE... MINE!!!</i>
+<<screenEffect screenShake>>
+<<screenEffect fadeBlack>>
+Catherine: Where... where am I? Don’t tell me... am I still doomed to perish, even after all my hard work to change the story?
+Catherine: Is it truly impossible to change my fate, to... change Catherine’s fate?
+???: You.
+Catherine: !!!
+???: You there. You vile thing, talking and smiling in my body, using my mouth to utter all that shameful nonsense you dare come up with.
+???: For four years... four long years... I have been forced to sit here, in this unyielding darkness, helpless in my own consciousness.
+???: I have been forced to watch you.
+???: How dare you play friendly with that filthy commoner, exchanging sweet words with her even as you watch her get closer and closer to Everett?
+???: How dare you try to claim Everett, claim Oliver as yours?
+???: How dare you besmirch the name of Catherine Bennett so?!
+???: But now, it’s alright. Finally, after years of effort to crawl my way back into my mind... I can take back what was mine. I can rightfully execute the revenge that was mine.
+
+-> Catherine: No... you can’t be... are you... the original? You were here the whole time?
+    OG!Catherine: Hah! I am not just the original, I am the <i>true</i> Catherine Bennett. You are nothing more than a phony.
+-> Catherine: Who are you?! What do you mean by revenge?
+    OG!Catherine: You still haven’t caught on yet? I am the <i>true</i> Catherine Bennett.
+-> Catherine: What’s your problem? I was just about to finish with all this business, graduate, and escape!
+    OG!Catherine: Escape to where?! And shirk all the responsibilities I’ve carried since I was a child? I think not! I am the <i>true</i> Catherine Bennett, and I will not allow you to take one step further in my body.
+
+Catherine: Catherine...
+OG!Catherine: Do not soil my name with that pitiful look of yours. I will not stand for it.
+OG!Catherine: Someone like you, who blissfully waltzed into a noble life in the making, will never truly understand me. Change <i>my</i> fate? Silly thing, do you think yourself God?
+OG!Catherine: All my life, I have endeavoured to be nothing less than perfect, because that is what is expected of the girl one day meant to be crowned Queen.
+OG!Catherine: It has never mattered what others thought of me. Sleepless nights spent ensuring I could succeed in my studies... blistered hands from the etiquette tutor’s discipline... gritting my teeth through the meaningless drivel others whisper behind my back in order to preserve a reputation in high society.
+OG!Catherine: No doubt Everett -- my kind, sweet Everett -- had it hard too, but at least he was permitted to go out with his friends, to enjoy his life as a student.
+OG!Catherine: Me? Never. I would never have been able to do something so frivolous, so unbefitting of the woman to be wed to the Crown Prince.
+OG!Catherine: So how is it... how is it that you, who drove my perfectly constructed life off the rails, were so easily able to win over them? You, who didn’t spend a day in that dark classroom, you, who looks at my burden so lightly!
+OG!Catherine: It’s not fair... it’s not fair... it can’t be fair! I will take all of it back. I will take back what is mine. This was never meant for you.
+Catherine: Catherine, I...
+
+-> Catherine: I just wanted to save you from your destiny. I wanted you to be happy.
+    OG!Catherine: Make me... happy? Don’t make me laugh. It’s meaningless to chase after happiness when you are a person of my station.
+-> Catherine: I didn’t mean for any of this to happen, either. I didn’t want to be transmigrated into your story.
+    OG!Catherine: And yet, instead of laying low, you chose to make a mess of my reputation!
+
+Catherine: How can I make you believe me? If you continued on the way you did, the hurt person that you are, you would never have come out of this story alive, Catherine. Look at you!
+OG!Catherine: ...
+OG!Catherine: I’ve had it with you. I don’t want to hear a single word from you any longer. Prepare yourself. I will annihilate you now, █████████.
+Catherine: How do you... how do you know my real na—
+<<screenEffect screenShake>>
+// TODO: move to battle state here
+<<updateState GameStateManager 21>>
+===
+title: Cutscene_21
+tags:
+---
+<<if battleWon(2) is false>>
+    Catherine: Argh... no... how could this happen? I tried so hard... So, so, hard...
+    Catherine: It's so dark... it hurts... someone, please, anyone...
+    OG!Catherine: Don't worry. You'll get used to it eventually. It only took me a year to give up on escaping.
+    Catherine: Cath... erine... please, don't do this... I know you...
+    OG!Catherine: Still haven't learned your lesson, hm? But it's alright. I won't spare you a second more of my time.
+    OG!Catherine: You'll understand soon enough. That's right; you won't be able to do anything else but think. Silently... excruciatingly...
+    Catherine: Alice! {$notLIName}! Please, someone, anyone, can you hear me? Help... help me! I won't ask for anything else anymore... Please, this isn't what I wanted... {$liName}...
+    OG!Catherine: Hush, you silly thing. There's not enough space in my consciousness for you to be yelling so loud.
+
+    -> Catherine: I will never, ever forgive you, Catherine. I have never done a single thing to spite you, and yet... You will regret this. One day, you will.
+        OG!Catherine: Why should I? You're so weak now, there's nothing you can do to me once I leave this space and regain my body. I was always the one with the aptitude, after all. You were merely borrowing it.
+        Catherine: I survived in an unfamiliar world for 4 years. For all your talk, you don't understand the pain I went through, either, Catherine. This is not my end.
+    -> Catherine: Catherine... you know this isn't what's right. You still won't be happy, you still won't get back the things that were yours... Not like this.
+        OG!Catherine: Hah! I'm not soft like you. I never wanted a fairytale ending. I just wanted to carry out my duty and see through my revenge.
+        Catherine: I didn't want a fairytale either... I just wanted a simple life. I just wanted to live, Catherine.
+        OG!Catherine: That wish isn't unique to you, you know.
+
+    OG!Catherine: Regardless of what you think, it's all over now. There's nothing you can do here anymore. Farewell, █████████.
+    OG!Catherine: You know... I hated you, resented you... but it wasn't your fault.
+    Catherine: Cathe... rine... Don't... It's fading... Everything... Everything I worked so hard for... Don't do this to me...
+    Catherine: help... HE-
+    <<triggerCG badEnd>>
+    Narrator: ND: You have been cast into the void of Catherine Beckett's mind. Here, it's dark and silent. You cannot speak, you cannot see. Time stretches... infinitely. Goodbye, █████████. 
+<<elseif battleWon(2) is true and $gameScore <= 4>>
+    OG!Catherine: Hah... hah... I... didn't have enough... power... more...
+    Catherine: Catherine... I'm sorry. I didn't know you were... trapped, all this time.
+    Catherine: I wanted a better ending for you. I'm sorry you won't be the one to see it through. I'm sorry it could only be one of us.
+    OG!Catherine: No. No! Mark... my words... I will come back. Again, again, and ag... ain... to take back what's mine... To ful... fill...
+    Catherine: Good... goodbye, Catherine.
+    OG!Catherine: No!!! NO!!!
+    // TODO: this shouldn't be a narrator but rather a game notification
+    ???: Catherine Beckett has been casted back into the void. Take over? 
+
+    -> Catherine: Yes 
+        <<screenEffect screen shake, return to ballroom>>
+    -> Catherine: No 
+        ???: Are you sure? You cannot co-exist. There can only be one Catherine Beckett. 
+        Catherine: ... 
+        <<screenEffect screen shake, return to ballroom>>
+
+    Love Interest: Catherine? Catherine, hey, wake up!
+    Alice: Catherine!!! Can you hear us? Hurry, someone call the nurse! She’s not responding!
+    Everett: How could this happen? She seemed completely fine earlier...
+    Oliver: Maybe you fed her too many pine nut tarts, Alice.
+    Alice: Do you think this is the time to joke around?!
+    Catherine: So loud...
+    Alice: Catherine!!! Oh, Catherine, you’re back!
+    Love Interest: Oh, thank God...
+    Catherine: Guys? Why are you all crowded around?
+    Love Interest: You don’t remember...? You were just about to receive your certificate, when you suddenly collapsed on stage.
+    Catherine: I collapsed...? Oh... Oh! The original Cather—she’s gone, we have to bring her back—I’m not who you—
+    Everett: Original...? What do you mean? Stop making a fuss, Catherine, you just woke up. Don’t exert yourself.
+    Catherine: Ugh... I...
+    Catherine: I...
+    Catherine: ...
+    Catherine: Never mind. Ignore that, I think I had a weird dream. Sorry, let me get up and move out of the way—I feel completely fine now. I don’t want to ruin everyone’s graduation any further.
+    Alice: Oh, don’t say that! We were all so worried about you!
+    Catherine: Thanks for looking out for me, guys.
+    Oliver: Come on, let me help you up.
+    Everett: Sorry for the confusion, everyone! Catherine has woken up, she is safe! We can proceed with the ceremonies now, Headmaster, if you will.
+    Headmaster: Ahem... Alright then. Ladies and gentlemen, Catherine Beckett!
+    Catherine: Thank you, Headmaster.
+    // TODO: game notification: "You've Received Achievement: Certificate of Graduation With Honours!"
+    Alice: Oh, I’m so glad. I thought she would never wake up!
+    Love Interest: Don’t be so silly, Alice.
+    Everett: Thank you everyone! Now that the award ceremony is over, I’d like to make a small announcement as your Student Council President.
+    Everett: Over the past four years, we’ve experienced many things together ....
+    Alice: Oh, there he goes. Go, Everett, go!
+    Catherine: He suits being onstage like that.
+    Oliver: That’s our crown prince for you.
+    Everett: ... and finally, I’d like to thank the faculty for your thoughtful attention in nurturing the next generation of scholars, writers, engineers, artists, magicians, and leaders.
+    Everett: ... Before I close this ceremony, however, I’d like to make a small announcement. As you all know, I have been engaged to the honourable Lady Catherine Beckett since a very young age. However, now that we are older, and have forged our own paths to the future. I’d like to amicably terminate my engagement with Catherine.
+    Catherine: ...
+    Alice: Catherine...
+    Catherine: Don’t worry, we had a brief, private conversation about this prior. I just... feel a bit strange.
+    Everett: Catherine, over the past four years, I’ve learned that you are not the person I’ve always thought you to be. I am glad to have built a friendship with you.
+    <<if $liName is "Everett">>
+        Everett: Instead, I’d like to announce my love for...
+        Alice: No way... Right here?!
+        Catherine: What a place to propose, Everett.
+        Oliver: sighs
+        Everett: For the lovely Alice Langway, who, as you all know, is our kingdom’s future Saintess. Alice, will you give me the honour of becoming your betrothed?
+        Alice: I... I...
+        Catherine: Go on, Alice.
+        Alice: Catherine... Everett...
+        Everett: Alice... will you be my fiance?
+        Alice: Oh, Everett... Yes. Yes, I will.
+        <<triggerCG aliceEverettEngagement>>
+        Catherine: <i>How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...</i>
+        Catherine: <i>But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?</i>
+        Catherine: <i>But there’s no way... she’s gone, forever.</i>
+        Catherine: <i>How dare I wish for more than this? This is the happy ending I wanted, for everyone.</i>
+        Oliver: You okay, Catherine? Your face looks...
+        Catherine: I’m... I’m alright, Oliver. Thank you for asking. I’m just annoyed at Everett for choosing such an untactful location to propose.
+        Oliver: [sighs] You know him, he has a flair for the extravagant even if he pretends not to.
+        Catherine: Congratulations, Alice. Congratulations, Everett. May you have a wonderful engagement, and marriage.
+        <<triggerCG goodEndQuestionEverett>>
+    <<elseif $liName is "Oliver">>
+        Catherine: And I you, Crown Prince Everett Aulus, moon of the Kingdom.
+        Everett: [smiles brightly]
+        Everett: Alright, that’s enough from me. Instead, the heir of the Conrad Dukedom, Oliver Conrad, would like to make an announcement to you all.
+        Catherine: Oliver...?
+        Oliver: [clears throat]
+        Oliver: I would like to hereby announce my betrothal with Alice Langway, the future Saintess of our Kingdom.
+        Narrator: ND: The crowd gasps 
+        Catherine: W-w-with Alice? Alice and Oliver are getting... <i>engaged</i>?!
+        Catherine: Where on Earth did this come from? With that stoic Duke’s heir, to boot...
+        Alice: Oh, Oliver! Why here? There are so many people!
+        Oliver: I just... wanted everyone to know, Alice. That... we love each other. That I will be the one to protect you, from now on.
+        Oliver: Crown Prince Everett Aulus. I am sorry that I must betray my promise of eternal servitude to you, for my love for another.
+        Oliver: I will take responsibility for this sin. You may... you may take my life, if that is what you wish.
+        Everett: Stop with the theatrics and get up immediately, Oliver. You know I would never do that.
+        Everett: Instead, I’d like to bestow my blessings upon you two. May you bring forth a prosperous future for our kingdom.
+        Catherine: Con—congratulations, Oliver, Alice. I’m...
+        Catherine: I’m...
+        Alice: Catherine? Are you still feeling sick?
+        Catherine: ...
+        Catherine: No, Alice, my dear. Thank you for worrying. I am happy for you both.
+        <<triggerCG aliceOliverEngagement>>
+        Catherine: <i>How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...</i>
+        Catherine: <i>But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?</i>
+        Catherine: <i>How dare I wish for more than this? This is the happy ending I wanted, for everyone.</i>
+        Everett: You okay, Catherine? Your face looks...
+        Catherine: I’m... I’m alright, Everett. Thank you for asking. I’m just annoyed at Oliver for choosing such an untactful way to announce their betrothal.
+        Everett: [sighs] It can’t be helped, he had to make sure Alice would be acknowledged by the nobles.
+        Catherine: Congratulations, Alice. Congratulations, Oliver. May you have a wonderful engagement, and marriage.
+        <<triggerCG goodEndQuestionOliver>>
+    <<endif>>
+    <<if battleWon(2) and $gameScore > 4>>
+        OG!Catherine: Hah... hah... I... didn't have enough... power... more...
+        Catherine: Catherine... I'm sorry. I didn't know you were... trapped, all this time.
+        Catherine: I wanted a better ending for you. I'm sorry you won't be the one to see it through. I'm sorry it could only be one of us.
+        OG!Catherine: No. No! Mark... my words... I will come back. Again, again, and ag... ain... to take back what's mine... To ful... fill...
+        Catherine: Good... goodbye, Catherine.
+        OG!Catherine: No!!! NO!!!
+        Narrator: ND: Catherine Beckett has been casted back into the void. Take over? 
+
+        -> Narrator: Yes 
+            <<screenEffect screen shake, return to ballroom>>
+        -> Narrator: No 
+            Narrator: ND: Are you sure? You cannot co-exist. There can only be one Catherine Beckett. 
+            Narrator: ... 
+            Narrator: Screen shake, return to ballroom 
+
+        Love Interest: Catherine? Catherine, hey, wake up!
+        Alice: Catherine!!! Can you hear us? Hurry, someone call the nurse! She’s not responding!
+        Everett: How could this happen? She seemed completely fine earlier...
+        Oliver: Maybe you fed her too many pine nut tarts, Alice.
+        Alice: Do you think this is the time to joke around?!
+        Catherine: So loud...
+        Alice: Catherine!!! Oh, Catherine, you’re back!
+        Love Interest: Oh, thank God...
+        Catherine: Guys? Why are you all crowded around?
+        Love Interest: You don’t remember...? You were just about to receive your certificate, when you suddenly collapsed on stage.
+        Catherine: I collapsed...? Oh... Oh! The original Cather—she’s gone, we have to bring her back—I’m not who you—
+        Everett: Original...? What do you mean? Stop making a fuss, Catherine, you just woke up. Don’t exert yourself.
+        Catherine: Ugh... I...
+        Catherine: I...
+        Catherine: ...
+        Catherine: Never mind. Ignore that, I think I had a weird dream. Sorry, let me get up and move out of the way—I feel completely fine now. I don’t want to ruin everyone’s graduation any further.
+        Alice: Oh, don’t say that! We were all so worried about you!
+        Catherine: Thanks for looking out for me, guys.
+        Oliver: Come on, let me help you up.
+        Everett: Sorry for the confusion, everyone! Catherine has woken up, she is safe! We can proceed with the ceremonies now, Headmaster, if you will.
+        Headmaster: Ahem... Alright then. Ladies and gentlemen, Catherine Beckett!
+        Catherine: Thank you, Headmaster.
+        // TODO: game notification: "You've Received Achievement: Certificate of Graduation With Honours!"
+        Alice: Oh, I’m so glad. I thought she would never wake up!
+        Love Interest: Don’t be so silly, Alice.
+        Everett: Thank you everyone! Now that the award ceremony is over, I’d like to make a small announcement as your Student Council President.
+        Everett: Over the past four years, we’ve experienced many things together ....
+        Alice: Oh, there he goes. Go, Everett, go!
+        Catherine: He suits being onstage like that.
+        Oliver: That’s our crown prince for you.
+        Everett: ... and finally, I’d like to thank the faculty for your thoughtful attention in nurturing the next generation of scholars, writers, engineers, artists, magicians, and leaders.
+        <<if $liName is "Everett">>
+            Everett: ... Before I close this ceremony, however, I’d like to make a small announcement. As you all know, I have been engaged to the honourable Lady Catherine Beckett since a very young age. However, now that we are older, and have forged our own paths to the future. I’d like to make a proper proposal, on my own terms.
+            Alice: [gasp] Catherine...!
+            Catherine: No way... this is so embarrassing...!
+            Oliver: It looks like you like it though?
+            Everett: Catherine, it was our parents who arranged our marriage, but I would like to formally ask you... would you do me the honour of becoming our nation’s next queen and my partner forevermore?
+            Catherine: [tearing up] You’re not pulling my leg again like you always did, are you?
+            Everett: No, I’m not. Catherine, I love you with all of my heart, and not because someone told me to, but because I grew to love you with all that I am. When I am with you, I am not just the Crown Prince, heir to the throne. I am just Everett Aulus, another boy in love with a girl.
+            Everett: So what do you say, Catherine Beckett? Will you make me the happiest man alive and be my wife?
+
+            -> Catherine: Yes! Yes, of course I will.
+            -> Catherine: Obviously I will, you dummy! Get over here!
+            -> Catherine: Lol no.
+                Everett: [freezes] ...huh? Uh...
+                Catherine: I’m just kidding you idiot, get over here, yes I want to marry you for real!
+
+            Narrator: e crowd cheers and everyone onstage remembers that there’s an audience
+            <<changeExpression Everett blushing>>
+            Everett: Thank you, Cath... I swear to you I will try to make you as happy as you make me.
+            <<changeExpression Catherine blushing>>
+            Catherine: You don’t need to... because you already do.
+            Alice: Oh my god, stop being so cheesy guys, get a room!
+            Catherine: You say that, but I can clearly see the Duke’s hand around your waist right now!
+            <<changeExpression Oliver blushing>>
+            Oliver: Ah, erm, [starts to draw back his hand]
+            Alice: Duke Conrad, if you let go of me right now and let them win as the cutest couple on stage, I’m going to be very very angry with you later.
+            Oliver: [freezes]
+            Everett: Hahaha! I guess you found someone you will listen to other than me, huh?
+            Oliver: ...silence, your highness.
+            Catherine: He’s even talking back to you!
+            Alice: Congrats your highnesses, on your engagement.
+            Everett: [looks lovingly at you] Thank you. I’m glad we could make it officially ours. I love you, Catherine Beckett.
+            Catherine: I’m glad too... I love you as well, my prince, Everett Aulus.
+            <<triggerCG goodEndEverett>>
+        <<elseif $liName is "Oliver">>
+            Everett: ... Before I close this ceremony, however, I’d like to make a small announcement. As you all know, I have been engaged to the honourable Lady Catherine Beckett since a very young age. However, now that we are older, and have forged our own paths to the future. I’d like to amicably terminate my engagement with Catherine.
+            Catherine: ...
+            Alice: Catherine...
+            Catherine: Don’t worry, we had a brief, private conversation about this prior. I just... feel a bit strange.
+            Everett: Catherine, over the past four years, I’ve learned that you are not the person I’ve always thought you to be. I am glad to have built a friendship with you.
+            Catherine: And I you, Crown Prince Everett Aulus, moon of the Kingdom.
+            Everett: [smiles brightly]
+            Everett: Alright, that’s enough from me. Instead, the heir of the Conrad Dukedom, Oliver Conrad, would like to make an announcement to you all.
+            Catherine: Oliver...?
+            Oliver: [clears throat]
+            Oliver: I have been told that I have... quite the reputation for being... a stony stick in the mud...
+            Catherine: Oh my goodness, I literally said that all the way in the first year, Oliver, how do you remember that...
+            Oliver: But to the person who called me that... you have broken down my walls and burrowed your way into my heart, making me feel joy and love beyond anything I could have ever imagined, which is why I want to ask you...
+            Oliver: Lady Catherine Beckett, would you do me the greatest honour and marry me?
+            Alice: [gasp] Catherine...!
+            Catherine: No way... this is so embarrassing...!
+            Everett: It looks like you like it though?
+
+            -> Catherine: Yes! Yes, of course I will.
+            -> Catherine: Obviously I will, you dummy! Get over here!
+            -> Catherine: Lol no.
+                Oliver: [freezes] Ah... in that case, apologies...
+                Catherine: I’m just kidding you idiot, get over here, yes I want to marry you for real!
+
+            Narrator: ND: the crowd cheers and everyone onstage remembers that there’s an audience 
+            <<changeExpression Oliver blushing>>
+            Oliver: Thank you, Cath... I swear I will devote the rest of my life to making you the happiest person alive.
+            <<changeExpression Catherine blushing>>
+            Catherine: You don’t need to... because you already do.
+            Alice: Oh my god, stop being so cheesy guys, get a room!
+            Catherine: You say that, but I can clearly see the Crown Prince’s hand around your waist right now!
+            Everett: Hey, now that I’m a free man, can’t I show my affection to whomever I like now?
+            Alice: Your Highness, do you just call yourself a free man and me ‘whomever’ with your hand around me right now?
+            Everett: [freezes]
+            Oliver: [smirks] Your playboy tendencies are showing, your highness.
+            Everett: ...silence, you traitorous dog, were you not the one who kept saying speaking of the royal family is treason?
+            Catherine: He’s even talking back to you!
+            Alice: Congrats Cath and Duke Oliver, on your engagement.
+            Oliver: Thank you, saintess. [looks lovingly at you] I couldn’t be happier... I love you, Catherine Beckett.
+            Catherine: I’m glad too... I love you as well, my duke, Oliver Conrad.
+            <<triggerCG goodEndOliver>>
+        <<endif>>
+    <<endif>>
+<<endif>>
+===

@@ -1,0 +1,146 @@
+title: Katarina_4
+tags:
+---
+<<if visited("Katarina_4")>>
+    <<jump Katarina_4_2>>
+<<endif>>
+<<changeExpression Katarina happy>>
+Katarina: Hey! It's a great day to avoid raising any death flags, isn't it?
+Catherine: Er... Come again?
+<<changeExpression Catherine worried>>
+Catherine: <i>There's not way... It's only my 1st year! Has someone seen through me already?</i>
+Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused witha ll the arguments going on in my head.
+Katarina: Anyway, what can I do for you? I think it's the first we've...
+<<if inventoryIncludes("katarinaSnake")>>
+    <<removeInventoryItem InventoryManager katarinaSnake>>
+    <<changeExpression Katarina surprised>>
+    Katarina: Oh my! Is that my little snake you picked up there? Thank you, I would've been in dire straits without it.
+    <<changeExpression Katarina neutral>>
+    Katarina: Oh, I really should repay you somehow... Ah! I know!
+    // TODO: Game notification for new item    
+    <<addInventoryItem InventoryManager ironHoe>>
+    <<changeExpression Katarina excited>>
+    Katarina: Check this out! I developed it just recently.
+    Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
+
+    -> Catherine: Oh thanks! This is <i>exactly</i> what I needed! BUt how do I carry something like this around the school is the question...
+        <<changeExpression Katarina neutral>>
+        Katarina: Just tell them you're a part of the gardening club! I'm sure the professors won't mind
+        Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.
+    -> Catherine: Uh... sure. Thanks? I'm not sure what I'd use it for, but...
+    -> Catherine: Argh, I'm not a fan of golems. They remind me of dirt beetles. But... I'll take it.
+    
+    Catherine: Well, thank you regardless, Katarina. You're very kind.
+    Katarina: Aw, don't worry about it!
+    <<if visited("Calliope_4")>>
+        <<updateState GameStateManager 5>>
+    <<endif>>
+<<else>>
+    Katarina: Ah! You must be feeling lonely since it's your first year as well, right? Well, fear not! I'll be your friend!
+    Catherine: Um, but we just met two seconds ago...?
+    Katarina: Great friendships always start somewhere! Don't sweat it!
+    Katarina: Is there anything in particular you've been worried about? I, Katarina Claes, can be sure to be of help!
+    Catherine: Um... well, there <i>is</i> one thing. Have you met Alice Langway yet? The one rumoured to be the Saintess?
+    Katarina: Why, yes. Just keep going to the end of the hallway, I think I saw her around that corner a few minutes ago.
+    Katarina: But... why?
+    Catherine: Oh! Nothing, she just seems nice. I'm looking to make some... friends.
+    Katarina: Great! Let me know if you need any friendship tips - I'm your gal!
+    Catherina: Ha ha ha, thanks, Katarina. See you!
+    <<if visited("Calliope_4")>>
+        <<updateState GameStateManager 5>>
+    <<endif>>
+<<endif>>
+===
+title: Katarina_4_2
+tags:
+---
+Katarina: Hey, Catherine! Are you interested in romance novels? I've been thinking about opening a book club.
+Catherine: Sounds great, I'll look for you during the club fair.
+Katarina: Oh! I see Mary. I should convince her to join the club too. See you later, Catherine!
+===
+title: Katarina_12
+tags:
+---
+<<if miniGamePlayed(1) == false>>
+    Katarina: Measure your strength here! Winner wins a toy sword!
+    Catherine: Didn’t we just speak with you at a vegetable stall? What are you doing here?
+    Everett: Oli, are you game for a round?
+    <<changeExpression Alice excited>>
+    Alice: Ooh! I’ve seen these before!
+    Oliver: Hmm, the balance of this toy hammer is a bit off, but if Your Highness wants to do it….
+    Everett: Haha! Alright, let’s go!
+    <<screenEffect bang!!! >>
+    <<changeExpression Katarina excited>>
+    Katarina: Strength level of 50!
+    Everett: I think this game is rigged.
+    <<changeExpression Oliver exasperated>>
+    Oliver: Whew…
+    // TODO: <<screenEffect bang!!! >>
+    Mob: Strength level of… 50!
+    Alice: An even tie of 50, maybe the game really is rigged… What are the chances?
+
+    -> Catherine: Step aside boys, let the real muscles give it a go.
+        <<changeExpression Alice excited>>
+        Alice: Ooh, Catherine, are you also going to participate?
+        Everett: You’re going to waste more time on a rigged game?
+        Oliver: Let’s let her do it, we’re here to fool around after all.
+    -> Catherine: Yeah, all festival games are rigged guys. To be honest, I think the first one was a fluke.
+        Alice: Let’s give it a try, Catherine! Come on!
+        Oliver: We have time to spare, so let’s all try to ring the bell at the top.
+        Everett: We can also test whether it’s made to always ring at 50 too…
+<<else>>
+    <<if minigamewon(1) == true>>
+        <<screenEffect ding!!! >>
+        <<changeExpression Katarina excited>>
+        Katarina: Strength level of 100!
+        <<changeExpression Alice excited>>
+        Alice: Catherine, you’re amazing!
+        <<changeExpression Everett exasperated>>
+        Everett: Whoa… remind me to not get into a fight with you…
+        <<changeExpression Oliver determined>>
+        Oliver: Impressive, have you been secretly training with the guard?
+        // TODO: Game notification: you’ve received special item: {toy sword}!
+        <<addInventoryItem InventoryManager toySword>> 
+    <<else>>
+        Katarina: Strength level of 1!
+        <<changeExpression Catherine exasperated>>
+        Catherine: You’ve gotta be kidding me…
+        Everett: Haha, I guess we know the game isn’t rigged, huh?
+        <<changeExpression Oliver exasperated>>
+        Oliver: I didn’t know it was possible to get it that low…
+    <<endif>>
+    <<updateState GameStateManager 13 >>
+<<endif>>
+===
+title: Katarina_17
+tags:
+---
+<<if visited("Katarina_17")>>
+    Catherine: Uh, actually… I wanted to ask if I could actually have some tomatoes from your garden next time. Everyone’s been talking about them…
+    Katarina: Oh, of course! Drop by after the ball and I’ll get you some!
+    Catherine: Thanks, Katarina!
+    Catherine: <i>Yesss!</i>
+<<else>>
+    Catherine: Good job on graduating, Katarina. You made it!
+    Katarina: Ehehe, thank you Catherine. I’m sure it’s because the professors all loved the home-grown potatoes I gifted them! That reminds me, I need to give you some too!
+    Narrator: Item retrieved: Potatoes 
+    // TODO: Game notification: Item retrieved: Potatoes !
+    <<addInventoryItem InventoryManager potatoes>> 
+    Catherine: Thank you, but it’s not just that, Katarina. Look at all the amazing friends you’ve made who have supported you through everything!
+
+    -> Catherine: You’re a warm, bright light in this school.
+    -> Catherine: We wouldn’t be where we are right now without you.
+    -> Catherine: Who wouldn’t want to befriend one of the kindest students around?
+
+    Katarina: Aw… Honestly, I’m not sure what I did to deserve them.
+    Catherine: You were yourself, Katarina. That’s all you needed!
+    Katarina: Oh, Catherine, when did you become such a sweet talker?
+    Katarina: You know… I sure am grateful for them. I may look like this, but… in the end, I know that if I was all alone, I never would have gotten this far.
+    Catherine: I know. I feel the same. I was really lonely at the beginning, but nowadays I look around me and I realise I’m actually not alone anymore.
+    Katarina: Aw, Cath!
+    Catherine: I’m really happy for you, Katarina. I’m happy for us!
+    Catherine: By the way, are you going to the ball tonight?
+    Katarina: Uh huh! I’ll see you there?
+    Catherine: Most definitely!
+<<endif>>
+===

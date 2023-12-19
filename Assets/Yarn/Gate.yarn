@@ -1,0 +1,7 @@
+﻿title: Gate_2
+tags:
+---
+Catherine: All right. Let’s do this, Lady Catherine Beckett! Let’s save you from your ill-fated destiny!
+<<screenEffect fadeWhite>>
+<<updateState GameStateManager 3>>
+===

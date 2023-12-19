@@ -1,0 +1,26 @@
+title: Ibelina_18
+tags:
+---
+<<if visited("Ibelina_18")>>
+    Ibelina: Catherine, we already said our teary farewells. Let’s not drag this on any longer.
+    Catherine: You’re right!
+    Ibelina: Now shoo, go on and have fun. Tell me everything once you return tomorrow morning.
+<<else>>
+    Ibelina: Hello, my lady. You have grown up beautifully.
+    Catherine: Oh, Ibelina... Thank you. It’s all because of your faithful service over the years. Thanks for sticking by me, through... everything.
+    Ibelina: It’s not easy, being in your situation. Trust me, you’re not alone.
+    Catherine: Yes! I always felt so isolated, but I realised there were... oddly quite a few people at this school in the same situation as me?
+    Ibelina: [chuckles] Well... yes, that seems to be the case. Quite a mysterious school, no?
+    Catherine: Hm... You know, you seem to know a lot more than you let on, too.
+    Ibelina: Perhaps. Come talk to me again when you’re a full-fledged adult, Catherine. I will tell you everything then.
+    Catherine: Not fair!
+    Ibelina: Hush, go now. Don’t be spending your precious time at the graduation ball with your maid.
+    Catherine: Hmph! This won’t be the last you’ll hear of this!
+    Ibelina: Here, this is my gift to you for graduating. Congratulations my lady.
+    // TODO: Game notification: Item Retrieved: Bouquet of Flowers 
+    <<addInventoryItem InventoryManager bouquetOfFlowers>>
+    Ibelina: Now go and have fun at that ball, OK?
+    Catherine: [teary] I will! Thank you so much, I’ll see you after the ball, Ibelina!
+    Ibelina: Bye, Catherine.
+<<endif>>
+===

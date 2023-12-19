@@ -1,0 +1,92 @@
+title: Athanasia_12
+tags:
+---
+<<if miniGamePlayed(0) == false>>
+    Athanasia: Come one, come all! Show off your strength and win a stuffed toy of your choice!
+    <<changeExpression Alice surprised>>
+    Alice: Oh, Athanasia! I didn’t know students could run the stalls.
+    <<changeExpression Athanasia exasperated>>
+    Athanasia: Oh, I’m just taking over for my dad while he takes a break, haha.
+    <<changeExpression Everett determined>>
+    Everett: Hey Oli, wanna bet you can beat me in a good ol’ arm wrestling match?
+    <<changeExpression Oliver exasperated>>
+    Oliver: Your Highness, let’s not draw too much attention...
+    Everett: Oh, so you’re scared?
+    <<changeExpression Oliver angry>>
+    Oliver: ...You’re going to regret provoking me, Aulus.
+<<else>>
+    <<if miniGameWon(0) == true and $liName == "Everett">>
+        <<changeExpression Everett happy>>
+        Everett: What was I going to regret again, Oli?
+        <<changeExpression Oliver blushing>>
+        Oliver: I simply wanted to preserve Your Highness’ dignity and pride as your guard.
+        Alice: That was such a close match though! I never knew you both were so strong.
+        <<if battlewon(0) == true>>
+            Everett: I suppose it’s only fitting that I give this bear to my fiancée, not that I want to of course.
+            <<changeExpression Everett blushing>>
+            Everett: You can simply hold it for me while we go through the festival.
+            Catherine: Oh, uh, thanks...
+            <<changeExpression Catherine blushing>>
+            Catherine: <i>I wasn’t expecting that... he has a cute side to him, doesn’t he?</i>
+            // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
+            <<addInventoryItem InventoryManager teddyBearOfLove>>
+        <<else>>
+            <<jump Athanasia_12_2>>
+        <<endif>>
+        <<if minigamewon(0) == true and $liName == "Oliver">>
+            Oliver: Your Highness, what did I say about provoking me?
+            Everett: I was holding back, so that you wouldn’t make a fool of yourself. A good ruler thinks of his citizens after all.
+            Alice: That was such a close match though! I never knew you both were so strong.
+            <<if battlewon(0) == true>>
+                Oliver: I can’t keep this bear if I want to be able to protect us throughout this festival though...
+                <<changeExpression Oliver blushing>>
+                Oliver: Catherine, would you keep it safe for me? If you like it, you can have it forever... ahem. I mean—
+                Catherine: I’ll hold onto it, Duke Oliver. Thank you for the gift.
+                Catherine: <i>A cuddly teddy bear with such a stoic bear of a guard... cute.</i>
+                // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
+                <<addInventoryItem InventoryManager teddyBearOfLove>>
+            <<else>>
+                <<jump Athanasia_12_2>>
+            <<endif>>
+        <<endif>>
+    <<endif>>
+<<endif>>
+===
+title: Athanasia_12_2
+tags:
+---
+Love Interest: Here, Alice, you like bears, don’t you?
+Alice: Oh! You don’t need to, really!
+Love Interest: It’s fine, a stuffed bear won’t really fit the imperial palace too well anyway... I’d much rather you keep it with you.
+Alice: Thank you, I’ll think of you when I see it!
+===
+title: Athanasia_17
+tags:
+---
+<<if visited("Athanasia_17")>>
+    Alice: What’s up?
+    Catherine: Oh, nothing, sorry! I’m excited to meet your dad later.
+    Alice: Oh, he’ll love to meet you! I’ll introduce you!
+<<else>>
+    Catherine: Hey Athy! How are you?
+    Athanasia: Catherine! I’m good. Great, actually. I kind of felt like this day would never come, for some reason.
+    Catherine: I’m glad things worked out well for you. I know you didn’t have an easy couple of years.
+    Athanasia: You know my dad will actually be coming to see me at the ball?
+
+    -> Catherine: I can’t believe it! I’m so happy for you, Athy. You really deserve this.
+    -> Catherine: Truly? That’s amazing! I bet you’ll go all out for the ball then.
+
+    Athanasia: Thank you. I just have to do right by everyone who’s stood by me.
+    Alice: Oh! Speaking of which, I can’t believe I almost forgot. Here, I have something to give you!
+    // TODO: <<gameNotification item received: raven keychain! >>
+    <<addInventoryItem InventoryManager ravenKeychain>>
+    Athanasia: This is a little keychain plushie of my puppy, Raven. I’ve imbued some of his mana properties into it, so I’m sure it’ll prove to be helpful if you ever find yourself in a sticky situation.
+    Catherine: What? Athy, you really didn’t have to. How can someone like me dare to receive a magical item made by our school’s highest scoring Spells student?
+    Athanasia: Don’t get your knickers in such a twist, this is just a mere trinket. My dad wanted Jeanette and I to properly congratulate everyone, so we’ve been working on these all week.
+    Catherine: Athanasia... Thank you. You’re the absolute sweetest. I’m sure you’ll make a fine heir to your father, after we graduate.
+    Athanasia: Oh, stop that. Go on, you should get changed soon - I saw Alice rushing to the dorms a couple minutes ago.
+    Catherine: You’re right. I will be seeing you at the ball, then? I can’t wait to see your dress!
+    Athanasia: Aw, thank you, Cath! I’ll see you later.
+    Catherine: Bye!
+<<endif>>
+===

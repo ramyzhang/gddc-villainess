@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bc71e55194e40497d9d187d804e663b2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Shallot Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 603a515c691774b4eba0f3a63a5882a4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
