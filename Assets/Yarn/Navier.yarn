@@ -39,7 +39,7 @@ Catherine: Well... Not so much that I have my eye on them, but I do really wanna
         // TODO: <<gameNotification your warm friendship with navier has awarded you a defence buff! >>
         Catherine: Thanks, Navier.
         Navier: No need. Go now!
-
+    <<newQuest GameStateManager 3>>
     <<set $tassellearned to true>>
 <<else>>
     Navier: So you’re going to make a tassel?

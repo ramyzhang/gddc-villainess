@@ -59,6 +59,7 @@ Catherine: Man, is it just me or do all my friends have some insane baggage?
     Catherine: Yerenika...
     Yerenika: Come on, just take it! I’m just glad you’re finally livening up—you used to look like you had the burden of the world’s destiny on your shoulders.
     Catherine: Thank you. I’ll be sure to use it well!
+    <<newQuest GameStateManager 3>>
     <<set $tassellearned to true>>
 <<endif>>
 ===

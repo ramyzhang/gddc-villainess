@@ -120,11 +120,13 @@ Catherine: <i>Oh no, isn't this where the heroine first meets and makes an impre
 -> Catherine: <i>I want those hotties to myself!</i>
 -> Catherine: <i>That will lead to my death!</i>
 
+<<changeExpression Catherine determined>>
 Catherine: <i>I</i> have <i>to make sure I ruin her speech and destroy her script before she goes up there!</i>
-// TODO: Input game notif and new quest to the backend here
-// New quest: [Orientation Capitulation]!
+<<newQuest GameStateManager 0>>
 Catherine: <i>Come on, Catherine Beckett. Muster your best villainess-style schemes! We have to do something!</i>
+<<changeExpression Catherine worried>>
 Catherine: What should I do first...
+// TODO: jump to correct area when chosen
 
 -> Catherine: I know! I'll stay in the auditorium to ask around about her!
 -> Catherine: Maybe I should explore the hallway first, then come back later for more clues...
@@ -149,7 +151,7 @@ tags:
   Catherine: This won’t do. I have to get it together.
   Catherine: Don’t panic, {$liName}. Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
   // TODO: gameNotification: "New Quest: A Case of Kidnapping!"
-  // TODO: <<newQuest QuestManager 0>>
+  <<newQuest GameStateManager 1>>
   <<updateState GameStateManager 9>>
 <<else>>
     <<jump Cutscene_8_2>>
@@ -176,8 +178,7 @@ Love Interest: Fine, but I won’t believe you until you find who did hurt her.
 Catherine: <i>This won’t do. I have to get it together.</i>
 Catherine: Come on, stop staring at me hatefully like that.
 Catherine: Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
-// TODO: gameNotification "New Quest: A Case of Kidnapping!"
-// TODO: <<newQuest QuestManager 0>>
+<<newQuest GameStateManager 1>>
 <<updateState GameStateManager 9>>
 ===
 title: Cutscene_13
@@ -340,7 +341,7 @@ Catherine: Oh! I’m sorry. I, uh...
     Love Interest: Okay...
     Catherine: Alright, come on. Let’s go!
      <<set $li_knows to false>>
-
+<<completeQuest GameStateManager 2>>
 <<updateState GameStateManager 15>>
 ===
 title: Cutscene_15
@@ -365,6 +366,7 @@ tags:
 title: Cutscene_17
 tags:
 ---
+// TODO: If branch
 Catherine: It’s been another year! I can’t believe we’re almost finished with school.
 Love Interest: Yes. And you know what? I’m really glad to have gotten to know you better.
 Catherine: Me... me too.
@@ -377,6 +379,7 @@ Catherine: What he said! Alice, how could a bully like you be the oh-so-pure Sai
 Alice: Oh, stop exaggerating! I do my job well, don’t I?
 Oliver: That you most certainly do.
 Catherine: Alright, stop that. Come on. Let’s go back to the dorms and get ready.
+// TODO: else branch
 Catherine: I can’t believe we’re almost done with school...
 Love Interest: You know, despite all the ups and downs, it’s been a weirdly fun time with you around.
 Catherine: You don’t mean that.

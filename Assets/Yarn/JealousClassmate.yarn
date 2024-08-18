@@ -230,5 +230,6 @@ Catherine: Why are you in my head?! I don’t want this! Please, I didn’t mean
 Catherine: Is it... is it finally gone? Who was that?
 Catherine: How did they know I’m an imposter?
 Catherine: I have to be careful...
+<<completeQuest GameStateManager 1>>
 <<updateState GameStateManager 11 >>
 ===

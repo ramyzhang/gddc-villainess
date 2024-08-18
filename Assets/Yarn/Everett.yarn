@@ -1,175 +1,175 @@
 title: Everett_19
 tags:
 ---
-<<if $liName is "Oliver">>
-    Everett: Catherine. You’re late.
-    Catherine: Hello to you too, Everett Aulus. You sure clean up nicely.
-    Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
+// <<if $liName is "Oliver">>
+//     Everett: Catherine. You’re late.
+//     Catherine: Hello to you too, Everett Aulus. You sure clean up nicely.
+//     Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
 
-    -> Catherine: It’s more like I’m reminded of it every single day.
-    -> Catherine: How could I forget, when it’s all people know me from?
+//     -> Catherine: It’s more like I’m reminded of it every single day.
+//     -> Catherine: How could I forget, when it’s all people know me from?
 
-    Everett: Hm?
-    Catherine: No, nothing. How is the ball going so far? I hope you’re not getting pulled into any bothersome political or business talks.
-    Everett: Most of the attendees are students’ parents who are too busy being proud of their children, so thankfully not. Thank you... for worrying about me, though.
-    Catherine: Nothing to thank me for. It’s your one and only graduation ball. I just hope that we can all celebrate it like proper students one last time, instead of being forced into adulthood too early.
-    Everett: ...
-    Everett: Yes. Yes, Catherine, you’re right. We should enjoy this moment as much as possible.
-    Everett: Have you seen Alice, yet?
-    Catherine: Of course, we came in together. She’s probably hovering shyly around the pine nut tarts right about now.
-    Catherine: Oh, there she is. See?
-    Everett: Ah... She looks... Particularly fit to be the Saintess, today. White certainly suits her.
+//     Everett: Hm?
+//     Catherine: No, nothing. How is the ball going so far? I hope you’re not getting pulled into any bothersome political or business talks.
+//     Everett: Most of the attendees are students’ parents who are too busy being proud of their children, so thankfully not. Thank you... for worrying about me, though.
+//     Catherine: Nothing to thank me for. It’s your one and only graduation ball. I just hope that we can all celebrate it like proper students one last time, instead of being forced into adulthood too early.
+//     Everett: ...
+//     Everett: Yes. Yes, Catherine, you’re right. We should enjoy this moment as much as possible.
+//     Everett: Have you seen Alice, yet?
+//     Catherine: Of course, we came in together. She’s probably hovering shyly around the pine nut tarts right about now.
+//     Catherine: Oh, there she is. See?
+//     Everett: Ah... She looks... Particularly fit to be the Saintess, today. White certainly suits her.
 
-    -> Catherine: You should go tell that to her face, you know. She’d be ecstatic to receive such a compliment from you.
-    -> Catherine: Now all you need to do is say that line to her instead of your ex-fiancee.
-    -> Catherine: You would suit her too, if you’d only take that leap of courage again and make your move.
+//     -> Catherine: You should go tell that to her face, you know. She’d be ecstatic to receive such a compliment from you.
+//     -> Catherine: Now all you need to do is say that line to her instead of your ex-fiancee.
+//     -> Catherine: You would suit her too, if you’d only take that leap of courage again and make your move.
 
-    Everett: No, I don’t... I’m... That’s alright.
-    Everett: It’s not just Alice. You... you look most dazzling today as well, Catherine.
-    Catherine: Stop with the niceties, it’s not like I’m jealous or anything.
-    Everett: No, I’m being sincere.
-    Catherine: Oh.
-    Catherine: ...
+//     Everett: No, I don’t... I’m... That’s alright.
+//     Everett: It’s not just Alice. You... you look most dazzling today as well, Catherine.
+//     Catherine: Stop with the niceties, it’s not like I’m jealous or anything.
+//     Everett: No, I’m being sincere.
+//     Catherine: Oh.
+//     Catherine: ...
 
-    -> Catherine: Thank you.
-    -> Catherine: You too.
-    -> Catherine: As you should.
-    -> Catherine: [finger guns]
-        Everett: ...Are you threatening me right now? Should I stop complimenting you?
-        Catherine: Uh, no, ignore that.
+//     -> Catherine: Thank you.
+//     -> Catherine: You too.
+//     -> Catherine: As you should.
+//     -> Catherine: [finger guns]
+//         Everett: ...Are you threatening me right now? Should I stop complimenting you?
+//         Catherine: Uh, no, ignore that.
 
-    Everett: Mm.
-    Catherine: I, well, I suppose I’ll be taking my leave now. I should socialise at least a little bit, shouldn’t I?
-    Everett: Yes, it is our duty as the Student Council to ensure the students feel comfortable during this ball. Let us continue our talk later.
-    Catherine: See you.
-<<elseif $liName == "Everett" and romancePoints >= 3>>
-    Everett: Catherine. You’re late.
-    Catherine: Hello to you too. You sure clean up nicely.
-    Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
-    Catherine: Well to me, you’re only the annoying fiance I’ve known since birth.
-    Everett: Well I hope that after these past few years... we have gotten to be more than just that.
-    <<changeExpression Catherine blushing>>
-    Catherine: Wh- wh... whatever do you mean?
-    Everett: Don’t tell me you’ve already forgotten what happened at the knight tournament?
+//     Everett: Mm.
+//     Catherine: I, well, I suppose I’ll be taking my leave now. I should socialise at least a little bit, shouldn’t I?
+//     Everett: Yes, it is our duty as the Student Council to ensure the students feel comfortable during this ball. Let us continue our talk later.
+//     Catherine: See you.
+// <<elseif $liName == "Everett" and $romancePoints >= 3>>
+//     Everett: Catherine. You’re late.
+//     Catherine: Hello to you too. You sure clean up nicely.
+//     Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
+//     Catherine: Well to me, you’re only the annoying fiance I’ve known since birth.
+//     Everett: Well I hope that after these past few years... we have gotten to be more than just that.
+//     <<changeExpression Catherine blushing>>
+//     Catherine: Wh- wh... whatever do you mean?
+//     Everett: Don’t tell me you’ve already forgotten what happened at the knight tournament?
 
-    -> Catherine: Of course I didn’t!
-    -> Catherine: How could I?
-    -> Catherine: Never in a million years would I forget something so heart-thumping, you have stolen my heart from the moment you stole that kiss from my lips you crazy prince.
+//     -> Catherine: Of course I didn’t!
+//     -> Catherine: How could I?
+//     -> Catherine: Never in a million years would I forget something so heart-thumping, you have stolen my heart from the moment you stole that kiss from my lips you crazy prince.
 
-    Narrator: Your emphatic response surprises the prince.
-    <<changeExpression Everett blushing>>
-    Everett: I’m glad... I know we had many disagreements and misunderstandings over the years about our relationship, but I want to make it clear to you right now.
-    Everett: I have every intention of pursuing you romantically. Outside of our arrangement.
-    Narrator: Everett holds out his hand.
-    Everett: If you would give me the honour of sharing my first dance with you... I hope that means you will agree with me courting you.
-    Narrator: You see his hand trembling ever so slightly under the dim lights of the ball.
-    Catherine: ...Yes, I would love to dance with you as my partner, your highness.
-    Narrator: You take his hand, you can hear him breathe a sigh of relief.
-    Everett: There’s no need to call me Your Highness, Catherine. We both know you never cared much for such frivolities between us anyway.
-    Catherine: Ah, does this mean you’ll finally let me call you Evvie again?
-    Everett: Y-you..! You haven’t called me that since we were five!
-    Catherine: [laughs] Hahaha, fine you little wimp, I’ll just-
-    Everett: ...but I guess it’s fine.
-    <<changeExpression Catherine blushing>>
-    Catherine: Huh?
-    Narrator: The crown prince looks to the side, pouting slightly.
-    Everett: Don’t make me say it again! I’m just saying it might be ok if you’re the one saying it. Just! Not all the time...
+//     Narrator: Your emphatic response surprises the prince.
+//     <<changeExpression Everett blushing>>
+//     Everett: I’m glad... I know we had many disagreements and misunderstandings over the years about our relationship, but I want to make it clear to you right now.
+//     Everett: I have every intention of pursuing you romantically. Outside of our arrangement.
+//     Narrator: Everett holds out his hand.
+//     Everett: If you would give me the honour of sharing my first dance with you... I hope that means you will agree with me courting you.
+//     Narrator: You see his hand trembling ever so slightly under the dim lights of the ball.
+//     Catherine: ...Yes, I would love to dance with you as my partner, your highness.
+//     Narrator: You take his hand, you can hear him breathe a sigh of relief.
+//     Everett: There’s no need to call me Your Highness, Catherine. We both know you never cared much for such frivolities between us anyway.
+//     Catherine: Ah, does this mean you’ll finally let me call you Evvie again?
+//     Everett: Y-you..! You haven’t called me that since we were five!
+//     Catherine: [laughs] Hahaha, fine you little wimp, I’ll just-
+//     Everett: ...but I guess it’s fine.
+//     <<changeExpression Catherine blushing>>
+//     Catherine: Huh?
+//     Narrator: The crown prince looks to the side, pouting slightly.
+//     Everett: Don’t make me say it again! I’m just saying it might be ok if you’re the one saying it. Just! Not all the time...
 
-    -> Catherine: You’re a real tsundere, aren’t you?
-    -> Catherine: The gap moe is real! Thank you, isekai gods.
+//     -> Catherine: You’re a real tsundere, aren’t you?
+//     -> Catherine: The gap moe is real! Thank you, isekai gods.
 
-    Everett: ...what?
-    Catherine: Nothing, nothing.
-    Narrator: The prince spins you around and catches you by the waist
-    Everett: It’s not nothing. Everything and anything you have to say, I want to hear it.
-    Catherine: Even the dumb things you don’t understand?
-    Everett: Catherine, you are the most idiotic, blumbering, straightforward, dry, and loud-mouthed woman I have ever met.
+//     Everett: ...what?
+//     Catherine: Nothing, nothing.
+//     Narrator: The prince spins you around and catches you by the waist
+//     Everett: It’s not nothing. Everything and anything you have to say, I want to hear it.
+//     Catherine: Even the dumb things you don’t understand?
+//     Everett: Catherine, you are the most idiotic, blumbering, straightforward, dry, and loud-mouthed woman I have ever met.
 
-    -> Catherine: Wow, complimentary much?
-    -> Catherine: Harsh. But not wrong.
-    -> Catherine: Yeah yeah, keep it going.
+//     -> Catherine: Wow, complimentary much?
+//     -> Catherine: Harsh. But not wrong.
+//     -> Catherine: Yeah yeah, keep it going.
 
-    Everett: And I have never been so enamoured with someone as the way I am enraptured with you. All of your bad and good moments, I have seen them all, since birth until now, we have known our best and worst selves.
-    Everett: No one has been able to bring out the truest most honest self out of me then you, in all of your confident glory. You may be all of those things, but I love all of those parts of you, as well as the moments where your kindheartedness, intelligence, wit, humour, and beauty shines through.
-    Catherine: I... I never knew you thought of me that way.
-    Everett: How could I not? I always knew that I wanted to marry out of love, not obligation.
-    <<changeExpression Catherine blushing>>
-    Catherine: Well, it took you long enough to come out and finally say it to me!
-    Everett: I know. I can’t believe how much time I wasted getting to this moment with you. That it
-    Narrator: You rise onto your tiptoes and kiss him.
-    Catherine: Well at least now we got there. And now we can do things like this [smiles].
-    Everett: [flushed] Damn, I really should’ve confessed sooner, huh?
-    Catherine: Didn’t you learn in your etiquette classes to have more refined speech as the Crown Prince?
-    Everett: I think we both know that I was never very composed when I was with you.
-    Narrator: The academy headmaster’s voice suddenly rings through the speakers.
-    Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
-    Catherine: Come on, Evvie. Let's finish our last year at the academy!
-    Everett: [smiles] Yes, my fiancee.
-<<elseif $liName == "Everett" and romancePoints < 3 >>
-    Everett: Catherine. You’re late.
-    Catherine: Hello to you too. You sure clean up nicely.
-    Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
-    Catherine: How can I, when my family reminds me incessantly about the privilege of being engaged to said crown prince?
-    Everett: That sounds terribly annoying.
-    Catherine: Which part, the reminders by family or the engagement itself?
-    Everett: ...I’m not sure. Which one is it for you?
+//     Everett: And I have never been so enamoured with someone as the way I am enraptured with you. All of your bad and good moments, I have seen them all, since birth until now, we have known our best and worst selves.
+//     Everett: No one has been able to bring out the truest most honest self out of me then you, in all of your confident glory. You may be all of those things, but I love all of those parts of you, as well as the moments where your kindheartedness, intelligence, wit, humour, and beauty shines through.
+//     Catherine: I... I never knew you thought of me that way.
+//     Everett: How could I not? I always knew that I wanted to marry out of love, not obligation.
+//     <<changeExpression Catherine blushing>>
+//     Catherine: Well, it took you long enough to come out and finally say it to me!
+//     Everett: I know. I can’t believe how much time I wasted getting to this moment with you. That it
+//     Narrator: You rise onto your tiptoes and kiss him.
+//     Catherine: Well at least now we got there. And now we can do things like this [smiles].
+//     Everett: [flushed] Damn, I really should’ve confessed sooner, huh?
+//     Catherine: Didn’t you learn in your etiquette classes to have more refined speech as the Crown Prince?
+//     Everett: I think we both know that I was never very composed when I was with you.
+//     Narrator: The academy headmaster’s voice suddenly rings through the speakers.
+//     Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
+//     Catherine: Come on, Evvie. Let's finish our last year at the academy!
+//     Everett: [smiles] Yes, my fiancee.
+// <<elseif $liName == "Everett" and romancePoints < 3 >>
+//     Everett: Catherine. You’re late.
+//     Catherine: Hello to you too. You sure clean up nicely.
+//     Everett: Well, it’s only natural. Have you forgotten that I am, after all, the crown prince of this kingdom?
+//     Catherine: How can I, when my family reminds me incessantly about the privilege of being engaged to said crown prince?
+//     Everett: That sounds terribly annoying.
+//     Catherine: Which part, the reminders by family or the engagement itself?
+//     Everett: ...I’m not sure. Which one is it for you?
 
-    -> Catherine: The reminders.
-        Everett: I guess so, huh? Everyone around me reminds me of that too...
-    -> Catherine: The engagement.
-        Everett: Really? [He looks slightly disappointed] Oh... well, uh...
-    -> Catherine: Both.
-        Everett: Ah, I mean, I guess that makes sense...
+//     -> Catherine: The reminders.
+//         Everett: I guess so, huh? Everyone around me reminds me of that too...
+//     -> Catherine: The engagement.
+//         Everett: Really? [He looks slightly disappointed] Oh... well, uh...
+//     -> Catherine: Both.
+//         Everett: Ah, I mean, I guess that makes sense...
 
-    Catherine: Come on now Your Highness, don’t play coy. Every student and their left grandmother’s dog saw you kiss Alice after the knight tournament. It was the hottest gossip. After all, you are the heir to the throne. And everyone knows... about... well, us.
-    Everett: There’s no way you, the frustrating and hotheaded Catherine, were hurt by that? After all, we both know this is a sham marriage made against our will.
-    Catherine: [mutters] Was it really against <i>our</i> will? Or just yours?
-    Everett: Sorry, what was that?
-    Catherine: <i>I doubt this romance novel setting would let you hear the things I want to say and just give you selective hearing instead.</i>
-    Catherine: I said thanks for the compliment, you ignorant buffoon of a prince.
-    Everett: That’s not all that I see of you. Here, let me apologise.
-    Narrator: The prince holds out his hand.
-    Everett: Let us dance.
-    Catherine: [You raise your eyebrow] You want to dance with the fiancee you blatantly cheated on?
-    Everett: [flushed] You need not say it like that, no? And I’m trying to make up for it now.
-    Narrator: Everett shakes his hand.
-    Everett: Quickly, or I might just change my mind.
-    Catherine: [sigh] Fine, but don’t take this as me accepting your apology. I require more begging for forgiveness, this dance is just a formality so that I don’t look like the one who disregards their familial duties.
-    Narrator: You and the Crown Prince begin to sway across the ballroom floor.
-    Everett: Well, I, for one, find it ludicrous that marriage is considered a familial duty at all.
-    Catherine: I don’t disagree with you on that, but since it was set upon us, is it truly so bad that we must marry one another?
+//     Catherine: Come on now Your Highness, don’t play coy. Every student and their left grandmother’s dog saw you kiss Alice after the knight tournament. It was the hottest gossip. After all, you are the heir to the throne. And everyone knows... about... well, us.
+//     Everett: There’s no way you, the frustrating and hotheaded Catherine, were hurt by that? After all, we both know this is a sham marriage made against our will.
+//     Catherine: [mutters] Was it really against <i>our</i> will? Or just yours?
+//     Everett: Sorry, what was that?
+//     Catherine: <i>I doubt this romance novel setting would let you hear the things I want to say and just give you selective hearing instead.</i>
+//     Catherine: I said thanks for the compliment, you ignorant buffoon of a prince.
+//     Everett: That’s not all that I see of you. Here, let me apologise.
+//     Narrator: The prince holds out his hand.
+//     Everett: Let us dance.
+//     Catherine: [You raise your eyebrow] You want to dance with the fiancee you blatantly cheated on?
+//     Everett: [flushed] You need not say it like that, no? And I’m trying to make up for it now.
+//     Narrator: Everett shakes his hand.
+//     Everett: Quickly, or I might just change my mind.
+//     Catherine: [sigh] Fine, but don’t take this as me accepting your apology. I require more begging for forgiveness, this dance is just a formality so that I don’t look like the one who disregards their familial duties.
+//     Narrator: You and the Crown Prince begin to sway across the ballroom floor.
+//     Everett: Well, I, for one, find it ludicrous that marriage is considered a familial duty at all.
+//     Catherine: I don’t disagree with you on that, but since it was set upon us, is it truly so bad that we must marry one another?
 
-    -> Catherine: It is mutually beneficial for both of our families after all, you can’t deny the power our families combined will bring.
-    -> Catherine: Maybe further down the line we could become more affectionate and friendly with one another...
-    -> Catherine: Stop being such a loser and suck it up!
+//     -> Catherine: It is mutually beneficial for both of our families after all, you can’t deny the power our families combined will bring.
+//     -> Catherine: Maybe further down the line we could become more affectionate and friendly with one another...
+//     -> Catherine: Stop being such a loser and suck it up!
 
-    Everett: But what of marrying for love, out of your own heart?
-    Catherine: But what of assisting your family, to solidify your position in court and bring about impactful change without being hindered by corrupted officials?
-    Everett: [sigh] I didn’t think I’d talk politics at our graduation ball.
-    Catherine: Me either, yet here we are. Well, at least now I know you’re more of a romantic than I thought.
-    Everett: I’m the Crown Prince, of course I can be romantic and charming.
-    Catherine: And yet how come as the fiancee of said crown prince, I’ve never seen such a side?
-    Everett: Ha! If I truly courted you over all of these years, you never would have been able to stand a chance against falling for me, I spared the both of us that mess.
-    Catherine: Maybe you should have courted me, because either way I didn’t stand a chance.
-    Everett: [shocked] P-pardon?
-    Catherine: Screw the selective hearing setting, I’m gonna say it again. Would it truly have been a mess, Prince Everett? Like I said, I do not disagree with marrying out of love and for the true feelings of one’s heart.
-    Everett: Don’t jest with me like this Catherine, I know you tease me often but this is going too far.
-    Alice: Prince Everett! Catherine!
-    Narrator: At the sound of Alice’s voice, the crown prince breaks away from the dance.
-    Catherine: Alice!
+//     Everett: But what of marrying for love, out of your own heart?
+//     Catherine: But what of assisting your family, to solidify your position in court and bring about impactful change without being hindered by corrupted officials?
+//     Everett: [sigh] I didn’t think I’d talk politics at our graduation ball.
+//     Catherine: Me either, yet here we are. Well, at least now I know you’re more of a romantic than I thought.
+//     Everett: I’m the Crown Prince, of course I can be romantic and charming.
+//     Catherine: And yet how come as the fiancee of said crown prince, I’ve never seen such a side?
+//     Everett: Ha! If I truly courted you over all of these years, you never would have been able to stand a chance against falling for me, I spared the both of us that mess.
+//     Catherine: Maybe you should have courted me, because either way I didn’t stand a chance.
+//     Everett: [shocked] P-pardon?
+//     Catherine: Screw the selective hearing setting, I’m gonna say it again. Would it truly have been a mess, Prince Everett? Like I said, I do not disagree with marrying out of love and for the true feelings of one’s heart.
+//     Everett: Don’t jest with me like this Catherine, I know you tease me often but this is going too far.
+//     Alice: Prince Everett! Catherine!
+//     Narrator: At the sound of Alice’s voice, the crown prince breaks away from the dance.
+//     Catherine: Alice!
 
-    -> Catherine: You’re looking gorgeous tonight, as per usual.
-    -> Catherine: It’s not like you interrupted anything important like me confessing, haha. By the way, you look greeeeaaat!!!
+//     -> Catherine: You’re looking gorgeous tonight, as per usual.
+//     -> Catherine: It’s not like you interrupted anything important like me confessing, haha. By the way, you look greeeeaaat!!!
 
-    Alice: Thank you, Cath. You also look stunning!
-    Everett: What, no compliments for me?
-    <<changeExpression Alice blushing>>
-    Alice: Of course you look wonderfully handsome and charming, Your Highness. You always do.
-    Everett: It’s nice to hear that from somebody who looks as radiant as you do tonight.
-    Alice: If I may be so presumptuous... w-would you like to dance, Your Highness?
-    Narrator: The Crown Prince glances at you, looking as though he wants to continue the conversation, but looking at Alice’s shining face, you make a waving motion to him.
-    Catherine: You’re right, I took my teasing too far. Don’t take me too seriously, Your Highness, all of this political talk has left me parched so go dance some more and celebrate well.
-    Narrator: After a few dances where you drink the punch and try not to look at Alice and the Prince dancing, you hear the academy’s headmaster over the speakers.
-    Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
-<<endif>>
+//     Alice: Thank you, Cath. You also look stunning!
+//     Everett: What, no compliments for me?
+//     <<changeExpression Alice blushing>>
+//     Alice: Of course you look wonderfully handsome and charming, Your Highness. You always do.
+//     Everett: It’s nice to hear that from somebody who looks as radiant as you do tonight.
+//     Alice: If I may be so presumptuous... w-would you like to dance, Your Highness?
+//     Narrator: The Crown Prince glances at you, looking as though he wants to continue the conversation, but looking at Alice’s shining face, you make a waving motion to him.
+//     Catherine: You’re right, I took my teasing too far. Don’t take me too seriously, Your Highness, all of this political talk has left me parched so go dance some more and celebrate well.
+//     Narrator: After a few dances where you drink the punch and try not to look at Alice and the Prince dancing, you hear the academy’s headmaster over the speakers.
+//     Headmaster: Dear students. I hope you are all enjoying the ball, but now I would like to commence the celebration of our graduating students.
+// <<endif>>
 ===

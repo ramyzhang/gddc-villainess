@@ -1,178 +1,179 @@
 title: Ripley_9
 tags:
 ---
-<<if visited("Ripley_9") == false>>
-    <<if battleWon(0) == true>>
-        <<changeExpression Ripley happy>>
-        Ripley: Hi Catherine! How was your break?
-        <<changeExpression Catherine worried>>
-        Catherine: Ripley! It was great, thanks, but more importantly—Alice went missing. Did you happen to see her?
-        <<changeExpression Ripley excited>>
-        Ripley: Oh no, oh my, a kidnapping! I know what it’s like, I’ll help as much as I can. I last saw her in the courtyard collecting ingredients for home economics...
-        Catherine: Ok! I’ll have a look around the bushes and see if she left any traces behind!
-        <<changeExpression Ripley happy>>
-        Ripley: Great, I’ll also ask around to see if anyone figured anything out!
-    <<else>>
-        Ripley: Oh! Catherine... What's up?
-        <<changeExpression Catherine worried>>
-        Catherine: Ripley! Alice was kidnapped, but I swear it wasn’t me! I need to prove my innocence and save her!
-        <<changeExpression Ripley worried>>
-        Ripley: Kidnapped? I know all too well what that’s like, but can I really trust you...?
+// <<if visited("Ripley_9") == false>>
+//     <<if battleWon(0) == true>>
+//         <<changeExpression Ripley happy>>
+//         Ripley: Hi Catherine! How was your break?
+//         <<changeExpression Catherine worried>>
+//         Catherine: Ripley! It was great, thanks, but more importantly—Alice went missing. Did you happen to see her?
+//         <<changeExpression Ripley excited>>
+//         Ripley: Oh no, oh my, a kidnapping! I know what it’s like, I’ll help as much as I can. I last saw her in the courtyard collecting ingredients for home economics...
+//         Catherine: Ok! I’ll have a look around the bushes and see if she left any traces behind!
+//         <<changeExpression Ripley happy>>
+//         Ripley: Great, I’ll also ask around to see if anyone figured anything out!
+//     <<else>>
+//         Ripley: Oh! Catherine... What's up?
+//         <<changeExpression Catherine worried>>
+//         Catherine: Ripley! Alice was kidnapped, but I swear it wasn’t me! I need to prove my innocence and save her!
+//         <<changeExpression Ripley worried>>
+//         Ripley: Kidnapped? I know all too well what that’s like, but can I really trust you...?
 
-        -> Catherine: Ugh, yes, why would I kidnap her when everyone already thinks I hate her? I’d be the prime suspect!
-        -> Catherine: No, I guess you can’t, but I’m still going to do everything I can to find her, even without your help.
+//         -> Catherine: Ugh, yes, why would I kidnap her when everyone already thinks I hate her? I’d be the prime suspect!
+//         -> Catherine: No, I guess you can’t, but I’m still going to do everything I can to find her, even without your help.
 
-        <<changeExpression Ripley neutral>>
-        Ripley: ... Alright, I believe you. But I’m going to investigate on my own too. All I know right now is that she was last seen in the courtyard collecting ingredients for home economics, so try and find clues there.
-        <<changeExpression Catherine happy>>
-        Catherine: Of course! I’ll look everywhere there.
-    <<endif>>
-<<else>>
-    <<jump Ripley_9_2>>
-<<endif>>
-===
-title: Ripley_9_2
-tags:
----
-<<if battleWon(0) == true>>
-    <<changeExpression Catherine worried>>
-    Catherine: Ripley, what do we do?
-    <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
-        Ripley: Keep searching for ingredients! I’m talking with a witch who might have some leads...
-    <<else>>
-        -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!
-            Ripley: Don’t worry, I consulted an oracle I know and she saw someone from Class 3 taking Alice away! Maybe you can ask the people from there if they know who might have taken her.
-            <<changeExpression Catherine worried>>
-            Catherine: Uh, I’m not sure about the reliability of that information, but I’ll take anything right now. I’ll go there right away.
-            <<changeExpression Ripley excited>>
-            Ripley: Wait! Those herbs... I know a recipe for them that might help you, just in case you get kidnapped too.
-            // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
-            <<addInventoryItem InventoryManager healingCream>>
-            Ripley: Hurry, now go!
-        -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
-            <<changeExpression Ripley happy>>
-            Ripley: Those are some very pretty flowers... wait! This might be the perfect ingredient to finish this product I’m selling...
-            // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
-            <<addInventoryItem InventoryManager healingCream>>
-            Ripley: It’s dangerous to go alone! Take this.
-            <<changeExpression Catherine blushing>>
-            Catherine: Ripley... you’re too kind!
-            Ripley: Don’t be silly, it’s my friends’ family recipe, I’m just the marketer. I almost forgot! I also talked to an oracle who saw Alice being taken away from someone in Class 3, so maybe you should go there next.
-    <<endif>>
-<<else>>
-    Catherine: Ripley, what do we do?
-    <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
-        Ripley: Keep searching for clues! I’m talking with a witch who might have some leads...
-    <<else>>
-        -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!
-            Ripley: Don’t worry, I consulted an oracle I know and she saw someone from class 3 taking Alice away! Maybe you can ask the people from there if they know who might have taken her.
-            <<changeExpression Catherine happy>>
-            Catherine: Thank goodness! I’ll go there right away.
-            Ripley: Wait! Those herbs... it really does look like you tried to find her. I’m pretty infamous for these, just like you’re a little infamous for your... uh... passionate love for the Crown Prince! Maybe you’re not so bad after all... here, take this.
-            //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
-            <<addInventoryItem InventoryManager bombDrink>>
-            Ripley: It’s dangerous to go alone! Take this.
-        -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
-            Ripley: Those are some very pretty flowers... wait! Can I really trust you when you didn’t even make that much of an effort to find her?
-            <<changeExpression Catherine worried>>
-            Catherine: I-I swear these flowers have magical properties that I thought could help find Alice through magic! You know how my skills are, so I thought you might have a better idea of what to do with them.
-            Ripley: Actually, I do... Don’t beat yourself up too much about your magic, Catherine. There’s still plenty you can make without it. Like this!
-            //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
-            <<addInventoryItem InventoryManager bombDrink>>
-            Ripley: This might be able to help you if you come across danger like Alice did.
-            Catherine: Ripley... are you sure this is safe to give to a minor?
-            Ripley: If it’s for someone who kidnapped Alice, then it’s fine.  I almost forgot! I also talked to an oracle who saw Alice being taken away from someone in Class 3, so maybe you should go there next.
-    <<endif>>
-<<endif>>
-===
-title: Ripley_10
-tags:
----
-<<if battleWon(1) == true>>
-    Ripley: Catherine! I’m so glad you’re alright! You’re so much stronger than I thought!
-    Catherine: Err, thanks, Ripley. You’re sweet. You did so much more for me than you had to!
-    Ripley: Hehe! Anytime!
-<<else>>
-    Ripley: Oh, Catherine, that looked rough! You doing okay?
-    Catherine: Yeah, I wish that had gone differently... but it’s over now.
-    Ripley: Aw, Catherine. Everything will be OK, I promise.
-<<endif>>
-===
-title: Ripley_15
-tags:
----
-Catherine: Ripley, it’s so nice to see you at school again!
-Ripley: Oh, hey Catherine, how was your summer break?
-Catherine: It was great, I want to thank you again for helping out when Alice got kidnapped last year.
-Ripley: No need to thank me, I just wanted to make sure our saintess was safe.
-Catherine: So, what’s up? How are things going?
-<<changeExpression Ripley blushing>>
-Ripley: Oh... I’m just making a tassel for my Duke at the moment...
-<<if $tassellearned is false>>
-    -> Catherine: A tassel? What for?
-    -> Catherine: Awe, homemade! What’s the occasion?
-    -> Catherine: What is he going to use with a tassel?
+//         <<changeExpression Ripley neutral>>
+//         Ripley: ... Alright, I believe you. But I’m going to investigate on my own too. All I know right now is that she was last seen in the courtyard collecting ingredients for home economics, so try and find clues there.
+//         <<changeExpression Catherine happy>>
+//         Catherine: Of course! I’ll look everywhere there.
+//     <<endif>>
+// <<else>>
+//     <<jump Ripley_9_2>>
+// <<endif>>
+// ===
+// title: Ripley_9_2
+// tags:
+// ---
+// <<if battleWon(0) == true>>
+//     <<changeExpression Catherine worried>>
+//     Catherine: Ripley, what do we do?
+//     <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
+//         Ripley: Keep searching for ingredients! I’m talking with a witch who might have some leads...
+//     <<else>>
+//         -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!
+//             Ripley: Don’t worry, I consulted an oracle I know and she saw someone from Class 3 taking Alice away! Maybe you can ask the people from there if they know who might have taken her.
+//             <<changeExpression Catherine worried>>
+//             Catherine: Uh, I’m not sure about the reliability of that information, but I’ll take anything right now. I’ll go there right away.
+//             <<changeExpression Ripley excited>>
+//             Ripley: Wait! Those herbs... I know a recipe for them that might help you, just in case you get kidnapped too.
+//             // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
+//             <<addInventoryItem InventoryManager healingCream>>
+//             Ripley: Hurry, now go!
+//         -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
+//             <<changeExpression Ripley happy>>
+//             Ripley: Those are some very pretty flowers... wait! This might be the perfect ingredient to finish this product I’m selling...
+//             // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
+//             <<addInventoryItem InventoryManager healingCream>>
+//             Ripley: It’s dangerous to go alone! Take this.
+//             <<changeExpression Catherine blushing>>
+//             Catherine: Ripley... you’re too kind!
+//             Ripley: Don’t be silly, it’s my friends’ family recipe, I’m just the marketer. I almost forgot! I also talked to an oracle who saw Alice being taken away from someone in Class 3, so maybe you should go there next.
+//     <<endif>>
+// <<else>>
+//     Catherine: Ripley, what do we do?
+//     <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
+//         Ripley: Keep searching for clues! I’m talking with a witch who might have some leads...
+//     <<else>>
+//         -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!
+//             Ripley: Don’t worry, I consulted an oracle I know and she saw someone from class 3 taking Alice away! Maybe you can ask the people from there if they know who might have taken her.
+//             <<changeExpression Catherine happy>>
+//             Catherine: Thank goodness! I’ll go there right away.
+//             Ripley: Wait! Those herbs... it really does look like you tried to find her. I’m pretty infamous for these, just like you’re a little infamous for your... uh... passionate love for the Crown Prince! Maybe you’re not so bad after all... here, take this.
+//             //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
+//             <<addInventoryItem InventoryManager bombDrink>>
+//             Ripley: It’s dangerous to go alone! Take this.
+//         -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
+//             Ripley: Those are some very pretty flowers... wait! Can I really trust you when you didn’t even make that much of an effort to find her?
+//             <<changeExpression Catherine worried>>
+//             Catherine: I-I swear these flowers have magical properties that I thought could help find Alice through magic! You know how my skills are, so I thought you might have a better idea of what to do with them.
+//             Ripley: Actually, I do... Don’t beat yourself up too much about your magic, Catherine. There’s still plenty you can make without it. Like this!
+//             //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
+//             <<addInventoryItem InventoryManager bombDrink>>
+//             Ripley: This might be able to help you if you come across danger like Alice did.
+//             Catherine: Ripley... are you sure this is safe to give to a minor?
+//             Ripley: If it’s for someone who kidnapped Alice, then it’s fine.  I almost forgot! I also talked to an oracle who saw Alice being taken away from someone in Class 3, so maybe you should go there next.
+//     <<endif>>
+// <<endif>>
+// ===
+// title: Ripley_10
+// tags:
+// ---
+// <<if battleWon(1) == true>>
+//     Ripley: Catherine! I’m so glad you’re alright! You’re so much stronger than I thought!
+//     Catherine: Err, thanks, Ripley. You’re sweet. You did so much more for me than you had to!
+//     Ripley: Hehe! Anytime!
+// <<else>>
+//     Ripley: Oh, Catherine, that looked rough! You doing okay?
+//     Catherine: Yeah, I wish that had gone differently... but it’s over now.
+//     Ripley: Aw, Catherine. Everything will be OK, I promise.
+// <<endif>>
+// ===
+// title: Ripley_15
+// tags:
+// ---
+// Catherine: Ripley, it’s so nice to see you at school again!
+// Ripley: Oh, hey Catherine, how was your summer break?
+// Catherine: It was great, I want to thank you again for helping out when Alice got kidnapped last year.
+// Ripley: No need to thank me, I just wanted to make sure our saintess was safe.
+// Catherine: So, what’s up? How are things going?
+// <<changeExpression Ripley blushing>>
+// Ripley: Oh... I’m just making a tassel for my Duke at the moment...
+// <<if $tassellearned is false>>
+//     -> Catherine: A tassel? What for?
+//     -> Catherine: Awe, homemade! What’s the occasion?
+//     -> Catherine: What is he going to use with a tassel?
 
-    Ripley: *gasp* Catherine! Do you not know the legend of the Knight Tournament Tassel?
-    Catherine: The wha?
-    Ripley: Long ago in the founding of our academy, the headmaster’s daughter was scheduled to compete in the knight tournament. Her future husband was so worried about her, tossing and turning every night unable to sleep that he made a protective talisman out of sacred and sentimental items to be woven into her tournament uniform’s tassel. She ended up winning the tournament and after that, they lived happily together for the rest of their lives.
-    Catherine: But that couldn’t have just been because of the tassel, right?
-    Ripley: Ah, but here’s where the legend comes in. Every year since then, when a contestant of the knight tournament exchanged tassels with their lover, the couple has never been broken apart. Their love always seems to prevail in the end! Isn’t that romantic?
-    Catherine: You know, that doesn’t sound too bad...
-    Ripley: Right? Some of the children I talked with at the local orphanage seemed to think the same, so they all started making some charms for each other. Here! I have a bit of a... tiger-like relationship with the kids, haha, so I have a spare tiger charm you can decorate your tassel with!
-    // TODO: <<gameNotification you’ve received a tiger charm from ripley de liverpool! >>
-    <<addInventoryItem InventoryManager tigerCharm>>
-    Catherine: This is so adorable... although a little deformed... thank you Ripley! You should bring me on one of your volunteer trips, I would love to thank the children in person as well.
-    Ripley: Of course, and good luck with making the rest of your tassel, although you’ll never be able to defeat the duke and I in the tournament!
-    <<changeExpression Catherine happy>>
-    Catherine: We’ll see about that!
-<<else>>
-    Catherine: What a coincidence, I am as well!
-    Ripley: *gasp* Ooh, you have a crush on someone?
+//     Ripley: *gasp* Catherine! Do you not know the legend of the Knight Tournament Tassel?
+//     Catherine: The wha?
+//     Ripley: Long ago in the founding of our academy, the headmaster’s daughter was scheduled to compete in the knight tournament. Her future husband was so worried about her, tossing and turning every night unable to sleep that he made a protective talisman out of sacred and sentimental items to be woven into her tournament uniform’s tassel. She ended up winning the tournament and after that, they lived happily together for the rest of their lives.
+//     Catherine: But that couldn’t have just been because of the tassel, right?
+//     Ripley: Ah, but here’s where the legend comes in. Every year since then, when a contestant of the knight tournament exchanged tassels with their lover, the couple has never been broken apart. Their love always seems to prevail in the end! Isn’t that romantic?
+//     Catherine: You know, that doesn’t sound too bad...
+//     Ripley: Right? Some of the children I talked with at the local orphanage seemed to think the same, so they all started making some charms for each other. Here! I have a bit of a... tiger-like relationship with the kids, haha, so I have a spare tiger charm you can decorate your tassel with!
+//     // TODO: <<gameNotification you’ve received a tiger charm from ripley de liverpool! >>
+//     <<addInventoryItem InventoryManager tigerCharm>>
+//     Catherine: This is so adorable... although a little deformed... thank you Ripley! You should bring me on one of your volunteer trips, I would love to thank the children in person as well.
+//     Ripley: Of course, and good luck with making the rest of your tassel, although you’ll never be able to defeat the duke and I in the tournament!
+//     <<changeExpression Catherine happy>>
+//     Catherine: We’ll see about that!
+// <<else>>
+//     Catherine: What a coincidence, I am as well!
+//     Ripley: *gasp* Ooh, you have a crush on someone?
 
-    -> Catherine: Do I have a crush on someone? More like who doesn’t have a crush on me amirite?
-    -> Catherine: I do have a bit of a romantic heart...
+//     -> Catherine: Do I have a crush on someone? More like who doesn’t have a crush on me amirite?
+//     -> Catherine: I do have a bit of a romantic heart...
 
-    Catherine: I mean, there’s so many dukes and nobles in this school, it seems like everyone in the academy has an isekai love plot- I mean, uhhh, who wouldn’t fall a little bit in love with someone here, right?
-    Ripley: That’s true, I have noticed a strange amount of couples in this school...
-    Catherine: I’m a bit worried though, with my reputation, I’m not sure whether my tassel will be accepted... especially when they’ll definitely be receiving tassels from many others too.
-    Ripley: Don’t be like that! You’re a wonderful person Catherine, despite all the rumours, I believe that you have your own story and brightness that the others overlooked, so if the person who receives your tassel rejects you, then they don’t know who they’re missing out on!
-    <<changeExpression Catherine crying>>
-    Catherine: Wow, Ripley... thank you so much for that... maybe I should just give you my tassel...
-    Ripley: Haha, I’m sorry but my heart lies with my duke!
-    Catherine: Well then tell him to square up, I’ll fight him in the tournament for your hand.
-    Ripley: I’m not even competing in the tournament, but since I won’t accept your tassel, I’ll help you out on giving it to who you’re really eyeing! Don’t worry, I’m a great matchmaker, after all I set up my best friend with her boyfriend.
-    Catherine: Wow, that sounds pretty promising.
-    Ripley: Of course, don’t underestimate me! I was making some charms with the children at an orphanage I volunteer at and I have a spare to give you. They kind of view me as... a tiger of sorts, so they all made a bunch of tiny little tigers to give me. It’ll spice up your tassel for sure!
-    Catherine: This is so adorable... although a little deformed... thank you, Ripley! You should bring me on one of your volunteer trips, I would love to thank the children in person as well.
-    Ripley: Of course, and good luck with making the rest of your tassel, although you’ll never be able to defeat the duke and I in the tournament!
-    <<changeExpression Catherine happy>>
-    Catherine: We’ll see about that!
-    <<set $tassellearned to true>>
-<<endif>>
-===
-title: Ripley_17
-tags:
----
-<<if visited("Ripley_17")>>
-    Ripley: Oh, did you wanna say something?
-    Catherine: Oops, I forgot what I wanted to say.
-    Ripley: You can ask me later at the ball if you remember!
-<<else>>
-    Ripley: Catherine! We’re finally graduating, can you believe it?
-    Catherine: I know, it’s been three years, although it only feels like it’s been a few hours of playtime.
-    Ripley: What?
-    Catherine: Uh, nothing. Anyway, we did it! What are your plans after graduation? Living out your happily ever after with Duke Zeronis?
-    Ripley: Haha, yes, but I’m also excited to have more free time to hang out with my friends, visit the kids at the orphanage, and continue building my business empire! I’m handing out some free samples to all the students before we all part ways to increase my brand awareness. Here! Take this!
-    // TODO: Item retrieved: Medicine Sample 
-    <<addInventoryItem InventoryManager medicineSample>>
-    Catherine: Wow thanks, that’s amazing Ripley.
-    <<changeExpression Ripley blushing>>
-    Ripley: It’s nothing really. And you, Catherine? What’s your plans for the future?
-    Catherine: I never really thought about anything lasting longer in this story... I always was focused on getting past the villainess plotline and...
-    <<changeExpression Catherine blushing>>
-    Catherine: Well, I think I can imagine a future with someone, but even past that I think I just want to explore my options once we’re out of school. It doesn’t really feel like we learned anything since it’s almost as if we were never in class, but I guess the first thing for me to do is to just have fun at the ball!
-    Ripley: I can’t wait, we’ve been looking forward to it since entering the academy. Are you ready to finish off our final year with a bang?
-    Catherine: Of course I am!
-<<endif>>
+//     Catherine: I mean, there’s so many dukes and nobles in this school, it seems like everyone in the academy has an isekai love plot- I mean, uhhh, who wouldn’t fall a little bit in love with someone here, right?
+//     Ripley: That’s true, I have noticed a strange amount of couples in this school...
+//     Catherine: I’m a bit worried though, with my reputation, I’m not sure whether my tassel will be accepted... especially when they’ll definitely be receiving tassels from many others too.
+//     Ripley: Don’t be like that! You’re a wonderful person Catherine, despite all the rumours, I believe that you have your own story and brightness that the others overlooked, so if the person who receives your tassel rejects you, then they don’t know who they’re missing out on!
+//     <<changeExpression Catherine crying>>
+//     Catherine: Wow, Ripley... thank you so much for that... maybe I should just give you my tassel...
+//     Ripley: Haha, I’m sorry but my heart lies with my duke!
+//     Catherine: Well then tell him to square up, I’ll fight him in the tournament for your hand.
+//     Ripley: I’m not even competing in the tournament, but since I won’t accept your tassel, I’ll help you out on giving it to who you’re really eyeing! Don’t worry, I’m a great matchmaker, after all I set up my best friend with her boyfriend.
+//     Catherine: Wow, that sounds pretty promising.
+//     Ripley: Of course, don’t underestimate me! I was making some charms with the children at an orphanage I volunteer at and I have a spare to give you. They kind of view me as... a tiger of sorts, so they all made a bunch of tiny little tigers to give me. It’ll spice up your tassel for sure!
+//     Catherine: This is so adorable... although a little deformed... thank you, Ripley! You should bring me on one of your volunteer trips, I would love to thank the children in person as well.
+//     Ripley: Of course, and good luck with making the rest of your tassel, although you’ll never be able to defeat the duke and I in the tournament!
+//     <<changeExpression Catherine happy>>
+//     Catherine: We’ll see about that!
+//     <<newQuest GameStateManager 3>>
+//     <<set $tassellearned to true>>
+// <<endif>>
+// ===
+// title: Ripley_17
+// tags:
+// ---
+// <<if visited("Ripley_17")>>
+//     Ripley: Oh, did you wanna say something?
+//     Catherine: Oops, I forgot what I wanted to say.
+//     Ripley: You can ask me later at the ball if you remember!
+// <<else>>
+//     Ripley: Catherine! We’re finally graduating, can you believe it?
+//     Catherine: I know, it’s been three years, although it only feels like it’s been a few hours of playtime.
+//     Ripley: What?
+//     Catherine: Uh, nothing. Anyway, we did it! What are your plans after graduation? Living out your happily ever after with Duke Zeronis?
+//     Ripley: Haha, yes, but I’m also excited to have more free time to hang out with my friends, visit the kids at the orphanage, and continue building my business empire! I’m handing out some free samples to all the students before we all part ways to increase my brand awareness. Here! Take this!
+//     // TODO: Item retrieved: Medicine Sample 
+//     <<addInventoryItem InventoryManager medicineSample>>
+//     Catherine: Wow thanks, that’s amazing Ripley.
+//     <<changeExpression Ripley blushing>>
+//     Ripley: It’s nothing really. And you, Catherine? What’s your plans for the future?
+//     Catherine: I never really thought about anything lasting longer in this story... I always was focused on getting past the villainess plotline and...
+//     <<changeExpression Catherine blushing>>
+//     Catherine: Well, I think I can imagine a future with someone, but even past that I think I just want to explore my options once we’re out of school. It doesn’t really feel like we learned anything since it’s almost as if we were never in class, but I guess the first thing for me to do is to just have fun at the ball!
+//     Ripley: I can’t wait, we’ve been looking forward to it since entering the academy. Are you ready to finish off our final year with a bang?
+//     Catherine: Of course I am!
+// <<endif>>
 ===

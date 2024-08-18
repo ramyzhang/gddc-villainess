@@ -14,7 +14,7 @@ tags:
         Catherine: SIKE!
         MOB: <i>GASP!</i>
         MOB 1: Everyone, look! Catherine stole Alice's script!
-        // TODO: Notification: A crowd has gathered.
+        Narrator: A crowd has gathered.
         MOB 2: Alice, get her!
         MOB 3: How dare you!
         MOB 1: Catherine's such a villainess!
@@ -140,6 +140,7 @@ tags:
     Love Interest: Come on, let’s get you two to the nurse’s office.
 <<else>>
     <<jump Alice_7_2>>
+<<endif>>
 ===
 title: Alice_7_2
 tags:
@@ -207,10 +208,12 @@ title: Alice_11
 tags:
 ---
 Alice: Finally, after all our hard work preparing, we can finally enjoy the festival together!
+<<newQuest GameStateManager 2>>
 Everett: The students did an excellent job. I’ll have to report this to the chairman—he’ll be delighted by our work!
-Catherine: Why is there always a Japanese festival in a historical-fantasy European style setting?
+Catherine: Why is there always a Japanese cultural festival in a historical-fantasy European style setting?
 Oliver: Your Highness, I think it would be prudent for us to stay low given recent events, but you and Alice are...
 // triggerCG alice and crown prince, sparkly sparkly>>
+// note: maybe this will be a VFX instead
 Alice: We’re what?
 Oliver: A little... bright.
 
@@ -310,7 +313,9 @@ Catherine: <i>Look at how nervous he is... he’s definitely going to kneel for 
     // TODO: <<triggerCG>> splash art of li winning tournament. end with a kiss between alice and li
 <<endif>>
 <<screenEffect fadeBlack>>
-???: <i>Sho...d h... b.....een m...</i>
+???: <i>Sho...d h... b.....een m...</i>>
+<<completeQuest GameStateManager 3>>
+<<updateState GameStateManager 17>>
 ===
 title: Alice_18
 tags:
@@ -333,4 +338,5 @@ Alice: Catherine, you—
 
 Alice: Really?! Let’s go, quickly!
 Catherine: Oh, Alice. I’m coming, I’m coming!
+<<updateState GameStateManager 19>>
 ===
