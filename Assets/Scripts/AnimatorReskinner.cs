@@ -9,13 +9,14 @@ public class AnimatorReskinner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        npcSprites = Resources.LoadAll<Sprite>($"Sprites/Characters/{character}");
-        constantSprites = Resources.LoadAll<Sprite>("Sprites/Characters/FemaleConstants");
+        ReSkin(character);
     }
-
-    // Update is called once per frame
-    void LateUpdate()
+    
+    public void ReSkin(Character newCharacter)
     {
+        npcSprites = Resources.LoadAll<Sprite>($"Sprites/Characters/{newCharacter}");
+        constantSprites = Resources.LoadAll<Sprite>("Sprites/Characters/FemaleConstants");
+
         foreach (var renderer in GetComponentsInChildren<SpriteRenderer>())
         {
             var newSprite = Array.Find(npcSprites, sprite => sprite.name == renderer.sprite.name);
@@ -29,6 +30,9 @@ public class AnimatorReskinner : MonoBehaviour
             if (newSprite != null)
             {
                 renderer.sprite = newSprite;
+            } else {
+                renderer.sprite = null;
+                renderer.sortingOrder = -1;
             }
         }
     }
