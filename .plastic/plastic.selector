@@ -1,4 +1,0 @@
-repository "gddc-villainess@gddc_games@cloud"
-  path "/"
-    br "/main"
-    co "/main"
