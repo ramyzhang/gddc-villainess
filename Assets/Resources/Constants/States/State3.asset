@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateIndex: 3
   initLocation: {x: -50, y: -150, z: 0}
-  availableNPCs: []
+  availableNPCs:
+  - NPCCharacter: Headmaster
+    NPCLocation: {x: -55, y: -150, z: 0}
+    isFacingRight: 1
   collectibles: []
   stickers: []
   gameEventTriggers: []
+  playerIsFacingRight: 0
   playerCharacter: Catherine
+  battlesWon: 
