@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: State4
   m_EditorClassIdentifier: 
   stateIndex: 4
+  doNotUpdateLocation: 1
   initLocation: {x: 20, y: -90, z: 0}
   availableNPCs:
   - NPCCharacter: Calliope
@@ -21,10 +22,14 @@ MonoBehaviour:
   - NPCCharacter: Headmaster
     NPCLocation: {x: 15, y: -90, z: 0}
     isFacingRight: 1
+  - NPCCharacter: Katarina
+    NPCLocation: {x: -40, y: -150, z: 0}
+    isFacingRight: 0
   collectibles: []
   stickers: []
   gameEventTriggers:
   - Calliope
+  - Katarina
   playerIsFacingRight: 0
   playerCharacter: Catherine
   battlesWon: 

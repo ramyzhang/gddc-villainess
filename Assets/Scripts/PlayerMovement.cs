@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private float direction;
-    private bool isFacingRight;
+    public bool isFacingRight;
     private Animator anim;
     public CharacterManager cm;
 
@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         cm = GetComponent<CharacterManager>();
+    }
+
+    void Start()
+    {
         isFacingRight = cm.facingRight;
     }
 
@@ -27,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
         //Relinquish player control if dialogue is running
         if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true)
         {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            // anim.SetBool("isWalking", false);
             return;
         }
 
@@ -36,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Changing from idle animation to walk animation
         if (anim != null) {
-            if (direction == 0) {
+            if (rb.velocity.x == 0) {
                 anim.SetBool("isWalking", false);
             } else {
                 anim.SetBool("isWalking", true);

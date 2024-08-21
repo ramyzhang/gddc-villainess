@@ -130,7 +130,9 @@ Catherine: What should I do first...
 
 -> Catherine: I know! I'll stay in the auditorium to ask around about her!
 -> Catherine: Maybe I should explore the hallway first, then come back later for more clues...
+    <<teleportCharacter Catherine Hallway>>
 
+<<changeExpression Catherine neutral>>
 <<updateState GameStateManager 4>>
 ===
 title: Cutscene_8

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -37,7 +38,15 @@ public class GameStateManager : MonoBehaviour
 
     // Game state management variables
     public int currentStateIndex = 0;
+    [Header("CONSTANTS BELOW - PLEASE DO NOT MODIFY")]
     public GameObject NPCPrefab;
+
+    [System.Serializable]
+    public struct Location {
+        public string locationName;
+        public Vector3 locationPosition;
+    }
+    public Location[] locations;
     private GameState currentState;
     private MainCamera gameGamera;
     private GameObject currentPlayer;
@@ -90,7 +99,9 @@ public class GameStateManager : MonoBehaviour
         // TODO: deal with other player related components as well
         currentPlayer = GameObject.Find(newState.playerCharacter);
         currentPlayer.tag = "Player";
-        currentPlayer.transform.position = newState.initLocation;
+        if (!newState.doNotUpdateLocation) {
+            currentPlayer.transform.position = newState.initLocation;
+        }
         currentPlayer.AddComponent<PlayerMovement>();
         currentPlayer.GetComponent<CharacterManager>().flipCharacter(newState.playerIsFacingRight);
 
@@ -120,7 +131,6 @@ public class GameStateManager : MonoBehaviour
         // TODO: do something to handle if it's just a game state trigger, not a dialogue one
         for (int k = 0; k < newState.gameEventTriggers.Length; k++) {
             GameTrigger gt = GameObject.Find(newState.gameEventTriggers[k]).GetComponent<GameTrigger>();
-            Debug.Log("game trigger: " + gt + $" {newState.gameEventTriggers[k]}_{newStateIndex}");
             gt.dialogueToStart = $"{newState.gameEventTriggers[k]}_{newStateIndex}";
         }
 

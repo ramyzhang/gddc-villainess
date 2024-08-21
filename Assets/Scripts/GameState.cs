@@ -42,6 +42,7 @@ public class GameState : ScriptableObject
     }
 
     public int stateIndex;
+    public bool doNotUpdateLocation;
     public Vector3 initLocation;
     public NPCState[] availableNPCs;
     public CollectibleState[] collectibles;
@@ -52,8 +53,9 @@ public class GameState : ScriptableObject
     public bool[] battlesWon;
     // TODO: Better to find some way to check this programmatically inside GameStateManager instead of having this variable
 
-    public GameState(int _stateIndex, Vector3 _initLocation, NPCState[] _availableNPCs, CollectibleState[] _collectibles, StickerState[] _stickers, string[] _gameEventTriggers, bool _playerIsFacingRight, string _playerCharacter, bool _hasCutscene, bool[] _battlesWon) {
+    public GameState(int _stateIndex, bool _doNotUpdateLocation, Vector3 _initLocation, NPCState[] _availableNPCs, CollectibleState[] _collectibles, StickerState[] _stickers, string[] _gameEventTriggers, bool _playerIsFacingRight, string _playerCharacter, bool _hasCutscene, bool[] _battlesWon) {
         stateIndex = _stateIndex;
+        doNotUpdateLocation = _doNotUpdateLocation;
         initLocation = _initLocation;   
         availableNPCs = _availableNPCs;
         collectibles = _collectibles;

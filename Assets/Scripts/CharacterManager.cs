@@ -53,10 +53,6 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    void Update() {
-
-    }
-
     [YarnCommand("changeExpression")]
     public void changeExpression(string expression) {
         Debug.Log($"Making {characterName} {expression}!");
@@ -134,5 +130,11 @@ public class CharacterManager : MonoBehaviour
     public void teleportCharacter(GameObject location) {
         Debug.Log($"Teleporting {characterName} to {location}");
         transform.position = location.transform.position;
+    }
+
+    public void StopWalking() {
+        if (anim != null) {
+            anim.SetBool("isWalking", false);
+        }
     }
 }

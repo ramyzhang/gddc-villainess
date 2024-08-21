@@ -132,7 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3e31dca924149ee8518c6e904d80cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerType: 0
+  triggerMethod: 1
   dialogueToStart: 
+  teleportTarget: {fileID: 0}
 --- !u!114 &3685471950970054096
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,8 +8,8 @@ tags:
 Katarina: Hey! It's a great day to avoid raising any death flags, isn't it?
 Catherine: Er... Come again?
 <<changeExpression Catherine worried>>
-Catherine: <i>There's not way... It's only my 1st year! Has someone seen through me already?</i>
-Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused witha ll the arguments going on in my head.
+Catherine: <i>There's no way... It's only my 1st year! Has someone seen through me already?</i>
+Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused with all the arguments going on in my head.
 Katarina: Anyway, what can I do for you? I think it's the first we've...
 <<if inventoryIncludes("katarinaSnake")>>
     <<removeInventoryItem InventoryManager katarinaSnake>>
@@ -29,23 +29,28 @@ Katarina: Anyway, what can I do for you? I think it's the first we've...
         Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.
     -> Catherine: Uh... sure. Thanks? I'm not sure what I'd use it for, but...
     -> Catherine: Argh, I'm not a fan of golems. They remind me of dirt beetles. But... I'll take it.
-    
+    <<changeExpression Catherine happy>>
     Catherine: Well, thank you regardless, Katarina. You're very kind.
     Katarina: Aw, don't worry about it!
+    <<changeExpression Catherine neutral>>
     <<if visited("Calliope_4")>>
         <<updateState GameStateManager 5>>
     <<endif>>
 <<else>>
     Katarina: Ah! You must be feeling lonely since it's your first year as well, right? Well, fear not! I'll be your friend!
+    <<changeExpression Catherine exasperated>>
     Catherine: Um, but we just met two seconds ago...?
     Katarina: Great friendships always start somewhere! Don't sweat it!
     Katarina: Is there anything in particular you've been worried about? I, Katarina Claes, can be sure to be of help!
+    <<changeExpression Catherine worried>>
     Catherine: Um... well, there <i>is</i> one thing. Have you met Alice Langway yet? The one rumoured to be the Saintess?
     Katarina: Why, yes. Just keep going to the end of the hallway, I think I saw her around that corner a few minutes ago.
     Katarina: But... why?
+    <<changeExpression Catherine happy>>
     Catherine: Oh! Nothing, she just seems nice. I'm looking to make some... friends.
     Katarina: Great! Let me know if you need any friendship tips - I'm your gal!
     Catherina: Ha ha ha, thanks, Katarina. See you!
+    <<changeExpression Catherine neutral>>
     <<if visited("Calliope_4")>>
         <<updateState GameStateManager 5>>
     <<endif>>

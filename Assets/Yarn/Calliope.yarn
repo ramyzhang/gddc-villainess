@@ -7,8 +7,8 @@ tags:
 Calliope: Hi, I'm the youngest student to ever be a first year at the Academy!
 // <<changeExpression Calliope excited>>
 Calliope: Why yes, it is I, your local genius reincarnated baby, Calliope! Some even call me... Lady Baby.
-Calliope: Ahem. Do you need anything?
 <<changeExpression Catherine surprised>>
+Calliope: Ahem. Do you need anything?
 Catherine: That is... that is quite the introduction.
 <<if inventoryIncludes("calliopePamphlets")>>
     <<removeInventoryItem InventoryManager calliopePamphlets>>
@@ -34,8 +34,10 @@ Catherine: That is... that is quite the introduction.
     <<endif>>
 <<else>>
     Catherine: I heard that the Saintess would be attending the academy. Do you happen to know where she might be?
+    <<changeExpression Catherine happy>>
     Calliope: The Saintess? I heard that she was in the hallway!
     Catherine: Thanks! See you later, Calliope!
+    <<changeExpression Catherine neutral>>
     <<if visited("Katarina_4")>>
         <<updateState GameStateManager 5>>
     <<endif>>
