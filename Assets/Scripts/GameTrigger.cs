@@ -13,12 +13,6 @@ public class GameTrigger : MonoBehaviour
         dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     /**
     TODO: Make option to choose between trigger methods (collision, onclick, etc.) so it's a sexier gameplay experience
     **/

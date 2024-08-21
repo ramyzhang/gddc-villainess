@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: State3
   m_EditorClassIdentifier: 
   stateIndex: 3
-  initLocation: {x: -50, y: -150, z: 0}
+  initLocation: {x: 20, y: -90, z: 0}
   availableNPCs:
   - NPCCharacter: Headmaster
-    NPCLocation: {x: -55, y: -150, z: 0}
+    NPCLocation: {x: 15, y: -90, z: 0}
     isFacingRight: 1
   collectibles: []
   stickers: []

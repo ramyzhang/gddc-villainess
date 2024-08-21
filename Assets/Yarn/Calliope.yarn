@@ -5,8 +5,8 @@ tags:
     <<jump Calliope_4_2>>
 <<endif>>
 Calliope: Hi, I'm the youngest student to ever be a first year at the Academy!
-<<changeExpression Calliope excited>>
-Calliope: Why yes, it is I, your lcal genius reincarnated baby, Calliope! Some even call me... Lady Baby.
+// <<changeExpression Calliope excited>>
+Calliope: Why yes, it is I, your local genius reincarnated baby, Calliope! Some even call me... Lady Baby.
 Calliope: Ahem. Do you need anything?
 <<changeExpression Catherine surprised>>
 Catherine: That is... that is quite the introduction.
@@ -15,7 +15,7 @@ Catherine: That is... that is quite the introduction.
     <<changeExpression Catherine neutral>>
     Catherine: I saw these pamphlets earlier... are these yours?
     Calliope: Oh my goodness, thank you so much, I was looking for these!
-    Catherine: It's no problem at all, just... you know... cleaning up the area or soemthing.
+    Catherine: It's no problem at all, just... you know... cleaning up the area or something.
     Calliope: Let me thank you. Here, from one first year to another, doing an activity or joining a club might help you make some friends!
     // TODO: Game notification for new item
     <<addInventoryItem InventoryManager graveyardLullabySheet>>

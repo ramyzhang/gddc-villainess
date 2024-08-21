@@ -37,11 +37,13 @@ public class GameStateManager : MonoBehaviour
 
     // Game state management variables
     public int currentStateIndex = 0;
+    public GameObject NPCPrefab;
     private GameState currentState;
     private MainCamera gameGamera;
     private GameObject currentPlayer;
     private DialogueRunner dialogueRunner;
     private DialogueViewBase dialogueViewBase;
+    private List<GameObject> toDestroy = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -97,10 +99,14 @@ public class GameStateManager : MonoBehaviour
         for (int i = 0; i < newState.availableNPCs.Length; i++) {
             GameObject currentNPC = GameObject.Find(newState.availableNPCs[i].NPCCharacter);
             if (currentNPC == null) {
-                Debug.Log($"Failed to find NPC {newState.availableNPCs[i].NPCCharacter}. Continuing through the rest of the NPCs for this state...");
-                continue;
+                Debug.Log($"Failed to find NPC {newState.availableNPCs[i].NPCCharacter}. Instantiating...");
+                currentNPC = Instantiate(NPCPrefab, newState.availableNPCs[i].NPCLocation, Quaternion.identity);
+                currentNPC.name = newState.availableNPCs[i].NPCCharacter;
+                currentNPC.GetComponent<AnimatorReskinner>().ReSkin((Character)System.Enum.Parse(typeof(Character), newState.availableNPCs[i].NPCCharacter));
+                toDestroy.Add(currentNPC);
+            } else {
+                currentNPC.transform.position = newState.availableNPCs[i].NPCLocation;
             }
-            currentNPC.transform.position = newState.availableNPCs[i].NPCLocation;
             currentNPC.GetComponent<CharacterManager>().flipCharacter(newState.availableNPCs[i].isFacingRight);
         }
 
@@ -114,6 +120,7 @@ public class GameStateManager : MonoBehaviour
         // TODO: do something to handle if it's just a game state trigger, not a dialogue one
         for (int k = 0; k < newState.gameEventTriggers.Length; k++) {
             GameTrigger gt = GameObject.Find(newState.gameEventTriggers[k]).GetComponent<GameTrigger>();
+            Debug.Log("game trigger: " + gt + $" {newState.gameEventTriggers[k]}_{newStateIndex}");
             gt.dialogueToStart = $"{newState.gameEventTriggers[k]}_{newStateIndex}";
         }
 
@@ -157,7 +164,13 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        // 2. Move all NPCs in this gamestate back to the loading dock
+        // 2. Move all NPCs in this gamestate back to the loading dock (or destroy them)
+        foreach (GameObject toDestroyNPC in toDestroy) {
+            Destroy(toDestroyNPC);
+        }
+
+        toDestroy.Clear();
+
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("Character");
         foreach (GameObject npc in npcs) {
             npc.transform.position = new Vector3(-325f, 80f, 0f);

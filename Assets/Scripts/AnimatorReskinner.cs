@@ -14,6 +14,7 @@ public class AnimatorReskinner : MonoBehaviour
     
     public void ReSkin(Character newCharacter)
     {
+        character = newCharacter;
         npcSprites = Resources.LoadAll<Sprite>($"Sprites/Characters/{newCharacter}");
         constantSprites = Resources.LoadAll<Sprite>("Sprites/Characters/FemaleConstants");
 
