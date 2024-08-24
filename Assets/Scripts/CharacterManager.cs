@@ -122,8 +122,13 @@ public class CharacterManager : MonoBehaviour
     }
 
     [YarnCommand("animateCharacter")]
-    public void animateCharacter(string animName) {
-        anim.Play(animName);
+    public void animateCharacter(string animName, int layer = 0) {
+        anim.Play(animName, layer);
+    }
+
+    public void changeAnimationSpeed(string speedMultiplierName, float speedMultiplier)
+    {
+        anim.SetFloat(speedMultiplierName, speedMultiplier);
     }
 
     [YarnCommand("teleportCharacter")]

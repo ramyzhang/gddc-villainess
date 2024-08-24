@@ -4572,7 +4572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigameLength: 3
-  buttonMashes: 300
+  winMashesThreshold: 20
   timer: {fileID: 566815418}
   score: {fileID: 1112221248}
   loveInterest: {fileID: 804318069}

@@ -7,7 +7,8 @@ public class ButtonMasher : MonoBehaviour
 {
     [Header("Minigame Variables")]
     [SerializeField] private float minigameLength;
-    [SerializeField] private int buttonMashes;
+    [SerializeField] private int winMashesThreshold;
+    private int buttonMashes;
     private float timeRemaining;
     private bool minigameRunning;
 
@@ -42,12 +43,14 @@ public class ButtonMasher : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
             UpdateDisplays();
+            loveInterestCM.changeAnimationSpeed("armSpinSpeed", buttonMashes*3/winMashesThreshold);
         }
         else if (minigameRunning && timeRemaining <= 0) // Game finished
         {
             minigameRunning = false;
             timeRemaining = 0;
             UpdateDisplays();
+            ResetLIs();
         }
         else // Game hasn't started yet
         {
@@ -104,7 +107,7 @@ public class ButtonMasher : MonoBehaviour
         }
         else if (timeRemaining <= 0)
         {
-            if (buttonMashes > 200)
+            if (buttonMashes > winMashesThreshold)
             {
                 score.text = "Mashes: " + buttonMashes.ToString() + "\nYou Win!";
             }
@@ -118,8 +121,18 @@ public class ButtonMasher : MonoBehaviour
 
     private void AnimateLIs()
     {
-        secondLoveInterestCM.animateCharacter("pr_wrestle");
-        //secondLoveInterest.transform.Find("body").Find("leftarm").Rotate()
+        loveInterestCM.animateCharacter("wrestle");
+        loveInterestCM.animateCharacter("arm_spin", 1);
+        secondLoveInterestCM.animateCharacter("wrestle");
+        secondLoveInterestCM.animateCharacter("arm_spin", 1);
+    }
+
+    private void ResetLIs()
+    {
+        loveInterestCM.animateCharacter("idle");
+        loveInterestCM.animateCharacter("none", 1);
+        secondLoveInterestCM.animateCharacter("idle");
+        secondLoveInterestCM.animateCharacter("none", 1);
     }
 
     private void ChangeButtonFunc(string buttonText, UnityEngine.Events.UnityAction call, bool delayChange)
