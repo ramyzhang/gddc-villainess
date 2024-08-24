@@ -4571,8 +4571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17d81771b567d04b9ca00f08b46fbb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigameLength: 3
-  winMashesThreshold: 20
+  minigameLength: 30
+  winMashesThreshold: 300
   timer: {fileID: 566815418}
   score: {fileID: 1112221248}
   loveInterest: {fileID: 804318069}
