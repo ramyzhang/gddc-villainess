@@ -18,6 +18,7 @@ public class GameTrigger : MonoBehaviour
     private DialogueRunner dialogueRunner;
     public TriggerType triggerType;
     public TriggerMethod triggerMethod;
+    [HideInInspector]
     public string dialogueToStart;
     public GameObject teleportTarget;
 
