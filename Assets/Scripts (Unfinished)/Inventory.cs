@@ -19,11 +19,12 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public static List<Item> items = new();
+    private const int maxItems = 16;
 
     [YarnCommand("addItem")]
     public void AddItem(string itemName) //will need to use this function for picking up item
     {
-        if (items.Count < 16)
+        if (items.Count < maxItems)
         {   
             Item item = Resources.Load<Item>("Items/" + itemName);
             items.Add(item);

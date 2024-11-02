@@ -294,8 +294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcd9b196d06544ee850c0541ba8f230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: 2df7e5ca3d70b4eadbe36c52feb45e88, type: 2}
 --- !u!1 &22874079
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +597,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 34209168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1073242127}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: toggleInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &34209168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4539,7 +4549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcd9b196d06544ee850c0541ba8f230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
 --- !u!1 &641096382
 GameObject:
   m_ObjectHideFlags: 0

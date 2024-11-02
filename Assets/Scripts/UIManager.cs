@@ -18,7 +18,9 @@ public class UIManager : MonoBehaviour
     [Space(10)]
     [Header("Inventory")]
     private GameObject inventoryUI;
+    [SerializeField]
     private GameObject inventoryButton;
+    [SerializeField]
     private GameObject inventoryPanel;
 
     // Start is called before the first frame update
@@ -36,6 +38,20 @@ public class UIManager : MonoBehaviour
 
         // Load in the Inventory UI game objects
         inventoryUI = transform.Find("Inventory").gameObject;
+        inventoryButton = inventoryUI.transform.Find("InventoryButton").gameObject;
+        inventoryPanel = inventoryUI.transform.Find("InventoryScreen").gameObject;
+
+        inventoryPanel.SetActive(false);
+    }
+
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.I)) {
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        }
+    }
+
+    public void toggleInventory() {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
 
     public void newQuestNotification(string _questTitle, string _questDescription) {
