@@ -18,9 +18,9 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
-    public List<Item> items = new List<Item>();
+    public static List<Item> items = new();
 
-    [YarnCommand("AddItem")]
+    [YarnCommand("addItem")]
     public void AddItem(string itemName) //will need to use this function for picking up item
     {
         if (items.Count < 16)
@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    [YarnCommand("RemoveItem")]
+    [YarnCommand("removeItem")]
     public void RemoveItem(string itemName)
     {
         foreach (Item item in items)
@@ -43,7 +43,8 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool CheckForItem(string itemName)
+    [YarnFunction("checkForItem")]
+    public static bool CheckForItem(string itemName)
     {
         foreach (Item item in items)
         {

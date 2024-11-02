@@ -20,9 +20,9 @@ public class InventoryUI : MonoBehaviour
         Debug.Log("Updating UI");
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < inventory.items.Count)
+            if (i < Inventory.items.Count)
             {
-                slots[i].addItemToUI(inventory.items[i]);
+                slots[i].addItemToUI(Inventory.items[i]);
             } else
             {
                 slots[i].clearSlot();

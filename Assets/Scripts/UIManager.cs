@@ -5,6 +5,7 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Quest Notification")]
     private GameObject questNotification;
 
     [SerializeField]
@@ -14,9 +15,16 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI questDescription;
 
+    [Space(10)]
+    [Header("Inventory")]
+    private GameObject inventoryUI;
+    private GameObject inventoryButton;
+    private GameObject inventoryPanel;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Load in the Quest Notification UI game objects
         questNotification = transform.Find("QuestNotification").gameObject;
         newQuestTitle = questNotification.transform.Find("NewQuest").GetComponent<TextMeshProUGUI>();
         completedQuestTitle = questNotification.transform.Find("CompletedQuest").GetComponent<TextMeshProUGUI>();
@@ -25,6 +33,9 @@ public class UIManager : MonoBehaviour
         questNotification.SetActive(false);
         newQuestTitle.gameObject.SetActive(false);
         completedQuestTitle.gameObject.SetActive(false);
+
+        // Load in the Inventory UI game objects
+        inventoryUI = transform.Find("Inventory").gameObject;
     }
 
     public void newQuestNotification(string _questTitle, string _questDescription) {
