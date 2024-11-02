@@ -1,6 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Inventory : MonoBehaviour
 {
@@ -20,15 +20,39 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
-    public void Add(Item item) //will need to use this function for picking up item
+    [YarnCommand("AddItem")]
+    public void AddItem(string itemName) //will need to use this function for picking up item
     {
-        if (!item.isDefaultItem)
-        {  //checking if item is in inventory by default
+        if (items.Count < 16)
+        {   
+            Item item = Resources.Load<Item>("Items/" + itemName);
             items.Add(item);
         }
     }
-    public void Remove(Item item)
+
+    [YarnCommand("RemoveItem")]
+    public void RemoveItem(string itemName)
     {
-        items.Remove(item);
+        foreach (Item item in items)
+        {
+            if (item.name == itemName)
+            {
+                items.Remove(item);
+                break;
+            }
+        }
+    }
+
+    public bool CheckForItem(string itemName)
+    {
+        foreach (Item item in items)
+        {
+            if (item.name == itemName)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

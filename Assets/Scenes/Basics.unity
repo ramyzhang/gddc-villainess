@@ -252,6 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2683472}
+  - component: {fileID: 2683473}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -281,6 +282,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2683473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcd9b196d06544ee850c0541ba8f230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: 2df7e5ca3d70b4eadbe36c52feb45e88, type: 2}
 --- !u!1 &22874079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4158,8 +4173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45.6031, y: 0.00048828}
-  m_SizeDelta: {x: 149.3298, y: 90}
+  m_AnchoredPosition: {x: 49.653637, y: 0.00048828}
+  m_SizeDelta: {x: 141.2287, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612245454
 MonoBehaviour:
@@ -4467,7 +4482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566b0613852cd475eb94610b005b53f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateIndex: 1
+  currentStateIndex: 0
   NPCPrefab: {fileID: 3685471950970054091, guid: 4fd7b3d61365b46c4be1d23609f814a6, type: 3}
   locations:
   - locationName: Crosswalk
@@ -11114,7 +11129,7 @@ MonoBehaviour:
   m_StartAxis: 0
   m_CellSize: {x: 90, y: 90}
   m_Spacing: {x: 10, y: 10}
-  m_Constraint: 2
+  m_Constraint: 0
   m_ConstraintCount: 4
 --- !u!114 &1605613869
 MonoBehaviour:

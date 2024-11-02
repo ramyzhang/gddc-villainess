@@ -7,20 +7,25 @@ public class InventorySlot : MonoBehaviour
 {
     public Image icon;
 
-    Item item; //keeps track of item in slot 
+    private Item item; // keeps track of item in slot 
 
-    public void addItem(Item newitem)
+    void Start() {
+        icon = gameObject.GetComponentInChildren<Image>();
+    }
+
+    public void addItemToUI(Item newitem)
     {
         item = newitem;
 
         icon.sprite = item.icon;
         icon.enabled = true;
     }
+
     public void clearSlot()
     {
+        // TODO: animation here
         item = null;
         icon.sprite = null;
         icon.enabled = false;
     }
-
 }
