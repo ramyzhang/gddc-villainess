@@ -7,20 +7,16 @@ public class GameTrigger : MonoBehaviour
 {
     public enum TriggerType {
         Dialogue,
-        Door
-    }
-
-    public enum TriggerMethod {
-        Collision,
-        OnClick
+        Door,
+        Item
     }
 
     private DialogueRunner dialogueRunner;
     public TriggerType triggerType;
-    public TriggerMethod triggerMethod;
     [HideInInspector]
     public string dialogueToStart;
     public GameObject teleportTarget;
+    private bool inRange = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,30 +28,25 @@ public class GameTrigger : MonoBehaviour
     TODO: Make option to choose between trigger methods (collision, onclick, etc.) so it's a sexier gameplay experience
     **/
     void OnMouseDown() {
-        if (triggerMethod == TriggerMethod.OnClick) {
-            switch (triggerType) {
-                case TriggerType.Dialogue:
-                    StartDialogue();
-                    break;
-                case TriggerType.Door:
-                    GameObject player = GameObject.FindGameObjectWithTag("Player");
-                    DoorTeleport(player, teleportTarget);
-                    break;
-            }
+        if (!inRange) return;
+
+        switch (triggerType) {
+            case TriggerType.Dialogue:
+                StartDialogue();
+                break;
+            case TriggerType.Door:
+                GameObject player = GameObject.FindGameObjectWithTag("Player");
+                DoorTeleport(player, teleportTarget);
+                break;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (triggerMethod == TriggerMethod.Collision) {
-            switch (triggerType) {
-                case TriggerType.Dialogue:
-                    StartDialogue();
-                    break;
-                case TriggerType.Door:
-                    DoorTeleport(collision.gameObject, teleportTarget);
-                    break;
-            }
-        }
+        inRange = true;
+    }
+
+    void OnTriggerExit2D(Collider2D collision) {
+        inRange = false;
     }
 
     private void StartDialogue() {
