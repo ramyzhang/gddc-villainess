@@ -55,7 +55,7 @@ Katarina: Oh, I really should repay you somehow... Ah! I know!
 Katarina: Check this out! I developed it just recently.
 Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
 
--> Catherine: Oh thanks! This is <i>exactly</i> what I needed! BUt how do I carry something like this around the school is the question...
+-> Catherine: Oh thanks! This is <i>exactly</i> what I needed! But how do I carry something like this around the school...?
     <<changeExpression Katarina neutral>>
     Katarina: Just tell them you're a part of the gardening club! I'm sure the professors won't mind
     Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.

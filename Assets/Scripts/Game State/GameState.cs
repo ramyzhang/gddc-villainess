@@ -21,7 +21,7 @@ public class GameState : ScriptableObject
     **/
     [System.Serializable]
     public struct CollectibleState {
-        public GameObject collectible;
+        public Item item;
         public Vector3 collectibleLocation;
     }
 

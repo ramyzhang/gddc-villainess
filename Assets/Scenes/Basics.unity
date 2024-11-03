@@ -2257,8 +2257,8 @@ GameObject:
   - component: {fileID: 484824822}
   - component: {fileID: 484824825}
   - component: {fileID: 484824824}
-  - component: {fileID: 484824826}
   - component: {fileID: 484824827}
+  - component: {fileID: 484824828}
   m_Layer: 12
   m_Name: Door
   m_TagString: GameTrigger
@@ -2359,18 +2359,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &484824826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484824821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec738bb21dd4f4abb8d71218ebbdc0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &484824827
 Rigidbody2D:
   serializedVersion: 4
@@ -2392,6 +2380,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &484824828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484824821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602eaedf69dac4cf7b7608329f104a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  teleportTarget: {fileID: 976167874}
 --- !u!1 &531707210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,8 +4953,8 @@ GameObject:
   - component: {fileID: 976167875}
   - component: {fileID: 976167877}
   - component: {fileID: 976167879}
-  - component: {fileID: 976167880}
   - component: {fileID: 976167881}
+  - component: {fileID: 976167882}
   m_Layer: 12
   m_Name: Door
   m_TagString: GameTrigger
@@ -5053,18 +5055,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9008496, y: 5.12}
   m_EdgeRadius: 0
---- !u!114 &976167880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976167874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec738bb21dd4f4abb8d71218ebbdc0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &976167881
 Rigidbody2D:
   serializedVersion: 4
@@ -5086,6 +5076,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &976167882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976167874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602eaedf69dac4cf7b7608329f104a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  teleportTarget: {fileID: 484824821}
 --- !u!1 &986168741
 GameObject:
   m_ObjectHideFlags: 0

@@ -121,8 +121,13 @@ public class GameStateManager : MonoBehaviour
 
         // 3. Instantiate all collectibles
         for (int j = 0; j < newState.collectibles.Length; j++) {
-            // TODO: Check if collectible in fact exists (maybe with an enum?)
-            Instantiate(newState.collectibles[j].collectible, newState.collectibles[j].collectibleLocation, Quaternion.identity);
+            GameObject collectible = Instantiate(ItemPrefab, newState.collectibles[j].collectibleLocation, Quaternion.identity);
+            collectible.GetComponent<ItemTrigger>().item = newState.collectibles[j].item;
+            Debug.Log(newState.collectibles[j].item.icon.name);
+            if (collectible.GetComponent<SpriteRenderer>().sprite) {
+                collectible.GetComponent<SpriteRenderer>().sprite = newState.collectibles[j].item.icon;
+            }
+            toDestroy.Add(collectible);
         }
 
         // 4. Game triggers (create a tag for these)

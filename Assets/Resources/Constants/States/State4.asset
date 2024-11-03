@@ -25,7 +25,11 @@ MonoBehaviour:
   - NPCCharacter: Katarina
     NPCLocation: {x: -40, y: -150, z: 0}
     isFacingRight: 0
-  collectibles: []
+  collectibles:
+  - item: {fileID: 11400000, guid: de44b5590a27d46a287f4aeb35b8e7c7, type: 2}
+    collectibleLocation: {x: -57.85196, y: -152.38646, z: 0}
+  - item: {fileID: 11400000, guid: 0f8efd40fb218413e8718d838106ff50, type: 2}
+    collectibleLocation: {x: -5.5275755, y: -93.2, z: 0}
   stickers: []
   gameEventTriggers:
   - Calliope
