@@ -10,7 +10,7 @@ public class InventorySlot : MonoBehaviour
     private Item item; // keeps track of item in slot 
 
     void Start() {
-        icon = gameObject.GetComponentInChildren<Image>();
+        icon = gameObject.transform.Find("Image").GetComponent<Image>();
     }
 
     public void addItemToUI(Item newitem)

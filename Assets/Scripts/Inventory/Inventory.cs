@@ -5,18 +5,22 @@ using Yarn.Unity;
 public class Inventory : MonoBehaviour
 {
     #region Singleton
-    public static Inventory Instance; //singleton
+    public static Inventory instance; //singleton
 
     private void Awake()
     {
-        if (Instance != null)
+        if (instance != null)
         {
             Debug.LogWarning("More than one instance of Inventory found!");
             return;
         }
-        Instance = this;
+        instance = this;
     }
     #endregion
+
+    public delegate void OnItemChanged();
+	public OnItemChanged onItemChangedCallback;
+
 
     public static List<Item> items = new();
     private const int maxItems = 16;
@@ -28,6 +32,24 @@ public class Inventory : MonoBehaviour
         {   
             Item item = Resources.Load<Item>("Items/" + itemName);
             items.Add(item);
+
+            Debug.Log("Added " + item.name + " to inventory");
+            Debug.Log("Length of items: " + items.Count);
+
+            onItemChangedCallback?.Invoke();
+        }
+    }
+
+    public void AddItem(Item item)
+    {
+        if (items.Count < maxItems)
+        {
+            items.Add(item);
+
+            Debug.Log("Added " + item.name + " to inventory");
+            Debug.Log("Length of items: " + items.Count);
+
+            onItemChangedCallback?.Invoke();
         }
     }
 
@@ -39,9 +61,17 @@ public class Inventory : MonoBehaviour
             if (item.name == itemName)
             {
                 items.Remove(item);
+
+                onItemChangedCallback?.Invoke();
                 break;
             }
         }
+    }
+
+    public void RemoveItem(Item item)
+    {
+        items.Remove(item);
+        onItemChangedCallback?.Invoke();
     }
 
     [YarnFunction("checkForItem")]

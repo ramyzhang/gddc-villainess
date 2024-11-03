@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Test
   description: Lorem ipsum dolor. Nya nya nya? Gudetama nya nya nya.
-  icon: {fileID: 21300000, guid: 103eb85db854c4f649aeb4e5d1ac2b50, type: 3}
+  icon: {fileID: 21300000, guid: 4087fc19fd05442d6ac32435ced55b95, type: 3}
   isDefaultItem: 0
