@@ -130,8 +130,13 @@ public class GameStateManager : MonoBehaviour
         // 4. Game triggers (create a tag for these)
         // TODO: do something to handle if it's just a game state trigger, not a dialogue one
         for (int k = 0; k < newState.gameEventTriggers.Length; k++) {
-            GameTrigger gt = GameObject.Find(newState.gameEventTriggers[k]).GetComponent<GameTrigger>();
-            gt.dialogueToStart = $"{newState.gameEventTriggers[k]}_{newStateIndex}";
+            GameTrigger gt = GameObject.Find(newState.gameEventTriggers[k]).GetComponentInChildren<GameTrigger>();
+            if (gt.triggerType == TriggerType.Dialogue) {
+                DialogueTrigger dt = gt.gameObject.GetComponent<DialogueTrigger>();
+                if (dt) {
+                    dt.dialogueToStart = $"{newState.gameEventTriggers[k]}_{newStateIndex}";
+                }
+            }
         }
 
         // 5. Switch camera subject
@@ -187,10 +192,12 @@ public class GameStateManager : MonoBehaviour
         }
 
         // 3. Remove dialogues stored in game triggers
-        GameObject[] gameTriggers = GameObject.FindGameObjectsWithTag("GameTrigger");
-        foreach (GameObject gt in gameTriggers) {
-            GameTrigger trigger = gt.GetComponent<GameTrigger>();
-            trigger.dialogueToStart = null;
+        GameObject[] diaTrigger = GameObject.FindGameObjectsWithTag("GameTrigger");
+        foreach (GameObject gt in diaTrigger) {
+            DialogueTrigger trigger = gt.GetComponent<DialogueTrigger>();
+            if (trigger) {
+                trigger.dialogueToStart = null;
+            }
         }
 
         // 5. Clean up all stickers (prefab clones)

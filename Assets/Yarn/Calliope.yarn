@@ -10,7 +10,7 @@ Calliope: Why yes, it is I, your local genius reincarnated baby, Calliope! Some 
 <<changeExpression Catherine surprised>>
 Calliope: Ahem. Do you need anything?
 Catherine: That is... that is quite the introduction.
-<<if inventoryIncludes("calliopePamphlets")>>
+<<if checkForItem("calliopePamphlets")>>
     <<removeInventoryItem InventoryManager calliopePamphlets>>
     <<changeExpression Catherine neutral>>
     Catherine: I saw these pamphlets earlier... are these yours?
