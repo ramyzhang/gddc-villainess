@@ -12,9 +12,6 @@ public class ItemPickup : MonoBehaviour
     {
         Inventory.instance.AddItem(item);	// Add to inventory
 
-        Debug.Log("Added " + item.name + " to inventory");
-        Debug.Log("Length of items: " + Inventory.items.Count);
-
         Destroy(gameObject);	// Destroy item from scene  
     }
 }

@@ -21,9 +21,9 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
 	public OnItemChanged onItemChangedCallback;
 
-
     public static List<Item> items = new();
     private const int maxItems = 16;
+
 
     [YarnCommand("addItem")]
     public void AddItem(string itemName) //will need to use this function for picking up item
@@ -32,9 +32,6 @@ public class Inventory : MonoBehaviour
         {   
             Item item = Resources.Load<Item>("Items/" + itemName);
             items.Add(item);
-
-            Debug.Log("Added " + item.name + " to inventory");
-            Debug.Log("Length of items: " + items.Count);
 
             onItemChangedCallback?.Invoke();
         }
@@ -45,9 +42,6 @@ public class Inventory : MonoBehaviour
         if (items.Count < maxItems)
         {
             items.Add(item);
-
-            Debug.Log("Added " + item.name + " to inventory");
-            Debug.Log("Length of items: " + items.Count);
 
             onItemChangedCallback?.Invoke();
         }
