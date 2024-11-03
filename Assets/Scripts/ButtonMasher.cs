@@ -34,7 +34,7 @@ public class ButtonMasher : MonoBehaviour
         ChangeButtonFunc("WRESTLE!", MashButton, false);
         loveInterestCM = loveInterest.GetComponent<CharacterManager>();
         secondLoveInterestCM = secondLoveInterest.GetComponent<CharacterManager>();
-        secondLoveInterestCM.flipCharacter(false);
+        secondLoveInterestCM.FlipCharacter(false);
     }
 
     void Update()
@@ -43,7 +43,7 @@ public class ButtonMasher : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
             UpdateDisplays();
-            loveInterestCM.changeAnimationSpeed("armSpinSpeed", buttonMashes*3/winMashesThreshold);
+            loveInterestCM.ChangeAnimationSpeed("armSpinSpeed", buttonMashes*3/winMashesThreshold);
         }
         else if (minigameRunning && timeRemaining <= 0) // Game finished
         {
@@ -121,18 +121,18 @@ public class ButtonMasher : MonoBehaviour
 
     private void AnimateLIs()
     {
-        loveInterestCM.animateCharacter("wrestle");
-        loveInterestCM.animateCharacter("arm_spin", 1);
-        secondLoveInterestCM.animateCharacter("wrestle");
-        secondLoveInterestCM.animateCharacter("arm_spin", 1);
+        loveInterestCM.AnimateCharacter("wrestle");
+        loveInterestCM.AnimateCharacter("arm_spin", 1);
+        secondLoveInterestCM.AnimateCharacter("wrestle");
+        secondLoveInterestCM.AnimateCharacter("arm_spin", 1);
     }
 
     private void ResetLIs()
     {
-        loveInterestCM.animateCharacter("idle");
-        loveInterestCM.animateCharacter("none", 1);
-        secondLoveInterestCM.animateCharacter("idle");
-        secondLoveInterestCM.animateCharacter("none", 1);
+        loveInterestCM.AnimateCharacter("idle");
+        loveInterestCM.AnimateCharacter("none", 1);
+        secondLoveInterestCM.AnimateCharacter("idle");
+        secondLoveInterestCM.AnimateCharacter("none", 1);
     }
 
     private void ChangeButtonFunc(string buttonText, UnityEngine.Events.UnityAction call, bool delayChange)

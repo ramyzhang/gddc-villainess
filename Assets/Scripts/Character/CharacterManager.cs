@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -54,7 +53,7 @@ public class CharacterManager : MonoBehaviour
     }
 
     [YarnCommand("changeExpression")]
-    public void changeExpression(string expression) {
+    public void ChangeExpression(string expression) {
         Debug.Log($"Making {characterName} {expression}!");
         if (!hasExpressions) {
             Debug.Log("This character doesn't have an expression set yet.");
@@ -81,7 +80,7 @@ public class CharacterManager : MonoBehaviour
     // Characters face right by default
     // TODO: add flipping commands to Yarn scripts once all scenes are fully set up
     [YarnCommand("flipCharacter")]
-    public void flipCharacter(bool faceRight) {
+    public void FlipCharacter(bool faceRight) {
         if (!faceRight && facingRight) {
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             facingRight = false;
@@ -91,7 +90,7 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    public IEnumerator moveCharacter(GameObject location) {
+    public IEnumerator MoveCharacter(GameObject location) {
         Debug.Log($"Moving {characterName} to {location}");
         Vector3 newPos = location.transform.position;
         Vector2 positionOffset = new Vector2(9f, Physics2D.gravity.y * rb.gravityScale);
@@ -103,7 +102,7 @@ public class CharacterManager : MonoBehaviour
             anim.SetBool("isWalking", true);
 
             if (transform.position.x > newPos.x) {
-                flipCharacter(false);
+                FlipCharacter(false);
                 while (transform.position.x > newPos.x) {
                     rb.MovePosition(rb.position + positionOffset * negative * Time.fixedDeltaTime);
                     yield return 0;
@@ -111,7 +110,7 @@ public class CharacterManager : MonoBehaviour
                 anim.SetBool("isWalking", false);
 
             } else if (transform.position.x < newPos.x) {
-                flipCharacter(true);
+                FlipCharacter(true);
                 while (transform.position.x < newPos.x) {
                     rb.MovePosition(rb.position + positionOffset * positive * Time.fixedDeltaTime);
                     yield return 0;
@@ -122,17 +121,17 @@ public class CharacterManager : MonoBehaviour
     }
 
     [YarnCommand("animateCharacter")]
-    public void animateCharacter(string animName, int layer = 0) {
+    public void AnimateCharacter(string animName, int layer = 0) {
         anim.Play(animName, layer);
     }
 
-    public void changeAnimationSpeed(string speedMultiplierName, float speedMultiplier)
+    public void ChangeAnimationSpeed(string speedMultiplierName, float speedMultiplier)
     {
         anim.SetFloat(speedMultiplierName, speedMultiplier);
     }
 
     [YarnCommand("teleportCharacter")]
-    public void teleportCharacter(GameObject location) {
+    public void TeleportCharacter(GameObject location) {
         Debug.Log($"Teleporting {characterName} to {location}");
         transform.position = location.transform.position;
     }

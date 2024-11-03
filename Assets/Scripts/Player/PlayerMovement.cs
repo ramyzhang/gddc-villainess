@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         //Sprite flipping
         if ((direction > 0 && !isFacingRight) || (direction < 0 && isFacingRight))
         {
-            cm.flipCharacter(!isFacingRight);
+            cm.FlipCharacter(!isFacingRight);
             isFacingRight = cm.facingRight;
         }
     }

@@ -3137,7 +3137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566b0613852cd475eb94610b005b53f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateIndex: 4
+  currentStateIndex: 0
   NPCPrefab: {fileID: 3685471950970054091, guid: 4fd7b3d61365b46c4be1d23609f814a6, type: 3}
   ItemPrefab: {fileID: 2392968356776222991, guid: c3b62b262670b47c99575704095130c4, type: 3}
   locations:
@@ -3151,6 +3151,8 @@ MonoBehaviour:
     locationPosition: {x: 20, y: -90, z: 0}
   - locationName: Hallway
     locationPosition: {x: -50, y: -150, z: 0}
+  - locationName: Loading Dock
+    locationPosition: {x: -325, y: 80, z: 0}
 --- !u!4 &638818492
 Transform:
   m_ObjectHideFlags: 0
