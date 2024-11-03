@@ -18,7 +18,7 @@ tags:
     Catherine: Hmph! This won’t be the last you’ll hear of this!
     Ibelina: Here, this is my gift to you for graduating. Congratulations my lady.
     // TODO: Game notification: Item Retrieved: Bouquet of Flowers 
-    <<addInventoryItem InventoryManager bouquetOfFlowers>>
+    <<addItem InventoryManager bouquetOfFlowers>>
     Ibelina: Now go and have fun at that ball, OK?
     Catherine: [teary] I will! Thank you so much, I’ll see you after the ball, Ibelina!
     Ibelina: Bye, Catherine.

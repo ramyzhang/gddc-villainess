@@ -40,6 +40,7 @@ public class GameStateManager : MonoBehaviour
     public int currentStateIndex = 0;
     [Header("CONSTANTS BELOW - PLEASE DO NOT MODIFY")]
     public GameObject NPCPrefab;
+    public GameObject ItemPrefab;
 
     [System.Serializable]
     public struct Location {
@@ -51,14 +52,12 @@ public class GameStateManager : MonoBehaviour
     private MainCamera gameGamera;
     private GameObject currentPlayer;
     private DialogueRunner dialogueRunner;
-    private DialogueViewBase dialogueViewBase;
     private List<GameObject> toDestroy = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
-        dialogueViewBase = FindObjectOfType<DialogueViewBase>();
         gameGamera = GameObject.FindWithTag("MainCamera").GetComponent<MainCamera>();
 
         // Instantiate current state
@@ -79,7 +78,6 @@ public class GameStateManager : MonoBehaviour
     [YarnCommand("updateState")]
     public void updateState(int newStateIndex) {
         Debug.Log($"New state index: {newStateIndex}");
-        int prevStateIndex = currentStateIndex;
 
         string statePath = $"Constants/States/State{newStateIndex}";
         GameState newState = Resources.Load<GameState>(statePath);

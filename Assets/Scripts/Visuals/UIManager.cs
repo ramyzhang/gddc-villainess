@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [Header("Quest Notification")]
+    [SerializeField]
+    private GameObject questNotificationPrefab;
     private GameObject questNotification;
-
-    [SerializeField]
-    private TextMeshProUGUI newQuestTitle;
-    [SerializeField]
-    private TextMeshProUGUI completedQuestTitle;
-    [SerializeField]
-    private TextMeshProUGUI questDescription;
 
     [Space(10)]
     [Header("Inventory")]
@@ -26,16 +22,6 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Load in the Quest Notification UI game objects
-        questNotification = transform.Find("QuestNotification").gameObject;
-        newQuestTitle = questNotification.transform.Find("NewQuest").GetComponent<TextMeshProUGUI>();
-        completedQuestTitle = questNotification.transform.Find("CompletedQuest").GetComponent<TextMeshProUGUI>();
-        questDescription = questNotification.transform.Find("QuestDescription").GetComponent<TextMeshProUGUI>();
-
-        questNotification.SetActive(false);
-        newQuestTitle.gameObject.SetActive(false);
-        completedQuestTitle.gameObject.SetActive(false);
-
         // Load in the Inventory UI game objects
         inventoryUI = transform.Find("Inventory").gameObject;
         inventoryButton = inventoryUI.transform.Find("InventoryButton").gameObject;
@@ -50,27 +36,35 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void toggleInventory() {
+    public void ToggleInventory() {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        // Remove focus from the inventory button
+        inventoryButton.GetComponent<Button>().OnDeselect(null);
     }
 
-    public void newQuestNotification(string _questTitle, string _questDescription) {
-        questNotification.SetActive(true);
-        newQuestTitle.gameObject.SetActive(true);
+    public void NewQuestNotification(string _questTitle, string _questDescription) {
+        questNotification = Instantiate(questNotificationPrefab, transform);
+
+        TextMeshProUGUI newQuestTitle = questNotification.transform.Find("NewQuest").GetComponent<TextMeshProUGUI>();
+        questNotification.transform.Find("CompletedQuest").gameObject.SetActive(false);
+        TextMeshProUGUI questDescription = questNotification.transform.Find("QuestDescription").GetComponent<TextMeshProUGUI>();
+
         newQuestTitle.text = newQuestTitle.text + " " + _questTitle;
         questDescription.text = _questDescription;
     }
 
-    public void completedQuestNotification(string _questTitle, string _questDescription) {
-        questNotification.SetActive(true);
-        completedQuestTitle.gameObject.SetActive(true);
+    public void CompletedQuestNotification(string _questTitle, string _questDescription) {
+        questNotification = Instantiate(questNotificationPrefab, transform);
+
+        TextMeshProUGUI completedQuestTitle = questNotification.transform.Find("CompletedQuest").GetComponent<TextMeshProUGUI>();
+        questNotification.transform.Find("NewQuest").gameObject.SetActive(false);
+        TextMeshProUGUI questDescription = questNotification.transform.Find("QuestDescription").GetComponent<TextMeshProUGUI>();
+
         completedQuestTitle.text = completedQuestTitle.text + " " + _questTitle;
         questDescription.text = _questDescription;
     }
 
-    public void closeQuestNotification() {
-        newQuestTitle.gameObject.SetActive(false);
-        completedQuestTitle.gameObject.SetActive(false);
-        questNotification.SetActive(false);
+    public void CloseQuestNotification() {
+        Destroy(questNotification);
     }
 }
