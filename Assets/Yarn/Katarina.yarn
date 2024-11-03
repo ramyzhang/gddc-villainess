@@ -45,12 +45,12 @@ Katarina: Oh! I see Mary. I should convince her to join the club too. See you la
 title: Katarina_4_3
 tags:
 ---
-<<removeItem Inventory KatarinaSnake>>
+<<removeItem GameStateManager KatarinaSnake>>
 <<changeExpression Katarina surprised>>
 Katarina: Oh my! Is that my little snake you picked up there? Thank you, I would've been in dire straits without it.
 <<changeExpression Katarina neutral>>
 Katarina: Oh, I really should repay you somehow... Ah! I know!
-<<addItem Inventory IronHoe>>
+<<addItem GameStateManager IronHoe>>
 <<changeExpression Katarina excited>>
 Katarina: Check this out! I developed it just recently.
 Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
@@ -111,7 +111,7 @@ tags:
         <<changeExpression Oliver determined>>
         Oliver: Impressive, have you been secretly training with the guard?
         // TODO: Game notification: you’ve received special item: {toy sword}!
-        <<addItem Inventory toySword>> 
+        <<addItem GameStateManager toySword>> 
     <<else>>
         Katarina: Strength level of 1!
         <<changeExpression Catherine exasperated>>
@@ -136,7 +136,7 @@ tags:
     Katarina: Ehehe, thank you Catherine. I’m sure it’s because the professors all loved the home-grown potatoes I gifted them! That reminds me, I need to give you some too!
     Narrator: Item retrieved: Potatoes 
     // TODO: Game notification: Item retrieved: Potatoes !
-    <<addItem Inventory potatoes>> 
+    <<addItem GameStateManager potatoes>> 
     Catherine: Thank you, but it’s not just that, Katarina. Look at all the amazing friends you’ve made who have supported you through everything!
 
     -> Catherine: You’re a warm, bright light in this school.

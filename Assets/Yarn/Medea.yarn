@@ -12,7 +12,7 @@ tags:
     Catherine: You’ve got that right, but I’m glad that I managed to change a lot of people’s views on me before we graduated.
     Medea: You did brilliantly. Here, take this ceremonial dagger, it was a common tradition in the academy to graduate these, although I’m afraid I’m the only one who remembers after my brother’s year was the last to uphold it.
     // TODO: Game notification Item retrieved: Ceremonial Dagger 
-    <<addItem Inventory ceremonialDagger>>
+    <<addItem GameStateManager ceremonialDagger>>
     Catherine: Thanks Medea!
 
     -> Catherine: But what about yours? Don’t you want to celebrate the tradition and graduation?

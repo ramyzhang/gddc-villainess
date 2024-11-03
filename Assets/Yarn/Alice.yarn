@@ -226,12 +226,12 @@ Oliver: A little... bright.
     Oliver: Ahem, I don’t think that’s a good disguise, but if it makes you happy...
     Catherine: Come on!
     // TODO: Game notification: You’ve received a special item: {yukata}!
-    <<addItem Inventory yukata>>
+    <<addItem GameStateManager yukata>>
 -> Catherine: Here, let’s wear matching headbands!
     <<changeExpression Alice happy>>
     Alice: Haha! Catherine, these fox ears match you perfectly!
     // TODO: Game notification: You’ve received a special item: {fox headband}!
-    <<addItem Inventory foxHeadBand>>
+    <<addItem GameStateManager foxHeadBand>>
     Everett: Yeah, I agree.
     <<changeExpression Catherine blushing>>
     Catherine: Are you trying to say something about me? Huh?
@@ -247,7 +247,7 @@ Oliver: A little... bright.
     Alice: Dressing up is part of the fun, Catherine!
     Everett: Yeah, at least wear these glasses.
     // TODO: Game notification: You’ve received a special item: {goofy glasses}!
-    <<addItem Inventory goofyGlasses>>
+    <<addItem GameStateManager goofyGlasses>>
     <<changeExpression Catherine determined>>
     Catherine: Oh you’re asking for it now.
     Oliver: It actually does disguise you quite well.
