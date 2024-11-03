@@ -5,7 +5,7 @@ Jealous Classmate: Oh! Uh, hey, Catherine! What are you up to?
 <<changeExpression Catherine excited>>
 Catherine: I heard that Alice was kidnapped! I’m here to take down the villain and save her.
 <<moveCharacter Melissa Catherine >>
-<<if inventoryIncludes("complexArrow")>>
+<<if checkForItem("complexArrow")>>
     Jealous Classmate: Whoa, uh, that’s terrible! Here, let me hold on to that arrow for you, I’m a really good shot! I can help out.
 
     -> Catherine: Heck yeah, the more the better!

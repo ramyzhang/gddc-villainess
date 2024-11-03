@@ -1,7 +1,7 @@
 title: Alice_5
 tags:
 ---
-<<if inventoryIncludes("aliceScript")>>
+<<if checkForItem("aliceScript")>>
     <<changeExpression Alice worried>>    
     Alice: Hey! What are you holding? That looks my script!
 

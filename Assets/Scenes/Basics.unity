@@ -3295,8 +3295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerType: 1
-  dialogueToStart: 
-  teleportTarget: {fileID: 1926031790}
 --- !u!61 &484824824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3637,8 +3635,8 @@ GameObject:
   m_Component:
   - component: {fileID: 518166248}
   - component: {fileID: 518166250}
-  - component: {fileID: 518166249}
   - component: {fileID: 518166251}
+  - component: {fileID: 518166252}
   m_Layer: 0
   m_Name: ItemPrefab
   m_TagString: Untagged
@@ -3661,19 +3659,6 @@ Transform:
   m_Father: {fileID: 1745837825}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &518166249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518166247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ff085fd28424316b66b33fbf432e59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 2df7e5ca3d70b4eadbe36c52feb45e88, type: 2}
 --- !u!212 &518166250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3752,6 +3737,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.64, y: 1.27}
   m_EdgeRadius: 0
+--- !u!114 &518166252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518166247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fa64493d5f24718bd2a9ad40815896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 2
+  item: {fileID: 11400000, guid: 2df7e5ca3d70b4eadbe36c52feb45e88, type: 2}
 --- !u!1 &531707210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566b0613852cd475eb94610b005b53f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateIndex: 2
+  currentStateIndex: 4
   NPCPrefab: {fileID: 3685471950970054091, guid: 4fd7b3d61365b46c4be1d23609f814a6, type: 3}
   locations:
   - locationName: Crosswalk
@@ -6911,8 +6910,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerType: 1
-  dialogueToStart: 
-  teleportTarget: {fileID: 907600818}
 --- !u!61 &976167879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12607,12 +12604,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838098399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3e31dca924149ee8518c6e904d80cc, type: 3}
+  m_Script: {fileID: 11500000, guid: d2c66fbdfbf8c41abbed0fd44a4cc668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerType: 0
   dialogueToStart: 
-  teleportTarget: {fileID: 0}
 --- !u!1001 &1876097226
 PrefabInstance:
   m_ObjectHideFlags: 0

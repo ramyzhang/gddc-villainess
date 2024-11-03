@@ -37,7 +37,7 @@ tags:
 // <<if battleWon(0) == true>>
 //     <<changeExpression Catherine worried>>
 //     Catherine: Ripley, what do we do?
-//     <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
+//     <<if checkForItem(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
 //         Ripley: Keep searching for ingredients! I’m talking with a witch who might have some leads...
 //     <<else>>
 //         -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!
@@ -61,7 +61,7 @@ tags:
 //     <<endif>>
 // <<else>>
 //     Catherine: Ripley, what do we do?
-//     <<if inventoryIncludes(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
+//     <<if checkForItem(["trampledHerbs", "lilyFlowers", "blessedWater"]) == false>>
 //         Ripley: Keep searching for clues! I’m talking with a witch who might have some leads...
 //     <<else>>
 //         -> Catherine: The only thing I could find were these trampled herbs, but the trail ends outside the school gates!

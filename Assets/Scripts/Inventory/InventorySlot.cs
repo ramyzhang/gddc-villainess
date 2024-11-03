@@ -11,6 +11,7 @@ public class InventorySlot : MonoBehaviour
 
     void Start() {
         icon = gameObject.transform.Find("Image").GetComponent<Image>();
+        icon.enabled = false;
     }
 
     public void addItemToUI(Item newitem)

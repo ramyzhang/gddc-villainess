@@ -1,7 +1,7 @@
 title: Katarina_4
 tags:
 ---
-<<if visited("Katarina_4")>>
+<<if visited("Katarina_4") and not checkForItem("katarinaSnake")>>
     <<jump Katarina_4_2>>
 <<endif>>
 <<changeExpression Katarina happy>>
@@ -11,7 +11,7 @@ Catherine: Er... Come again?
 Catherine: <i>There's no way... It's only my 1st year! Has someone seen through me already?</i>
 Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused with all the arguments going on in my head.
 Katarina: Anyway, what can I do for you? I think it's the first we've...
-<<if inventoryIncludes("katarinaSnake")>>
+<<if checkForItem("katarinaSnake")>>
     <<removeInventoryItem InventoryManager katarinaSnake>>
     <<changeExpression Katarina surprised>>
     Katarina: Oh my! Is that my little snake you picked up there? Thank you, I would've been in dire straits without it.
