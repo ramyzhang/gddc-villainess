@@ -21,6 +21,9 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
 	public OnItemChanged onItemChangedCallback;
 
+    public delegate void OnNewItem(Item item);
+    public OnNewItem onNewItemCallback;
+
     public static List<Item> items = new();
     private const int maxItems = 16;
 
@@ -34,6 +37,7 @@ public class Inventory : MonoBehaviour
             items.Add(item);
 
             onItemChangedCallback?.Invoke();
+            onNewItemCallback?.Invoke(item);
         }
     }
 
@@ -44,6 +48,7 @@ public class Inventory : MonoBehaviour
             items.Add(item);
 
             onItemChangedCallback?.Invoke();
+            onNewItemCallback?.Invoke(item);
         }
     }
 

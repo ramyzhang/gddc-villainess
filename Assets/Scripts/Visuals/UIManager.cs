@@ -13,11 +13,15 @@ public class UIManager : MonoBehaviour
 
     [Space(10)]
     [Header("Inventory")]
-    private GameObject inventoryUI;
     [SerializeField]
     private GameObject inventoryButton;
     [SerializeField]
     private GameObject inventoryPanel;
+    [SerializeField]
+    private GameObject itemNotificationPrefab;
+    private GameObject itemNotification;
+    private GameObject inventoryUI;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,8 @@ public class UIManager : MonoBehaviour
         inventoryPanel = inventoryUI.transform.Find("InventoryScreen").gameObject;
 
         inventoryPanel.SetActive(false);
+
+        Inventory.instance.onNewItemCallback += NewItemNotification; //calls updateui on event
     }
 
     void Update() {
@@ -38,6 +44,23 @@ public class UIManager : MonoBehaviour
 
     public void ToggleInventory() {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+    }
+
+    public void NewItemNotification(Item item) {
+        itemNotification = Instantiate(itemNotificationPrefab, transform);
+
+        TextMeshProUGUI itemName = itemNotification.transform.Find("NewItem").GetComponent<TextMeshProUGUI>();
+        itemName.text = itemName.text + " " + item.name;
+
+        TextMeshProUGUI itemDescription = itemNotification.transform.Find("ItemDescription").GetComponent<TextMeshProUGUI>();
+        itemDescription.text = item.description;
+
+        Image itemImage = itemNotification.transform.Find("ItemImage").GetComponent<Image>();
+        itemImage.sprite = item.icon;
+    }
+
+    public void CloseItemNotification() {
+        Destroy(itemNotification);
     }
 
     public void NewQuestNotification(string _questTitle, string _questDescription) {

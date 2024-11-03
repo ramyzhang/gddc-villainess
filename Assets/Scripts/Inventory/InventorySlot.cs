@@ -34,6 +34,8 @@ public class InventorySlot : MonoBehaviour
     }
 
     public void OnItemClick() {
-        SendMessageUpwards("UpdateDetails", item);
+        if (item != null) {
+            SendMessageUpwards("UpdateDetails", item);
+        }
     }
 }

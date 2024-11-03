@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2392968356776222976}
   - component: {fileID: 2392968356776222978}
-  - component: {fileID: 2392968356776222980}
   - component: {fileID: 4023450487328188750}
+  - component: {fileID: 3298720771159954686}
   m_Layer: 0
   m_Name: ItemPrefab
-  m_TagString: Untagged
+  m_TagString: GameTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2392968356776222980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2392968356776222991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38fa64493d5f24718bd2a9ad40815896, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerType: 2
-  item: {fileID: 11400000, guid: de44b5590a27d46a287f4aeb35b8e7c7, type: 2}
 --- !u!61 &4023450487328188750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +112,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &3298720771159954686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2392968356776222991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fdcb1bc9bd44d7ea6db8f68a36bf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  item: {fileID: 0}

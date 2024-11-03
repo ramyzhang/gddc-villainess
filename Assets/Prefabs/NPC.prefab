@@ -736,9 +736,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8515598988413977579}
-  - component: {fileID: 5884952237297253301}
   - component: {fileID: 8534100718909769246}
   - component: {fileID: 8401051199642994951}
+  - component: {fileID: 5575077754089000257}
   m_Layer: 0
   m_Name: NPCTrigger
   m_TagString: GameTrigger
@@ -761,20 +761,6 @@ Transform:
   m_Father: {fileID: 3685471950970054090}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5884952237297253301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6421825707011842482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c66fbdfbf8c41abbed0fd44a4cc668, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerType: 0
-  dialogueToStart: 
 --- !u!61 &8534100718909769246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -822,3 +808,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5575077754089000257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421825707011842482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab254a6b5697e4e1ca7dc1a85f0f4cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  dialogueToStart: 
