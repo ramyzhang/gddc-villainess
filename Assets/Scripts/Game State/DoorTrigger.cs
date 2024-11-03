@@ -9,13 +9,13 @@ public class DoorTrigger : GameTrigger
     void Start()
     {
         triggerType = TriggerType.Door;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
     }
 
     /**
     TODO: Make option to choose between trigger methods (collision, onclick, etc.) so it's a sexier gameplay experience
     **/
     public override void Interact() {
+        player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<CharacterManager>().teleportCharacter(teleportTarget);
     }
 }
