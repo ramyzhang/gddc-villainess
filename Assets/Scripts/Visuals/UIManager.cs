@@ -38,8 +38,6 @@ public class UIManager : MonoBehaviour
 
     public void ToggleInventory() {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
-        // Remove focus from the inventory button
-        inventoryButton.GetComponent<Button>().OnDeselect(null);
     }
 
     public void NewQuestNotification(string _questTitle, string _questDescription) {
