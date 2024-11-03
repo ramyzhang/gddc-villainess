@@ -18,7 +18,6 @@ public class InventoryUI : MonoBehaviour
 
     void UpdateUI() //iterate through inventoryslots
     {
-        Debug.Log("Updating UI");
         for (int i = 0; i < slots.Length; i++)
         {
             if (i < Inventory.items.Count)

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
+    // TODO: refactor this to use the GameTrigger system
 	public Item item;	// Item to put in the inventory if picked up
-
-	// Pick up the item
 
     void OnMouseDown()
     {
