@@ -16,6 +16,6 @@ public class DoorTrigger : GameTrigger
     **/
     public override void Interact() {
         player = GameObject.FindGameObjectWithTag("Player");
-        player.GetComponent<CharacterManager>().teleportCharacter(teleportTarget);
+        player.GetComponent<CharacterManager>().TeleportCharacter(teleportTarget);
     }
 }

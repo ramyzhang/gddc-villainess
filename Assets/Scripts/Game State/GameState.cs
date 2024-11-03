@@ -16,9 +16,12 @@ public class GameState : ScriptableObject
         public bool isFacingRight;
     }
 
+    /**
+    Collectibles are any interactable GameObjects that can be picked up by the player and stored in their inventory
+    **/
     [System.Serializable]
     public struct CollectibleState {
-        public GameObject collectible;
+        public Item item;
         public Vector3 collectibleLocation;
     }
 
@@ -53,7 +56,7 @@ public class GameState : ScriptableObject
     public bool[] battlesWon;
     // TODO: Better to find some way to check this programmatically inside GameStateManager instead of having this variable
 
-    public GameState(int _stateIndex, bool _doNotUpdateLocation, Vector3 _initLocation, NPCState[] _availableNPCs, CollectibleState[] _collectibles, StickerState[] _stickers, string[] _gameEventTriggers, bool _playerIsFacingRight, string _playerCharacter, bool _hasCutscene, bool[] _battlesWon) {
+    public GameState(int _stateIndex, bool _doNotUpdateLocation, Vector3 _initLocation, NPCState[] _availableNPCs, CollectibleState[] _collectibles, StickerState[] _stickers, string[] _gameEventTriggers, bool _playerIsFacingRight, string _playerCharacter, bool[] _battlesWon) {
         stateIndex = _stateIndex;
         doNotUpdateLocation = _doNotUpdateLocation;
         initLocation = _initLocation;   

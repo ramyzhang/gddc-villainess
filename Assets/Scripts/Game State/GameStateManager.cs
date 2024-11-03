@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using Yarn.Unity;
@@ -40,6 +41,7 @@ public class GameStateManager : MonoBehaviour
     public int currentStateIndex = 0;
     [Header("CONSTANTS BELOW - PLEASE DO NOT MODIFY")]
     public GameObject NPCPrefab;
+    public GameObject ItemPrefab;
 
     [System.Serializable]
     public struct Location {
@@ -47,39 +49,26 @@ public class GameStateManager : MonoBehaviour
         public Vector3 locationPosition;
     }
     public Location[] locations;
-    private GameState currentState;
+    public GameState currentState { get; private set; }
     private MainCamera gameGamera;
     private GameObject currentPlayer;
     private DialogueRunner dialogueRunner;
-    private DialogueViewBase dialogueViewBase;
     private List<GameObject> toDestroy = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
-        dialogueViewBase = FindObjectOfType<DialogueViewBase>();
         gameGamera = GameObject.FindWithTag("MainCamera").GetComponent<MainCamera>();
 
         // Instantiate current state
-        updateState(currentStateIndex);
-    }
-
-    public (Sprite, Vector3) GETSticker(string name) {
-        foreach (GameState.StickerState stck in currentState.stickers) {
-            if (stck.stickerName.Equals(name)) {
-                return (stck.stickerSprite, stck.stickerLocation);
-            }
-        }
-        Debug.Log("This sticker should not exist in this gamestate!");
-        return (null, new Vector3(0f, 0f, 0f));
+        UpdateState(currentStateIndex);
     }
 
     // TODO: it might be better to be using one of yarn's built in event handlers instead here
     [YarnCommand("updateState")]
-    public void updateState(int newStateIndex) {
+    public void UpdateState(int newStateIndex) {
         Debug.Log($"New state index: {newStateIndex}");
-        int prevStateIndex = currentStateIndex;
 
         string statePath = $"Constants/States/State{newStateIndex}";
         GameState newState = Resources.Load<GameState>(statePath);
@@ -92,7 +81,7 @@ public class GameStateManager : MonoBehaviour
         // 0. Teardown if there was a previous state
         if (currentState != null) {
             Debug.Log("Tearing down previous state...");
-            tearDown(newState);
+            TearDown(newState);
         }
 
         // 1. Move player character to correct location and make it the player
@@ -103,7 +92,7 @@ public class GameStateManager : MonoBehaviour
             currentPlayer.transform.position = newState.initLocation;
         }
         currentPlayer.AddComponent<PlayerMovement>();
-        currentPlayer.GetComponent<CharacterManager>().flipCharacter(newState.playerIsFacingRight);
+        currentPlayer.GetComponent<CharacterManager>().FlipCharacter(newState.playerIsFacingRight);
 
         // 2. Instantiate all NPCs
         // TODO: do something about loading in dialogue for the NPCs
@@ -118,13 +107,18 @@ public class GameStateManager : MonoBehaviour
             } else {
                 currentNPC.transform.position = newState.availableNPCs[i].NPCLocation;
             }
-            currentNPC.GetComponent<CharacterManager>().flipCharacter(newState.availableNPCs[i].isFacingRight);
+            currentNPC.GetComponent<CharacterManager>().FlipCharacter(newState.availableNPCs[i].isFacingRight);
         }
 
         // 3. Instantiate all collectibles
         for (int j = 0; j < newState.collectibles.Length; j++) {
-            // TODO: Check if collectible in fact exists (maybe with an enum?)
-            Instantiate(newState.collectibles[j].collectible, newState.collectibles[j].collectibleLocation, Quaternion.identity);
+            GameObject collectible = Instantiate(ItemPrefab, newState.collectibles[j].collectibleLocation, Quaternion.identity);
+            collectible.GetComponent<ItemTrigger>().item = newState.collectibles[j].item;
+            Debug.Log(newState.collectibles[j].item.icon.name);
+            if (collectible.GetComponent<SpriteRenderer>().sprite) {
+                collectible.GetComponent<SpriteRenderer>().sprite = newState.collectibles[j].item.icon;
+            }
+            toDestroy.Add(collectible);
         }
 
         // 4. Game triggers (create a tag for these)
@@ -157,13 +151,14 @@ public class GameStateManager : MonoBehaviour
 
     /**
     State teardown involves:
-    1. Handle previous player (move code from updateState)
-    2. Move all NPCs on the scene back to loading dock
-    3. Remove all dialogues loaded into previous gametriggers (if they're diff from the next state's)
-    4. TODO: Clean up all collectibles (while checking game logic)
-    5. Clean up all stickers
+    0. Stop any running dialogue
+    1. Handle previous player (destroy PlayerMovement component and remove Player tag if character is changing)
+    2. Destroy all tracked game objects in toDestroy list
+    3. Move all NPCs back to loading dock position (-325, 80, 0)
+    4. Clear dialogue references from all GameTriggers
+    5. Clean up all Sticker prefab clones (except original prefab)
     **/
-    private void tearDown(GameState newState) {
+    private void TearDown(GameState newState) {
         // 0. Dismiss and stop current dialogue
         dialogueRunner.Stop();
         dialogueRunner.StartDialogue("Stop");
@@ -178,20 +173,21 @@ public class GameStateManager : MonoBehaviour
                 Destroy(prevPlayer.GetComponent<PlayerMovement>());
             }
         }
-
-        // 2. Move all NPCs in this gamestate back to the loading dock (or destroy them)
-        foreach (GameObject toDestroyNPC in toDestroy) {
-            Destroy(toDestroyNPC);
+        
+        // 2. Destroy all game objects in toDestroy
+        foreach (GameObject killedObject in toDestroy) {
+            Destroy(killedObject);
         }
 
         toDestroy.Clear();
 
+        // 3. Move all NPCs in this gamestate back to the loading dock (or destroy them)
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("Character");
         foreach (GameObject npc in npcs) {
-            npc.transform.position = new Vector3(-325f, 80f, 0f);
+            npc.transform.position = locations.Last().locationPosition;
         }
 
-        // 3. Remove dialogues stored in game triggers
+        // 4. Remove dialogues stored in game triggers
         GameObject[] diaTrigger = GameObject.FindGameObjectsWithTag("GameTrigger");
         foreach (GameObject gt in diaTrigger) {
             DialogueTrigger trigger = gt.GetComponent<DialogueTrigger>();

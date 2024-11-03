@@ -55,7 +55,7 @@ public class QuestManager : MonoBehaviour
             Debug.Log("Previous quest must be completed before starting a new quest!");
         } else {
             currQuestId = questId;
-            uiManager.newQuestNotification(quests[currQuestId].questTitle, quests[currQuestId].questDescription);
+            uiManager.NewQuestNotification(quests[currQuestId].questTitle, quests[currQuestId].questDescription);
         }
     }
 
@@ -69,7 +69,7 @@ public class QuestManager : MonoBehaviour
             Debug.Log("Quest IDs must be sequential!");
         } else {
             quests[currQuestId].isCompleted = true;
-            uiManager.completedQuestNotification(quests[currQuestId].questTitle, quests[currQuestId].questDescription);
+            uiManager.CompletedQuestNotification(quests[currQuestId].questTitle, quests[currQuestId].questDescription);
         }
     }
 }

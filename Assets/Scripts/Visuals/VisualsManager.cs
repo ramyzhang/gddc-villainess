@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -25,40 +26,34 @@ public class VisualsManager : MonoBehaviour
         dr = GameObject.FindObjectOfType<DialogueRunner>();
         dr.AddCommandHandler<string>(
             "screenEffect",     // the name of the command
-            screenEffect // the method to run
+            ScreenEffect // the method to run
         );
         dr.AddCommandHandler<string>(
             "addSticker",     // the name of the command
-            addSticker // the method to run
+            AddSticker // the method to run
         );
         dr.AddCommandHandler<string>(
             "triggerCG",     // the name of the command
-            triggerCG // the method to run
+            TriggerCG // the method to run
         );
         dr.AddCommandHandler<GameObject, GameObject>(
             "moveCharacter",     // the name of the command
-            moveCharacter // the method to run
+            MoveCharacter // the method to run
         );
     }
+    
+    private void AddSticker(string stickerName) {
+        GameState.StickerState sticker = gameStateManager.currentState.stickers.FirstOrDefault(s => s.stickerName == stickerName);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void addSticker(string stickerName) {
-        (Sprite, Vector3) sticker = gameStateManager.GETSticker(stickerName);
-
-        if (sticker.Item1 != null) {
-            GameObject newSticker = Instantiate(stickerPrefab, sticker.Item2, Quaternion.identity);
+        if (sticker.stickerSprite != null) {
+            GameObject newSticker = Instantiate(stickerPrefab, sticker.stickerLocation, Quaternion.identity);
             StickerManager sm = newSticker.GetComponent<StickerManager>();
-            sm.stickyStick(sticker.Item1, sticker.Item2, stickerName);
+            sm.stickyStick(sticker.stickerSprite, sticker.stickerLocation, stickerName);
         }
     }
 
     [YarnCommand("removeSticker")]
-    public void removeSticker(string stickerName) {
+    public void RemoveSticker(string stickerName) {
         GameObject sticker = GameObject.Find(stickerName);
         Destroy(sticker);
     }
@@ -66,20 +61,20 @@ public class VisualsManager : MonoBehaviour
     /**
     TODO: enum for all CGname options
     **/
-    private void triggerCG(string CGname) {
+    private void TriggerCG(string CGname) {
         Sprite newCG = Resources.Load<Sprite>($"CGs/{CGname}");
         cgc.setupCG(newCG);
     }
 
     [YarnCommand("takedownCG")]
-    public static void takedownCG() {
+    public static void TakedownCG() {
         cgc.removeCG();
     }
 
     /**
     TODO: enum for all effect options??
     **/
-    public Coroutine screenEffect(string effect) {
+    public Coroutine ScreenEffect(string effect) {
         if (effect.Equals("screenShake")) {
             Debug.Log("Playing sceen shake...");
             return StartCoroutine(playerCamera.screenShake());
@@ -90,8 +85,8 @@ public class VisualsManager : MonoBehaviour
         return null;
     }
 
-    public Coroutine moveCharacter(GameObject chara, GameObject target) {
+    public Coroutine MoveCharacter(GameObject chara, GameObject target) {
         CharacterManager cm = chara.GetComponent<CharacterManager>();
-        return StartCoroutine(cm.moveCharacter(target));
+        return StartCoroutine(cm.MoveCharacter(target));
     }
 }

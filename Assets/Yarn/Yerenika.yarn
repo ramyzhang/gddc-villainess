@@ -22,7 +22,7 @@ Catherine: Man, is it just me or do all my friends have some insane baggage?
     Catherine: Oh... no, not her, though I will be accompanying her before the tournament. Someone else...
     Yerenika: Oh? Well, no matter. I have just the thing for you. Take this!
     // TODO: <<gameNotification you’ve received a cross-shaped pin from yerenika lebovny! >>
-    <<addInventoryItem InventoryManager crossShapedPin>>
+    <<addItem GameStateManager crossShapedPin>>
     Catherine: Oh, I couldn’t... Isn’t this something precious to you?
     Yerenika: Don’t worry about that, I can get something like this anytime again from the Church. Erudian will understand—it was for a dear friend! Besides, your chosen Knight will need the extra protection during the tournament.
     Catherine: Yerenika...
@@ -53,7 +53,7 @@ Catherine: Man, is it just me or do all my friends have some insane baggage?
     Catherine: If nothing else helps me, then maybe some romance-obsessed ancient Academy spirit’s blessing will.
     Yerenika: Hm... Since it’s your first one, you should make it a little special. Something with a bit of extra protection... Oh! I know! Here, take the charm from my earring.
     // TODO: <<gameNotification you’ve received a cross-shaped pin from yerenika lebovny! >>
-    <<addInventoryItem InventoryManager crossShapedPin>>
+    <<addItem GameStateManager crossShapedPin>>
     Catherine: Huh? Wait, hold on! That’s something precious to you, isn’t it?
     Yerenika: Don’t worry about that, I can get something like this anytime again from the Church. Erudian will understand—it was for a dear friend! Besides, your chosen Knight will need the extra protection during the tournament.
     Catherine: Yerenika...
@@ -90,7 +90,7 @@ tags:
     Catherine: Oh come on, you really don’t have to.
     Yerenika: Hey, just take it! Neither of us are the type to go for the edgy asymmetrical look, anyway.
     // TODO: <<gameNotification item received: yerenika’s cross earrings! >>
-    <<addInventoryItem InventoryManager crossEarrings>>
+    <<addItem GameStateManager crossEarrings>>
     Yerenika: The most arduous parts of my story are over now—I was able to overcome them, thanks to my friends and Erudian. I have a feeling yours still has yet to be over, though. Having the full pair will protect you, believe me.
     Catherine: What is with everyone and me needing to be protected...? Are people seeing a bad omen over my head or something?
     Yerenika: Hm? Sorry, I didn’t quite catch that.

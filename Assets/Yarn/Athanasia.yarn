@@ -29,7 +29,7 @@ tags:
             <<changeExpression Catherine blushing>>
             Catherine: <i>I wasn’t expecting that... he has a cute side to him, doesn’t he?</i>
             // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
-            <<addInventoryItem InventoryManager teddyBearOfLove>>
+            <<addItem GameStateManager teddyBearOfLove>>
         <<else>>
             <<jump Athanasia_12_2>>
         <<endif>>
@@ -44,7 +44,7 @@ tags:
                 Catherine: I’ll hold onto it, Duke Oliver. Thank you for the gift.
                 Catherine: <i>A cuddly teddy bear with such a stoic bear of a guard... cute.</i>
                 // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
-                <<addInventoryItem InventoryManager teddyBearOfLove>>
+                <<addItem GameStateManager teddyBearOfLove>>
             <<else>>
                 <<jump Athanasia_12_2>>
             <<endif>>
@@ -79,7 +79,7 @@ tags:
     Athanasia: Thank you. I just have to do right by everyone who’s stood by me.
     Alice: Oh! Speaking of which, I can’t believe I almost forgot. Here, I have something to give you!
     // TODO: <<gameNotification item received: raven keychain! >>
-    <<addInventoryItem InventoryManager ravenKeychain>>
+    <<addItem GameStateManager ravenKeychain>>
     Athanasia: This is a little keychain plushie of my puppy, Raven. I’ve imbued some of his mana properties into it, so I’m sure it’ll prove to be helpful if you ever find yourself in a sticky situation.
     Catherine: What? Athy, you really didn’t have to. How can someone like me dare to receive a magical item made by our school’s highest scoring Spells student?
     Athanasia: Don’t get your knickers in such a twist, this is just a mere trinket. My dad wanted Jeanette and I to properly congratulate everyone, so we’ve been working on these all week.

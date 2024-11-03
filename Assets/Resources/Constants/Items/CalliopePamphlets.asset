@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
+  m_Name: CalliopePamphlets
+  m_EditorClassIdentifier: 
+  name: CalliopePamphlets
+  displayName: Calliope's Pamphlets
+  description: Calliope, the poshest baby lady, is advertising her lounge! She must
+    have dropped this by accident, let's bring these to her!
+  icon: {fileID: 21300000, guid: 0cafca8ad7e1f4cc2b91679d5d8adff8, type: 3}
+  isDefaultItem: 0
