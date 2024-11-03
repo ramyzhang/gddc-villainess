@@ -47,7 +47,7 @@ Catherine: Hey hey! No matter how petty they are, you can’t just call real lif
 Catherine: Anyhow, thanks—I’m gonna head out right now.
 Melissa: Wait! Before you go, take this inferiority complex arrow. I hand-enchanted it myself during Spells class. I’m sure it’ll help you put those kids in their places!
 // TODO: Game notification you’ve received a special item: {inferiority complex arrow}!
-<<addItem InventoryManager inferiorityComplexArrow>>
+<<addItem Inventory inferiorityComplexArrow>>
 Catherine: Thanks. You’re the coolest!
 Melissa: Don’t worry. You go in first! I’ll be right behind you!
 ===
@@ -76,7 +76,7 @@ tags:
     Catherine: Sounds tough.
     Melissa: Yes, and now I have way too many of their things in my bag, it’s getting so burdensome! Here, could you help me carry something? Keep it safe, it’s dangerous!
     // TODO: Game notification Item retrieved: Enchanted Sniper Rifle
-    <<addItem InventoryManager enchantedSniperRifle>>
+    <<addItem Inventory enchantedSniperRifle>>
 
     -> Catherine: Uh, are you sure it’s ok for me to hold onto this?
         Melissa: Of course it’s alright!

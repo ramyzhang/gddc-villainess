@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
         itemNotification = Instantiate(itemNotificationPrefab, transform);
 
         TextMeshProUGUI itemName = itemNotification.transform.Find("NewItem").GetComponent<TextMeshProUGUI>();
-        itemName.text = itemName.text + " " + item.name;
+        itemName.text = itemName.text + " " + item.displayName;
 
         TextMeshProUGUI itemDescription = itemNotification.transform.Find("ItemDescription").GetComponent<TextMeshProUGUI>();
         itemDescription.text = item.description;

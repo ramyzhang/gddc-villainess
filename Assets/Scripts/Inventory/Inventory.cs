@@ -31,14 +31,8 @@ public class Inventory : MonoBehaviour
     [YarnCommand("addItem")]
     public void AddItem(string itemName) //will need to use this function for picking up item
     {
-        if (items.Count < maxItems)
-        {   
-            Item item = Resources.Load<Item>("Items/" + itemName);
-            items.Add(item);
-
-            onItemChangedCallback?.Invoke();
-            onNewItemCallback?.Invoke(item);
-        }
+        Item item = Resources.Load<Item>("Constants/Items/" + itemName);
+        AddItem(item);  // Call the base implementation
     }
 
     public void AddItem(Item item)
@@ -55,16 +49,17 @@ public class Inventory : MonoBehaviour
     [YarnCommand("removeItem")]
     public void RemoveItem(string itemName)
     {
+        Item tempItem = null;
         foreach (Item item in items)
         {
             if (item.name == itemName)
             {
-                items.Remove(item);
-
-                onItemChangedCallback?.Invoke();
+                tempItem = item;
                 break;
             }
         }
+
+        RemoveItem(tempItem);
     }
 
     public void RemoveItem(Item item)

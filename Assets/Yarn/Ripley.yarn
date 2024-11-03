@@ -47,13 +47,13 @@ tags:
 //             <<changeExpression Ripley excited>>
 //             Ripley: Wait! Those herbs... I know a recipe for them that might help you, just in case you get kidnapped too.
 //             // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
-//             <<addItem InventoryManager healingCream>>
+//             <<addItem Inventory healingCream>>
 //             Ripley: Hurry, now go!
 //         -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
 //             <<changeExpression Ripley happy>>
 //             Ripley: Those are some very pretty flowers... wait! This might be the perfect ingredient to finish this product I’m selling...
 //             // TODO: <<gameNotification you’ve received a special item: {healing cream}! >>
-//             <<addItem InventoryManager healingCream>>
+//             <<addItem Inventory healingCream>>
 //             Ripley: It’s dangerous to go alone! Take this.
 //             <<changeExpression Catherine blushing>>
 //             Catherine: Ripley... you’re too kind!
@@ -70,7 +70,7 @@ tags:
 //             Catherine: Thank goodness! I’ll go there right away.
 //             Ripley: Wait! Those herbs... it really does look like you tried to find her. I’m pretty infamous for these, just like you’re a little infamous for your... uh... passionate love for the Crown Prince! Maybe you’re not so bad after all... here, take this.
 //             //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
-//             <<addItem InventoryManager bombDrink>>
+//             <<addItem Inventory bombDrink>>
 //             Ripley: It’s dangerous to go alone! Take this.
 //         -> Catherine: I tried looking for her, but got distracted by the pretty flowers...
 //             Ripley: Those are some very pretty flowers... wait! Can I really trust you when you didn’t even make that much of an effort to find her?
@@ -78,7 +78,7 @@ tags:
 //             Catherine: I-I swear these flowers have magical properties that I thought could help find Alice through magic! You know how my skills are, so I thought you might have a better idea of what to do with them.
 //             Ripley: Actually, I do... Don’t beat yourself up too much about your magic, Catherine. There’s still plenty you can make without it. Like this!
 //             //TODO: <<gameNotification you’ve received a special item: {bomb drink}! >>
-//             <<addItem InventoryManager bombDrink>>
+//             <<addItem Inventory bombDrink>>
 //             Ripley: This might be able to help you if you come across danger like Alice did.
 //             Catherine: Ripley... are you sure this is safe to give to a minor?
 //             Ripley: If it’s for someone who kidnapped Alice, then it’s fine.  I almost forgot! I also talked to an oracle who saw Alice being taken away from someone in Class 3, so maybe you should go there next.
@@ -121,7 +121,7 @@ tags:
 //     Catherine: You know, that doesn’t sound too bad...
 //     Ripley: Right? Some of the children I talked with at the local orphanage seemed to think the same, so they all started making some charms for each other. Here! I have a bit of a... tiger-like relationship with the kids, haha, so I have a spare tiger charm you can decorate your tassel with!
 //     // TODO: <<gameNotification you’ve received a tiger charm from ripley de liverpool! >>
-//     <<addItem InventoryManager tigerCharm>>
+//     <<addItem Inventory tigerCharm>>
 //     Catherine: This is so adorable... although a little deformed... thank you Ripley! You should bring me on one of your volunteer trips, I would love to thank the children in person as well.
 //     Ripley: Of course, and good luck with making the rest of your tassel, although you’ll never be able to defeat the duke and I in the tournament!
 //     <<changeExpression Catherine happy>>
@@ -166,7 +166,7 @@ tags:
 //     Catherine: Uh, nothing. Anyway, we did it! What are your plans after graduation? Living out your happily ever after with Duke Zeronis?
 //     Ripley: Haha, yes, but I’m also excited to have more free time to hang out with my friends, visit the kids at the orphanage, and continue building my business empire! I’m handing out some free samples to all the students before we all part ways to increase my brand awareness. Here! Take this!
 //     // TODO: Item retrieved: Medicine Sample 
-//     <<addItem InventoryManager medicineSample>>
+//     <<addItem Inventory medicineSample>>
 //     Catherine: Wow thanks, that’s amazing Ripley.
 //     <<changeExpression Ripley blushing>>
 //     Ripley: It’s nothing really. And you, Catherine? What’s your plans for the future?

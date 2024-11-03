@@ -32,6 +32,7 @@ public class InventoryUI : MonoBehaviour
             detailsPanel.SetActive(true);
         } else {
             detailsPanel.SetActive(false);
+            return;
         }
 
         for (int i = 0; i < slots.Length; i++)
@@ -45,14 +46,14 @@ public class InventoryUI : MonoBehaviour
             }
         }
 
-        detailsTitle.text = Inventory.items[0].name;
+        detailsTitle.text = Inventory.items[0].displayName;
         detailsDescription.text = Inventory.items[0].description;
         detailsImage.sprite = Inventory.items[0].icon;
     }
 
     public void UpdateDetails(Item item) {
         detailsPanel.SetActive(true);
-        detailsTitle.text = item.name;
+        detailsTitle.text = item.displayName;
         detailsDescription.text = item.description;
         detailsImage.sprite = item.icon;
     }

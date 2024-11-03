@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
   m_Name: AliceScript
   m_EditorClassIdentifier: 
-  name: Alice's Script
+  name: AliceScript
+  displayName: Alice's Script
   description: This is the script for Alice's valedictorian speech... Now, what will
     you decide to do?
   icon: {fileID: 21300000, guid: a05b3e0cc9c214ce794dda2177237bbc, type: 3}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
   m_Name: IronHoe
   m_EditorClassIdentifier: 
-  name: Katarina's Iron Hoe
+  name: IronHoe
+  displayName: Katarina's Iron Hoe
   description: A special weapon from Katarina that can summon golems with a single
     strike!
   icon: {fileID: 21300000, guid: d1ab6f726e20246fd95ebad2a8f4cf59, type: 3}

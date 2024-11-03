@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ComplexArrow
   m_EditorClassIdentifier: 
   name: ComplexArrow
+  displayName: Inferiority Complex Arrow
   description: Enter Description Here
   icon: {fileID: 0}
   isDefaultItem: 0

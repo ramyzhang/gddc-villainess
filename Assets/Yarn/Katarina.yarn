@@ -3,6 +3,8 @@ tags:
 ---
 <<if visited("Katarina_4") and not checkForItem("KatarinaSnake")>>
     <<jump Katarina_4_2>>
+<<elseif checkForItem("KatarinaSnake") and visited("Katarina_4")>>
+    <<jump Katarina_4_3>>
 <<endif>>
 <<changeExpression Katarina happy>>
 Katarina: Hey! It's a great day to avoid raising any death flags, isn't it?
@@ -12,30 +14,7 @@ Catherine: <i>There's no way... It's only my 1st year! Has someone seen through 
 Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused with all the arguments going on in my head.
 Katarina: Anyway, what can I do for you? I think it's the first we've...
 <<if checkForItem("KatarinaSnake")>>
-    <<removeItem InventoryManager katarinaSnake>>
-    <<changeExpression Katarina surprised>>
-    Katarina: Oh my! Is that my little snake you picked up there? Thank you, I would've been in dire straits without it.
-    <<changeExpression Katarina neutral>>
-    Katarina: Oh, I really should repay you somehow... Ah! I know!
-    // TODO: Game notification for new item    
-    <<addItem InventoryManager IronHoe>>
-    <<changeExpression Katarina excited>>
-    Katarina: Check this out! I developed it just recently.
-    Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
-
-    -> Catherine: Oh thanks! This is <i>exactly</i> what I needed! BUt how do I carry something like this around the school is the question...
-        <<changeExpression Katarina neutral>>
-        Katarina: Just tell them you're a part of the gardening club! I'm sure the professors won't mind
-        Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.
-    -> Catherine: Uh... sure. Thanks? I'm not sure what I'd use it for, but...
-    -> Catherine: Argh, I'm not a fan of golems. They remind me of dirt beetles. But... I'll take it.
-    <<changeExpression Catherine happy>>
-    Catherine: Well, thank you regardless, Katarina. You're very kind.
-    Katarina: Aw, don't worry about it!
-    <<changeExpression Catherine neutral>>
-    <<if visited("Calliope_4")>>
-        <<updateState GameStateManager 5>>
-    <<endif>>
+    <<jump Katarina_4_3>>
 <<else>>
     Katarina: Ah! You must be feeling lonely since it's your first year as well, right? Well, fear not! I'll be your friend!
     <<changeExpression Catherine exasperated>>
@@ -62,6 +41,33 @@ tags:
 Katarina: Hey, Catherine! Are you interested in romance novels? I've been thinking about opening a book club.
 Catherine: Sounds great, I'll look for you during the club fair.
 Katarina: Oh! I see Mary. I should convince her to join the club too. See you later, Catherine!
+===
+title: Katarina_4_3
+tags:
+---
+<<removeItem Inventory KatarinaSnake>>
+<<changeExpression Katarina surprised>>
+Katarina: Oh my! Is that my little snake you picked up there? Thank you, I would've been in dire straits without it.
+<<changeExpression Katarina neutral>>
+Katarina: Oh, I really should repay you somehow... Ah! I know!
+<<addItem Inventory IronHoe>>
+<<changeExpression Katarina excited>>
+Katarina: Check this out! I developed it just recently.
+Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
+
+-> Catherine: Oh thanks! This is <i>exactly</i> what I needed! BUt how do I carry something like this around the school is the question...
+    <<changeExpression Katarina neutral>>
+    Katarina: Just tell them you're a part of the gardening club! I'm sure the professors won't mind
+    Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.
+-> Catherine: Uh... sure. Thanks? I'm not sure what I'd use it for, but...
+-> Catherine: Argh, I'm not a fan of golems. They remind me of dirt beetles. But... I'll take it.
+<<changeExpression Catherine happy>>
+Catherine: Well, thank you regardless, Katarina. You're very kind.
+Katarina: Aw, don't worry about it!
+<<changeExpression Catherine neutral>>
+<<if visited("Calliope_4")>>
+    <<updateState GameStateManager 5>>
+<<endif>>
 ===
 title: Katarina_12
 tags:
@@ -105,7 +111,7 @@ tags:
         <<changeExpression Oliver determined>>
         Oliver: Impressive, have you been secretly training with the guard?
         // TODO: Game notification: you’ve received special item: {toy sword}!
-        <<addItem InventoryManager toySword>> 
+        <<addItem Inventory toySword>> 
     <<else>>
         Katarina: Strength level of 1!
         <<changeExpression Catherine exasperated>>
@@ -130,7 +136,7 @@ tags:
     Katarina: Ehehe, thank you Catherine. I’m sure it’s because the professors all loved the home-grown potatoes I gifted them! That reminds me, I need to give you some too!
     Narrator: Item retrieved: Potatoes 
     // TODO: Game notification: Item retrieved: Potatoes !
-    <<addItem InventoryManager potatoes>> 
+    <<addItem Inventory potatoes>> 
     Catherine: Thank you, but it’s not just that, Katarina. Look at all the amazing friends you’ve made who have supported you through everything!
 
     -> Catherine: You’re a warm, bright light in this school.

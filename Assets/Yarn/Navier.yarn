@@ -25,7 +25,7 @@ Catherine: Well... Not so much that I have my eye on them, but I do really wanna
         Navier: Oh! Oh, no, not at all. Please take it. I can’t wait to see your adorable cheeks blush as you give your completed tassel to your knight!
         Catherine: Oh, stop it. Thanks for the feather, Navier. It’s gorgeous.
         // TODO: <<gameNotification you’ve received a queen feather from navier trovi! >>
-        <<addItem InventoryManager queenFeather>>
+        <<addItem Inventory queenFeather>>
         Navier: My pleasure, lovely. Listen, I must go to my history class now. I shall meet you at lunch!
         Catherine: Sure, Nav. I’ll see you later!
     -> Catherine: Something so... so innocent and pure-hearted? They would all just laugh at me. I’m the villainess, after all.
@@ -78,7 +78,7 @@ tags:
     Catherine: These are... Earl Grey shortbread cookies! How did you know?
     Navier: [smiles]
     // TODO:<<gameNotification item received: navier’s earl grey cookies! >>
-    <<addItem InventoryManager earlGreyCookies>>
+    <<addItem Inventory earlGreyCookies>>
     Catherine: Thank you, Navier. I’ll be sure to share these with everyone. They’ll love them! I can’t believe I get to eat THE Lady Navier’s home-made sweets—the kids will be so jealous.
     Navier: Now, now, don’t be like that. Do enjoy them with everyone. You must go now, the ball has already begun.
     Catherine: Yes, I must make my rounds. I shall speak with you later!

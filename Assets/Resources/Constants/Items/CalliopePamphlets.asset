@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
   m_Name: CalliopePamphlets
   m_EditorClassIdentifier: 
-  name: Calliope's Pamphlets
+  name: CalliopePamphlets
+  displayName: Calliope's Pamphlets
   description: Calliope, the poshest baby lady, is advertising her lounge! She must
     have dropped this by accident, let's bring these to her!
   icon: {fileID: 21300000, guid: 0cafca8ad7e1f4cc2b91679d5d8adff8, type: 3}

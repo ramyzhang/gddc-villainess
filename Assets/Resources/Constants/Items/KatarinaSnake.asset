@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
   m_Name: KatarinaSnake
   m_EditorClassIdentifier: 
-  name: Katarina's Snake
+  name: KatarinaSnake
+  displayName: Katarina's Snake
   description: A toy snake that Katarina uses to torture a certain someone.
   icon: {fileID: 21300000, guid: dcba3aa6e9d244037b74b9fde722d809, type: 3}
   isDefaultItem: 0
