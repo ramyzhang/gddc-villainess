@@ -18,7 +18,7 @@ public class DialogueTrigger : GameTrigger
     **/
     public override void Interact() {
         Debug.Log("I was clicked on.");
-        if (dialogueToStart == null) {
+        if (dialogueToStart == null || dialogueToStart == "") {
             Debug.Log($"A dialogue was not loaded in to {gameObject.name}.");
         } else if (dialogueRunner.IsDialogueRunning) {
             Debug.Log("Dialogue is already running, hold on");

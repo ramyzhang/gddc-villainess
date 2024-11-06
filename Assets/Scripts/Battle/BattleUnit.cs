@@ -9,12 +9,16 @@ public class BattleUnit : MonoBehaviour
     public int maxHP;
     public int currentHP;
     public int baseAttack;
+    public bool isDefending = false;
 
-    void Start() {
+    void Awake() {
         currentHP = maxHP;
     }
 
     public bool TakeDamage(int damage) {
+        if (isDefending) {
+            damage /= 2;
+        }
         currentHP -= damage;
         if (currentHP <= 0) {
             currentHP = 0;

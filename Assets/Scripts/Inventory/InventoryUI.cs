@@ -28,7 +28,7 @@ public class InventoryUI : MonoBehaviour
 
     void UpdateUI() //iterate through inventoryslots
     {
-        if (Inventory.items.Count > 0) {
+        if (Inventory.instance.items.Count > 0) {
             detailsPanel.SetActive(true);
         } else {
             detailsPanel.SetActive(false);
@@ -37,18 +37,18 @@ public class InventoryUI : MonoBehaviour
 
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < Inventory.items.Count)
+            if (i < Inventory.instance.items.Count)
             {
-                slots[i].addItemToUI(Inventory.items[i]);
+                slots[i].addItemToUI(Inventory.instance.items[i]);
             } else
             {
                 slots[i].clearSlot();
             }
         }
 
-        detailsTitle.text = Inventory.items[0].displayName;
-        detailsDescription.text = Inventory.items[0].description;
-        detailsImage.sprite = Inventory.items[0].icon;
+        detailsTitle.text = Inventory.instance.items[0].displayName;
+        detailsDescription.text = Inventory.instance.items[0].description;
+        detailsImage.sprite = Inventory.instance.items[0].icon;
     }
 
     public void UpdateDetails(Item item) {

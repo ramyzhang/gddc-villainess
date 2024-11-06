@@ -24,7 +24,8 @@ public class Inventory : MonoBehaviour
     public delegate void OnNewItem(Item item);
     public OnNewItem onNewItemCallback;
 
-    public static List<Item> items = new();
+    // public static List<Item> items = new();
+    public List<Item> items = new();
     private const int maxItems = 16;
 
 
@@ -68,17 +69,19 @@ public class Inventory : MonoBehaviour
         onItemChangedCallback?.Invoke();
     }
 
-    [YarnFunction("checkForItem")]
-    public static bool CheckForItem(string itemName)
-    {
-        foreach (Item item in items)
-        {
-            if (item.name == itemName)
-            {
-                return true;
-            }
-        }
+    // Comment this out and change the "items" variable to a non-static one to test the Inventory with the Inspector
+    
+    // [YarnFunction("checkForItem")]
+    // public static bool CheckForItem(string itemName)
+    // {
+    //     foreach (Item item in items)
+    //     {
+    //         if (item.name == itemName)
+    //         {
+    //             return true;
+    //         }
+    //     }
 
-        return false;
-    }
+    //     return false;
+    // }
 }

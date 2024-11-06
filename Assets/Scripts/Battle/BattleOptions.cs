@@ -5,6 +5,6 @@ using UnityEngine;
 public enum BattleOptions {
     ATTACK,
     SPECIAL,
-    ITEM,
+    HEALITEM,
     DEFEND
 }
