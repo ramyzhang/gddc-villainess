@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566b0613852cd475eb94610b005b53f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateIndex: 0
+  currentStateIndex: 3
   NPCPrefab: {fileID: 3685471950970054091, guid: 4fd7b3d61365b46c4be1d23609f814a6, type: 3}
   ItemPrefab: {fileID: 2392968356776222991, guid: c3b62b262670b47c99575704095130c4, type: 3}
   locations:
@@ -8109,9 +8109,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838098399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c66fbdfbf8c41abbed0fd44a4cc668, type: 3}
+  m_Script: {fileID: 11500000, guid: ab254a6b5697e4e1ca7dc1a85f0f4cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerType: 0
+  dialogueToStart: Gate
 --- !u!1 &1907560154
 GameObject:
   m_ObjectHideFlags: 0

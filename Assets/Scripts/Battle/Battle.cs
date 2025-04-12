@@ -21,7 +21,7 @@ public class Battle : MonoBehaviour
         state = BattleState.START;
 
         // Set up inventory
-        foreach (Item item in Inventory.instance.items) {
+        foreach (Item item in Inventory.items) {
             if (item is HealItem) {
                 healItems.Add(item.name, (HealItem)item);
             } else if (item is WeaponItem) {
