@@ -701,10 +701,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 19d8c1e4-9a20-4328-8679-fb4bda46b1db
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: gddc-villainess
+  projectName: gddc-villainess 2025-04-11_17-45-37
   organizationId: mimimosa
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

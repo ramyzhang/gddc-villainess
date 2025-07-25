@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e03d93e9f5fa046b6b2e4d7cd2386e6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 02b705404701f45f7acbe425ff537984, type: 3}
   m_Name: GraveyardLullaby
   m_EditorClassIdentifier: 
   name: GraveyardLullaby
   displayName: Calliope's Graveyard Lullaby
-  description: There's more to Calliope than meets the eye... Singing these harrowing
-    melodies could help you in a time of need!
+  description: These morose melodies might just save you in a pinch. There seems
+    to be more to Calliope than meets the eye...
   icon: {fileID: 21300000, guid: fda3f2ab3ca7043b7a6e60268e29e898, type: 3}
-  isDefaultItem: 0
+  damage: 30
