@@ -31,18 +31,18 @@ public class PlayerMovement : MonoBehaviour
         //Relinquish player control if dialogue is running
         if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true)
         {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             // anim.SetBool("isWalking", false);
             return;
         }
 
         //Move character
         direction = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(direction * 5f, rb.velocity.y);
+        rb.linearVelocity = new Vector2(direction * 5f, rb.linearVelocity.y);
 
         //Changing from idle animation to walk animation
         if (anim != null) {
-            if (rb.velocity.x == 0) {
+            if (rb.linearVelocity.x == 0) {
                 anim.SetBool("isWalking", false);
             } else {
                 anim.SetBool("isWalking", true);

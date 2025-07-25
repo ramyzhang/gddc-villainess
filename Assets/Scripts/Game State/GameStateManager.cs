@@ -138,7 +138,7 @@ public class GameStateManager : MonoBehaviour
 
         // 6. Trigger relevant cutscene dialogue
         string cutsceneName = $"Cutscene_{newStateIndex}";
-        if (dialogueRunner.NodeExists(cutsceneName)) {
+        if (dialogueRunner.Dialogue.NodeExists(cutsceneName)) {
             dialogueRunner.StartDialogue(cutsceneName);
         } else {
             Debug.Log($"No opening cutscene in Game State {newStateIndex}");
