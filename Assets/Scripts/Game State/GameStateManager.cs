@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -58,7 +57,7 @@ public class GameStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueRunner = FindObjectOfType<DialogueRunner>();
+        dialogueRunner = FindFirstObjectByType<DialogueRunner>();
         gameGamera = GameObject.FindWithTag("MainCamera").GetComponent<MainCamera>();
 
         // Instantiate current state

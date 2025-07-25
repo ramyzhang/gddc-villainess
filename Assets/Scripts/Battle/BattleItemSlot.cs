@@ -16,7 +16,7 @@ public class BattleItemSlot : MonoBehaviour
     void Start() {
         button = GetComponent<Button>();
         button.onClick.AddListener(() => OnItemClick());
-        battle = FindObjectOfType<Battle>();
+        battle = FindFirstObjectByType<Battle>();
     }
 
     public void FillSlot(HealItem newItem) {

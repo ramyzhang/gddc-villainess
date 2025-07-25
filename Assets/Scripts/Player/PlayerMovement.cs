@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -29,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Relinquish player control if dialogue is running
-        if (FindObjectOfType<DialogueRunner>().IsDialogueRunning == true)
+        if (FindFirstObjectByType<DialogueRunner>().IsDialogueRunning == true)
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             // anim.SetBool("isWalking", false);

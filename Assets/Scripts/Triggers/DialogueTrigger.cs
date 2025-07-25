@@ -10,7 +10,7 @@ public class DialogueTrigger : GameTrigger
     void Start()
     {
         triggerType = TriggerType.Dialogue;
-        dialogueRunner = FindObjectOfType<DialogueRunner>();
+        dialogueRunner = FindFirstObjectByType<DialogueRunner>();
     }
 
     /**
@@ -24,7 +24,7 @@ public class DialogueTrigger : GameTrigger
             Debug.Log("Dialogue is already running, hold on");
         } else {
             Debug.Log("Starting dialogue!");
-            FindObjectOfType<DialogueRunner>().StartDialogue(dialogueToStart);
+            FindFirstObjectByType<DialogueRunner>().StartDialogue(dialogueToStart);
         }
     }
 }

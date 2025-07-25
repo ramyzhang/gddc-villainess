@@ -23,7 +23,7 @@ public class VisualsManager : MonoBehaviour
 
         gameStateManager = GameStateManager.Instance;
 
-        dr = GameObject.FindObjectOfType<DialogueRunner>();
+        dr = GameObject.FindFirstObjectByType<DialogueRunner>();
         dr.AddCommandHandler<string>(
             "screenEffect",     // the name of the command
             ScreenEffect // the method to run
