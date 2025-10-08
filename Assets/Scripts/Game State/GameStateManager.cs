@@ -37,6 +37,7 @@ public class GameStateManager : MonoBehaviour
     // TODO: create GET functions for current state variables
 
     // Game state management variables
+    private int prevStateIndex = -1;
     public int currentStateIndex = 0;
     [Header("CONSTANTS BELOW - PLEASE DO NOT MODIFY")]
     public GameObject NPCPrefab;
@@ -62,6 +63,25 @@ public class GameStateManager : MonoBehaviour
 
         // Instantiate current state
         UpdateState(currentStateIndex);
+    }
+
+    void Update()
+    {
+        if (prevStateIndex < currentStateIndex)
+        {
+            // Dismiss and stop current dialogue
+            dialogueRunner.Stop();
+            dialogueRunner.StartDialogue("Stop");
+
+            // Get new cutscene if available
+            string cutsceneName = $"Cutscene_{currentStateIndex}";
+            if (dialogueRunner.Dialogue.NodeExists(cutsceneName)) {
+                dialogueRunner.StartDialogue(cutsceneName);
+            } else {
+                Debug.Log($"No opening cutscene in Game State {currentStateIndex}");
+            }
+            prevStateIndex = currentStateIndex;
+        }
     }
 
     // TODO: it might be better to be using one of yarn's built in event handlers instead here
@@ -135,15 +155,7 @@ public class GameStateManager : MonoBehaviour
         // 5. Switch camera subject
         gameGamera.playerCharacter = currentPlayer;
 
-        // 6. Trigger relevant cutscene dialogue
-        string cutsceneName = $"Cutscene_{newStateIndex}";
-        if (dialogueRunner.Dialogue.NodeExists(cutsceneName)) {
-            dialogueRunner.StartDialogue(cutsceneName);
-        } else {
-            Debug.Log($"No opening cutscene in Game State {newStateIndex}");
-        }
-
-        // 9. Update state
+        // 6. Update state
         currentState = newState;
         currentStateIndex = newStateIndex;
     }
@@ -158,10 +170,6 @@ public class GameStateManager : MonoBehaviour
     5. Clean up all Sticker prefab clones (except original prefab)
     **/
     private void TearDown(GameState newState) {
-        // 0. Dismiss and stop current dialogue
-        dialogueRunner.Stop();
-        dialogueRunner.StartDialogue("Stop");
-
         // 1. Remove previous player
         if (!newState.playerCharacter.Equals(currentState.playerCharacter)) {
             GameObject prevPlayer = GameObject.FindWithTag("Player");

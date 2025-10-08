@@ -10,7 +10,7 @@ tags:
 Katarina: Hey! It's a great day to avoid raising any death flags, isn't it?
 Catherine: Er... Come again?
 <<changeExpression Catherine worried>>
-Catherine: <i>There's no way... It's only my 1st year! Has someone seen through me already?</i>
+Catherine: [i]There's no way... It's only my 1st year! Has someone seen through me already?[/i]
 Katarina: Oh! Ahaha, sorry, just talking to myself. I've had a lot to think about these days, so I get confused with all the arguments going on in my head.
 Katarina: Anyway, what can I do for you? I think it's the first we've...
 <<if checkForItem("KatarinaSnake")>>
@@ -22,7 +22,7 @@ Katarina: Anyway, what can I do for you? I think it's the first we've...
     Katarina: Great friendships always start somewhere! Don't sweat it!
     Katarina: Is there anything in particular you've been worried about? I, Katarina Claes, can be sure to be of help!
     <<changeExpression Catherine worried>>
-    Catherine: Um... well, there <i>is</i> one thing. Have you met Alice Langway yet? The one rumoured to be the Saintess?
+    Catherine: Um... well, there [i]is[/i] one thing. Have you met Alice Langway yet? The one rumoured to be the Saintess?
     Katarina: Why, yes. Just keep going to the end of the hallway, I think I saw her around that corner a few minutes ago.
     Katarina: But... why?
     <<changeExpression Catherine happy>>
@@ -55,7 +55,7 @@ Katarina: Oh, I really should repay you somehow... Ah! I know!
 Katarina: Check this out! I developed it just recently.
 Katarina: If you slam it into the ground, a small dirt golem will be summoned to help you with whatever you need!
 
--> Catherine: Oh thanks! This is <i>exactly</i> what I needed! But how do I carry something like this around the school...?
+-> Catherine: Oh thanks! This is [i]exactly[/i] what I needed! But how do I carry something like this around the school...?
     <<changeExpression Katarina neutral>>
     Katarina: Just tell them you're a part of the gardening club! I'm sure the professors won't mind
     Catherine: Uh, I'm not sure about that. This looks way too much like a weapon.
@@ -130,7 +130,7 @@ tags:
     Catherine: Uh, actually… I wanted to ask if I could actually have some tomatoes from your garden next time. Everyone’s been talking about them…
     Katarina: Oh, of course! Drop by after the ball and I’ll get you some!
     Catherine: Thanks, Katarina!
-    Catherine: <i>Yesss!</i>
+    Catherine: [i]Yesss![/i]
 <<else>>
     Catherine: Good job on graduating, Katarina. You made it!
     Katarina: Ehehe, thank you Catherine. I’m sure it’s because the professors all loved the home-grown potatoes I gifted them! That reminds me, I need to give you some too!

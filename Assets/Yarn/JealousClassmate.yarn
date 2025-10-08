@@ -17,7 +17,7 @@ Catherine: I heard that Alice was kidnapped! I’m here to take down the villain
         -> Catherine: You’re right, she’s acting super sus.
 
         <<moveCharacter Ripley Melissa>>
-        Ripley: Mhm, she’s a little <i>too</i> ready to help, especially after just hearing about it.
+        Ripley: Mhm, she’s a little [i]too[/i] ready to help, especially after just hearing about it.
         
         -> Catherine: Ripley? When did you get here?
         -> Catherine: I mean... Didn’t you help after I explained it once?
@@ -94,9 +94,9 @@ Catherine: ANYWAYS! That’s not even important right now! Guys, this girl and h
 Love Interest: Catherine, you... you saved Alice?
 <<if battleWon(0) == true>>
     Love Interest: You never fail to surprise me. I’ve never met a girl as brave and as...
-    Catherine: <i>OMG he’s going to say it!</i>
+    Catherine: [i]OMG he’s going to say it![/i]
     Love Interest: A girl as interesting as you!
-    Catherine: <i>It’s here! The trope of all tropes! The not-like-other girls trope! In the flesh! Kyaaaa!!!</i>
+    Catherine: [i]It’s here! The trope of all tropes! The not-like-other girls trope! In the flesh! Kyaaaa!!![/i]
 
     -> Catherine: For some reason, that makes me happy to hear...
     -> Catherine: I mean, Alice and the other girls are also plenty interesting.
@@ -123,7 +123,7 @@ Love Interest: Catherine, you... you saved Alice?
 
     Jealous Classmate: Uh... guys? I’m still here. Guys?
     Love Interest: Come on, Catherine. You must be tired after all this. Let’s go to the infirmary and help you and Alice patch up, then go back to class.
-    Catherine: <i>He’s actually being nice...?</i>
+    Catherine: [i]He’s actually being nice...?[/i]
     Alice: Yay! Let’s all be nice to each other from now on, okay? [hugs Catherine] Thanks so much for saving me, Catherine.
     <<jump JealousClassmate_10_Exit>>
 <<endif>>
@@ -159,9 +159,9 @@ tags:
 
     Love Interest: But it does seem like Catherine tried to save Alice...
     Love Interest: You never fail to surprise me. I’ve never met a girl as brave and as...
-    Catherine: <i>OMG he’s going to say it!</i>
+    Catherine: [i]OMG he’s going to say it![/i]
     Love Interest: A girl as interesting as you!
-    Catherine: <i>It’s here! The trope of all tropes! The not-like-other-girls trope! In the flesh! Kyaaaa!!!</i>
+    Catherine: [i]It’s here! The trope of all tropes! The not-like-other-girls trope! In the flesh! Kyaaaa!!![/i]
     <<changeExpression Catherine exasperated>>
     Catherine: H-haha, thanks, $liName. I do my best. I just wanted to make sure Alice was okay.
     <<moveCharacter Alice Catherine>>
@@ -207,7 +207,7 @@ tags:
     Jealous Classmate: Uh... guys? I’m still here. Guys?
     <<changeExpression LoveInterest happy>>
     Love Interest: Come on, Catherine. You must be tired after all this. Let’s go to the infirmary and help you and Alice patch up, then go back to class.
-    Catherine: <i>He’s actually being nice...?</i>
+    Catherine: [i]He’s actually being nice...?[/i]
     Alice: Yay! Let’s all be nice to each other from now on, okay? Thanks so much for saving me, Catherine.
     Jealous Classmate: GUYS???
     <<jump JealousClassmate_10_Exit>>
@@ -218,14 +218,14 @@ tags:
 ---
 <<screenEffect fadeBlack>>
 // TODO: catherine is alone in the scene
-???: <i>G... out... Get... Get... Out...</i>
+???: [i]G... out... Get... Get... Out...[/i]
 Catherine: Huh? Who’s there?
 ???: GET OUT!!!
 Catherine: Who are you?!
-???: <i>This... not... yours... Give... back... Give it... back... Imp... o... Impost... er...</i>
-???: <i>A... ice... Al... ice... Gi... ve... it... ba...</i>
+???: [i]This... not... yours... Give... back... Give it... back... Imp... o... Impost... er...[/i]
+???: [i]A... ice... Al... ice... Gi... ve... it... ba...[/i]
 Catherine: Why are you in my head?! I don’t want this! Please, I didn’t mean for any of this to happen.
-???: <i>No... no... no!</i>
+???: [i]No... no... no![/i]
 ???: ...
 Catherine: Is it... is it finally gone? Who was that?
 Catherine: How did they know I’m an imposter?

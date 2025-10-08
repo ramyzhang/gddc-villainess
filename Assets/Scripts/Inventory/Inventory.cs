@@ -15,6 +15,13 @@ public class Inventory : MonoBehaviour
             return;
         }
         instance = this;
+
+#if DEBUG
+        if (items.Count < debugItems.Count)
+        {
+            items = debugItems;
+        }
+#endif
     }
     #endregion
 
@@ -24,13 +31,24 @@ public class Inventory : MonoBehaviour
     public delegate void OnNewItem(Item item);
     public OnNewItem onNewItemCallback;
 
-    public static List<Item> items = new();
-    // public List<Item> items = new();
+    private static List<Item> items = new();
+#if DEBUG
+    public List<Item> debugItems = new();
+#endif
     private const int maxItems = 16;
 
+    public static int GetCount()
+    {
+        return items.Count;
+    }
+
+    public static Item GetItem(int index)
+    {
+        return items[index];
+    }
 
     [YarnCommand("addItem")]
-    public void AddItem(string itemName) //will need to use this function for picking up item
+    public void AddItem(string itemName) // will need to use this function for picking up item
     {
         Item item = Resources.Load<Item>("Constants/Items/" + itemName);
         AddItem(item);  // Call the base implementation
@@ -41,6 +59,9 @@ public class Inventory : MonoBehaviour
         if (items.Count < maxItems)
         {
             items.Add(item);
+#if DEBUG
+            debugItems.Add(item);
+#endif
 
             onItemChangedCallback?.Invoke();
             onNewItemCallback?.Invoke(item);
@@ -50,15 +71,7 @@ public class Inventory : MonoBehaviour
     [YarnCommand("removeItem")]
     public void RemoveItem(string itemName)
     {
-        Item tempItem = null;
-        foreach (Item item in items)
-        {
-            if (item.name == itemName)
-            {
-                tempItem = item;
-                break;
-            }
-        }
+        Item tempItem = items.Find(x => x.name == itemName);
 
         RemoveItem(tempItem);
     }
@@ -66,6 +79,9 @@ public class Inventory : MonoBehaviour
     public void RemoveItem(Item item)
     {
         items.Remove(item);
+#if DEBUG
+        debugItems.Remove(item);
+#endif
         onItemChangedCallback?.Invoke();
     }
 

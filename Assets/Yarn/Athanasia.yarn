@@ -27,7 +27,7 @@ tags:
             Everett: You can simply hold it for me while we go through the festival.
             Catherine: Oh, uh, thanks...
             <<changeExpression Catherine blushing>>
-            Catherine: <i>I wasn’t expecting that... he has a cute side to him, doesn’t he?</i>
+            Catherine: [i]I wasn’t expecting that... he has a cute side to him, doesn’t he?[/i]
             // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
             <<addItem GameStateManager teddyBearOfLove>>
         <<else>>
@@ -42,7 +42,7 @@ tags:
                 <<changeExpression Oliver blushing>>
                 Oliver: Catherine, would you keep it safe for me? If you like it, you can have it forever... ahem. I mean—
                 Catherine: I’ll hold onto it, Duke Oliver. Thank you for the gift.
-                Catherine: <i>A cuddly teddy bear with such a stoic bear of a guard... cute.</i>
+                Catherine: [i]A cuddly teddy bear with such a stoic bear of a guard... cute.[/i]
                 // TODO: <<gameNotification you’ve received a special item: {teddy bear of love?}! >>
                 <<addItem GameStateManager teddyBearOfLove>>
             <<else>>

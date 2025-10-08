@@ -6,14 +6,15 @@ MobMC: Who’s that girl with a slice of toast in her mouth, running to school b
 MobMC: ...
 MobMC: Oh yeah, that’s me.
 <<changeExpression MobMC excited>>
-MobMC: Don’t look at those dark circles and eyebags, I just stayed up late playing through all of the routes in a new visual novel game I’m obsessed with!
+MobMC: Don’t mind my eyebags, I just stayed up late trying to 100% this new otome game. It’s called...
 <<changeExpression MobMC neutral>>
-MobMC: Hold on, let me get the name... Oh, yeah!
+MobMC: Uhh...
+MobMC: Hold on, let me check my Vapor library to get the name... Oh, yeah!
 <<changeExpression MobMC excited>>
 MobMC:「Doki☆Doki! Caught Between Two Handsome Men, the Prince and his Guard, While Evading the Villainess as the Reincarnated Saintess of this World~ ☆ !!」
-MobMC: But us fans like to call it「Saintess」for short.
+MobMC: But us fans like to call it DDCBTHM for short.
 <<changeExpression MobMC worried>>
-MobMC: Even though I stayed up all night, I only just started to reach the end of the story...!
+MobMC: Even though I stayed up all night, I only just started to reach the climax of the story...!
 MobMC: The Crown Prince, Everett Aulus, annuls his engagement with the villainess, Lady Catherine Beckett, and his personal guard and best friend, Duke Oliver Conrad, is about to behead her...
 <<changeExpression MobMC surprised>>
 MobMC: ...but just as I’m about to cross the street to the gates of my school...!
@@ -21,7 +22,7 @@ MobMC: ...but just as I’m about to cross the street to the gates of my school.
 MOB: Hey, watch out!
 <<screenEffect screenShake>>
 <<changeExpression MobMC crying>>
-MobMC: There’s no way I’m getting isekai’d by Truck-kun?!
+MobMC: There’s no way!!! I’m getting isekai’d by Truck-kun?!
 <<screenEffect fadeBlack>>
 <<updateState GameStateManager 1>>
 ===
@@ -35,50 +36,67 @@ MobMC: ...
 <<changeExpression Catherine surprised>>
 <<animateCharacter Catherine vi_getup>>
 MobMC: I’m... I’m alive...?
-Narrator: <i>You pat yourself all over.</i>
+Narrator: [i]You pat yourself all over.[/i]
 <<changeExpression Catherine excited>>
-MobMC: I’m... I’m alive! Haha, let’s go!!!
+MobMC: I’m... I’m alive! Man, my skull must be crazy thick to have survived that.
 <<moveCharacter Ibelina Bedside>>
 MobMC: ... 
 ???: My lady...? Are you alright?
 <<changeExpression Catherine surprised>>
-MobMC: What... who are you? And why are you dressed like that?
-???: Pardon? Is something wrong with my uniform?
-MobMC: H-hold on... and why does my room look like this?!
+MobMC: What... who are you? And what's with the maid cosplay?
+???: Pardon? Cos-... cozpleigh? I don't understand, my lady...
+MobMC: H-hold on... And what's with this ridiculously garish medieval romance fantasy bedroom decor that's completely historically inaccurate?
+MobMC: Can't escape shitty worldbuilding even in my own dreams...
 ???: D-did you want me to change your decor...?
 <<changeExpression Catherine worried>>
-MobMC: Strange... you kind of look like...
-Narrator: <i>You inspect the maid and try to remember...</i>
+MobMC: Strange...
+MobMC: You kind of look like...
+Narrator: [i]You inspect the maid and try to remember...[/i]
 <<changeExpression Catherine surprised>>
-MobMC: That’s right! Ibelina! From「Sincerely: I Became a Duke’s Maid」!
-Ibelina: Yes...? I’m Ibelina...? But what do you mean a duke’s maid? I’m <i>your maid</i>, my lady.
+MobMC: That’s right! Ibelina! From「A Tender Heart: The Story of How I Became a Duke's Maid」!
+Ibelina: Yes...? I’m Ibelina...? But what do you mean a duke’s maid? I’m [i]your maid[/i], my lady.
+MobMC: ...!
 MobMC: Wait a second...
 <<moveCharacter Catherine Mirror>>
 <<changeExpression Catherine blushing>>
-MobMC: <i>Gorgeous, shiny hair even after just waking up... clear skin that’s never seen a pimple in its life... 
+MobMC: [i]Gorgeous, shiny hair even after just waking up... clear skin that’s never seen a blemish in its life...[/i]
 <<changeExpression Catherine excited>>
-MobMC: <i>This beauty that can only exist in the 2D plane... I’ve reincarnated! This is my isekai moment!</i>
-<<changeExpression Catherine surprised>>
-MobMC: Oh my gosh! I recognise this character!
-MobMC: She’s from「Doki☆Doki! Caught Between Two Handsome Men, the Prince and his Guard, While Evading the Villainess as the Reincarnated Saintess of this World~ ☆ !!」
+MobMC: [i]This beauty that can only exist in the 2D plane... I've been isekai'ed![/i]
 <<changeExpression Catherine worried>>
-MobMC: But... my hair isn’t blonde... huh?
+MobMC: [i]Oh god...[/i]
+MobMC: [i]But... I don't remember this character from Ibelina's story?[/i]
+MobMC: [i]And I've played [/i]way[i] too many otome games to remember them all...[/i]
+<<changeExpression Catherine surprised>>
+MobMC: Wait, this artstyle...
+MobMC: It's exactly the same as the one from DDCBTHM!!!
+MobMC: ...
+MobMC: Wait... WHAT?!
+<<changeExpression Catherine worried>>
+MobMC: But... my hair isn’t blonde like Alice, the saintess.
 MobMC: Ibelina...
 
--> Catherine: my lovely maid...
--> Catherine: light of my life...
--> Catherine: can do no wrong...
+-> MobMC: my lovely maid...
+-> MobMC: light of my life...
+-> MobMC: can do no wrong...
 
 MobMC: ...please tell me my name isn't Catherine from the Beckett family!
-Ibelina: Why? Oh my, did your fall down the stairwell cause you to lose some memory? 
-Ibelina: I know you were distraught because of your spat with the Crown Prince about the engagement, but I didn’t think it would be this severe.
+Ibelina: ...! Oh my, oh dear, did your fall down the stairwell cause you to lose some memory? 
+Ibelina: I know you were distraught because of your spat with the Crown Prince about the engagement, but I didn’t think it would be [i]this[/i] severe.
 Catherine: ...
 <<changeExpression Catherine crying>>
-Catherine: NooOOOOO!!!!!
+Catherine: You have got to be joking.
+Narrator: [i]...and this is my story of how I reincarnated and, well, will eventually die, as a villaine—[/i]
 <<screenEffect screenShake>>
-Narrator: <i>...and this is my story of how I reincarnated and, well, will eventually die, as a villaine—</i>
 <<changeExpression Catherine determined>>
-Catherine: Hold it, narrator! Don’t go there, I’m going to change this ending! I’m not about to die a second time—not like this!
+Catherine: Stop right there, disembodied voice!
+Catherine: Whether it's public breakups, royally ordained decapitation, or relentless court gossip... Come at me! I'll take it all head on.
+Catherine: After all, if there's one thing I'm confident in, it's my obsession with playing the game!
+<<changeExpression Catherine worried>>
+Catherine: And above all.. I want to live! It's too early for me to die.
+<<changeExpression Catherine crying>>
+Catherine: I haven't even kissed a real-life 3D guy yet!
+<<changeExpression Catherine determined>>
+Catherine: I’m going to change this shitty ending!!!
 <<screenEffect fadeBlack>>
 <<triggerCG titleCard>>
 // TODO: remove waits and handle them exclusively via triggerCG coroutine
@@ -90,18 +108,16 @@ Catherine: Hold it, narrator! Don’t go there, I’m going to change this endin
 title: Cutscene_2
 tags:
 ---
-Catherine: Wow, I can't believe it’s already been one year since I woke up as the villainess in「Saintess」!
-Catherine: The first thing I did was make sure I knew exactly what happened in my past.
 <<changeExpression Catherine happy>>
-Catherine: Good thing little miss Beckett's parents are <i>obsessed</i> and spoiled her a <i>ton</i>!
-Catherine: They even had a whole diary detailing every little thing she's done ever since she was born.
-Catherine: I mean, geez, now I know why Catherine turned out the way she did! Anyhow...
+Catherine: Wow, I can't believe it’s already been one year since I woke up as the villainess in「DDCBTHM」!
+Catherine: Good thing the game's writing was so weak - I got a [i]ton[/i] of exposition just by talking to random people in the manor.
 <<changeExpression Catherine worried>>
-Catherine: The only thing I’m worried about now is that today's my first day at Born Privileged Academy.
-Catherine: This can only mean one thing: the beginning of the otome game's story!
+Catherine: I did everything I could to prepare for my first day at Born Privileged Academy, but...
+Catherine: I still have a pit of anxiety in my stomach.
+Catherine: What if nothing I do can change the force of destiny? I really don't want to die again...
 <<changeExpression Catherine determined>>
-Catherine: Yep, this is where the plotline that’s set up to get me killed starts! I <i>have</i> to make sure I’m on good terms with the heroine, so that the male leads can’t find any reason to kill me in her name!
-Catherine: Alright! <b>NEW GAMEPLAN:</b> become best friends with Alice Langway! 
+Catherine: I [i]have[/i] to make sure I’m on good terms with the heroine, so that the male leads can’t find any reason to kill me in her name!
+Catherine: [b]GAMEPLAN:[/b] become best friends with Alice Langway! 
 <<changeExpression Catherine crying>>
 Catherine: She’s my only hope to stay alive!
 <<changeExpression Catherine neutral>>
@@ -109,21 +125,23 @@ Catherine: She’s my only hope to stay alive!
 title: Cutscene_3
 tags:
 ---
-Headmaster: Welcome one, welcome all, esteemed students of Born Privileged Academy!
+Headmaster: Welcome one, welcome all, esteemed freshmen of Born Privileged Academy!
 Headmaster: You, scions of the most powerful persons in our Kingdom, are here to study from the most prestigious scholars around the world.
-Headmaster: Here is where you shall learn the knowledge needed to propel our Kingdom into a new generation. For four years, you shall exert yourself in the disciplines of Spells, Magic History, Swordsmanship, Kingdom Administration, and more!
+Headmaster: For four years, you shall enrich yourself in the disciplines of Spellmaking, Magic History, Swordsmanship, Kingdom Administration, and more!
 Headmaster: Today is the first day of your orientation. Feel free to converse with your professors-to-be and your fellow classmates. Enjoy the refreshments our world-renowned kitchen has provided!
-Headmaster: And lastly, don't leave before the end of the ceremony, when the valedictorian of the Young Mages Elementary Academy shall make her welcome speech.
+Headmaster: And lastly, don't leave before the end of the ceremony - the valedictorian of the Young Mages Elementary Academy shall make her welcome speech.
 <<changeExpression Catherine worried>>
-Catherine: <i>Oh no, isn't this where the heroine first meets and makes an impression on the male leads? I can't let her do that, because...</i>
+Catherine: [i]God, it's all happening so fast.[/i]
+Catherine: [i]Alice's speech is the first game event where she piques the male leads' interest.[/i]
+Catherine: [i]I can't let it happen, because...[/i]
 
--> Catherine: <i>I want those hotties to myself!</i>
--> Catherine: <i>That will lead to my death!</i>
+-> Catherine: [i]I want those hotties to myself![/i]
+-> Catherine: [i]That will lead to my death![/i]
 
 <<changeExpression Catherine determined>>
-Catherine: <i>I</i> have <i>to make sure I ruin her speech and destroy her script before she goes up there!</i>
+Catherine: [i]I [/i]have[i] to make sure to get rid of her script before she goes up there![/i]
 <<newQuest GameStateManager 0>>
-Catherine: <i>Come on, Catherine Beckett. Muster your best villainess-style schemes! We have to do something!</i>
+Catherine: [i]Come on, Catherine Beckett. Muster your best villainess-style schemes! We have to do something![/i]
 <<changeExpression Catherine worried>>
 Catherine: What should I do first...
 // TODO: jump to correct area when chosen
@@ -149,7 +167,7 @@ tags:
   <<moveCharacter LoveInterest Catherine>>
   Love Interest: Catherine! Catherine, listen... Something horrible has occurred!
   Love Interest: Alice just got kidnapped! We haven’t been able to find her anywhere.
-  Catherine: <i>That can’t be true... It’s way too early for this to happen! Have I been enjoying my school life too much? I’ve forgotten about my main mission!</i>
+  Catherine: [i]That can’t be true... It’s way too early for this to happen! Have I been enjoying my school life too much? I’ve forgotten about my main mission![/i]
   Catherine: This won’t do. I have to get it together.
   Catherine: Don’t panic, {$liName}. Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
   // TODO: gameNotification: "New Quest: A Case of Kidnapping!"
@@ -177,7 +195,7 @@ Love Interest: Don’t play dumb! Alice! Did you kidnap her?! Your jealousy is g
 Catherine: I didn’t do it! Let me prove it to you.
 Love Interest: Fine, but I won’t believe you until you find who did hurt her.
 <<changeExpression Catherine neutral>>
-Catherine: <i>This won’t do. I have to get it together.</i>
+Catherine: [i]This won’t do. I have to get it together.[/i]
 Catherine: Come on, stop staring at me hatefully like that.
 Catherine: Let’s start by asking around to see if anyone witnessed Alice getting kidnapped.
 <<newQuest GameStateManager 1>>
@@ -191,7 +209,7 @@ tags:
     <<changeExpression Alice angry>>
     Alice: What are you saying? She isn’t just “not bad”, she just destroyed all of us! You’re amazing, Catherine!
     <<changeExpression Catherine exasperated>>
-    Catherine: <i>I guess all that time spent loitering at the arcade in my past life did amount to something, huh?</i>
+    Catherine: [i]I guess all that time spent loitering at the arcade in my past life did amount to something, huh?[/i]
     <<changeExpression Catherine determined>>
     Catherine: Sure, I’m good at games, but I think Alice can stand out way more at the festival tonight.
     Alice: What do you mean?
@@ -277,7 +295,7 @@ Medea: As such, the winner will be decided by the supporting team who can gather
     Catherine: ...? You okay?
     Love Interest: Yeah. Yep. Cool as a cucumber. Hey, why don’t we go meet up with Alice backstage now?
     Catherine: Ooh, great idea!
-    Catherine: <i>Huh. It seems like my death flags have faded a bit.</i>
+    Catherine: [i]Huh. It seems like my death flags have faded a bit.[/i]
     <<screenEffect fadeWhite>>
 <<else>>
     Catherine: Oh no... I don’t think we won enough tokens to help Alice win...
@@ -306,7 +324,7 @@ Medea: As such, the winner will be decided by the supporting team who can gather
         Oliver: She’s the Saintess for sure.
         Catherine: You two shine pretty brightly yourselves...
         Everett and Oliver: Huh?
-        Catherine: Oh, nothing. Let’s go backstage to meet up with Alice! I wanna end the night off with <i>ice cream.</i>
+        Catherine: Oh, nothing. Let’s go backstage to meet up with Alice! I wanna end the night off with [i]ice cream.[/i]
         Love Interest: Aw yeah.
         <<jump Cutscene_14_Exit>>
     <<endif>>
@@ -315,11 +333,11 @@ Medea: As such, the winner will be decided by the supporting team who can gather
 title: Cutscene_14_Exit
 tags:
 ---
-???: <i>ine... mine... n... ot... yours... my b... ody...</i>
+???: [i]ine... mine... n... ot... yours... my b... ody...[/i]
 Love Interest: ... Catherine? What’s up?
-???: <i>MINE!!! Give it BA...ck.... My b...ody... my... {$liName}...</i>
+???: [i]MINE!!! Give it BA...ck.... My b...ody... my... {$liName}...[/i]
 Love Interest: Hey, Catherine! Snap out of it! Are you okay?!
-???: <i>Don’t... don’t... don-</i>
+???: [i]Don’t... don’t... don-[/i]
 ???: ...
 Catherine: ...
 Catherine: The whispers... they came back... Her voice... She sounds like she’s in so much pain...
@@ -357,7 +375,7 @@ tags:
     Catherine: What’s next, what’s next...
     Catherine: I remember now! The 3rd Years’ Knight Tournament! Our Academy’s most prestigious event, where the future great knights of the kingdom are discovered!
     <<moveCharacter Catherine HallwayBegin>>
-    Catherine: There’s no way I can fail this. I <i>have</i> to cement my place in the friend group so they can’t exile me... or worse...
+    Catherine: There’s no way I can fail this. I [i]have[/i] to cement my place in the friend group so they can’t exile me... or worse...
     Catherine: No! Keep it together, Catherine. I’ve already come so far. Let’s gather some information and create a game plan.
 <<else>>
     Catherine: Well, my school life is rolling out better than expected. The boys don’t seem to hate my guts anymore...
@@ -406,10 +424,10 @@ Headmaster: Catherine Beckett!
 Narrator: You cross the stage, and just as you’re about to take your diploma, lightning strikes...
 <<screenEffect lightning>>
 <<screenEffect screenShake>>
-???: <i>N... Y..RS! MOM.......NT......VIL.........ENGE</i>
+???: [i]N... Y..RS! MOM.......NT......VIL.........ENGE[/i]
 Catherine: What... what’s going on?
 Headmaster: Catherine? Come now, take your certificate!
-???: <i>N... YOU... RS! MY.... MINE.... MINE... MINE!!!</i>
+???: [i]N... YOU... RS! MY.... MINE.... MINE... MINE!!![/i]
 <<screenEffect screenShake>>
 <<screenEffect fadeBlack>>
 Catherine: Where... where am I? Don’t tell me... am I still doomed to perish, even after all my hard work to change the story?
@@ -425,15 +443,15 @@ Catherine: !!!
 ???: But now, it’s alright. Finally, after years of effort to crawl my way back into my mind... I can take back what was mine. I can rightfully execute the revenge that was mine.
 
 -> Catherine: No... you can’t be... are you... the original? You were here the whole time?
-    OG!Catherine: Hah! I am not just the original, I am the <i>true</i> Catherine Bennett. You are nothing more than a phony.
+    OG!Catherine: Hah! I am not just the original, I am the [i]true[/i] Catherine Bennett. You are nothing more than a phony.
 -> Catherine: Who are you?! What do you mean by revenge?
-    OG!Catherine: You still haven’t caught on yet? I am the <i>true</i> Catherine Bennett.
+    OG!Catherine: You still haven’t caught on yet? I am the [i]true[/i] Catherine Bennett.
 -> Catherine: What’s your problem? I was just about to finish with all this business, graduate, and escape!
-    OG!Catherine: Escape to where?! And shirk all the responsibilities I’ve carried since I was a child? I think not! I am the <i>true</i> Catherine Bennett, and I will not allow you to take one step further in my body.
+    OG!Catherine: Escape to where?! And shirk all the responsibilities I’ve carried since I was a child? I think not! I am the [i]true[/i] Catherine Bennett, and I will not allow you to take one step further in my body.
 
 Catherine: Catherine...
 OG!Catherine: Do not soil my name with that pitiful look of yours. I will not stand for it.
-OG!Catherine: Someone like you, who blissfully waltzed into a noble life in the making, will never truly understand me. Change <i>my</i> fate? Silly thing, do you think yourself God?
+OG!Catherine: Someone like you, who blissfully waltzed into a noble life in the making, will never truly understand me. Change [i]my[/i] fate? Silly thing, do you think yourself God?
 OG!Catherine: All my life, I have endeavoured to be nothing less than perfect, because that is what is expected of the girl one day meant to be crowned Queen.
 OG!Catherine: It has never mattered what others thought of me. Sleepless nights spent ensuring I could succeed in my studies... blistered hands from the etiquette tutor’s discipline... gritting my teeth through the meaningless drivel others whisper behind my back in order to preserve a reputation in high society.
 OG!Catherine: No doubt Everett -- my kind, sweet Everett -- had it hard too, but at least he was permitted to go out with his friends, to enjoy his life as a student.
@@ -547,10 +565,10 @@ tags:
         Everett: Alice... will you be my fiance?
         Alice: Oh, Everett... Yes. Yes, I will.
         <<triggerCG aliceEverettEngagement>>
-        Catherine: <i>How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...</i>
-        Catherine: <i>But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?</i>
-        Catherine: <i>But there’s no way... she’s gone, forever.</i>
-        Catherine: <i>How dare I wish for more than this? This is the happy ending I wanted, for everyone.</i>
+        Catherine: [i]How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...[/i]
+        Catherine: [i]But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?[/i]
+        Catherine: [i]But there’s no way... she’s gone, forever.[/i]
+        Catherine: [i]How dare I wish for more than this? This is the happy ending I wanted, for everyone.[/i]
         Oliver: You okay, Catherine? Your face looks...
         Catherine: I’m... I’m alright, Oliver. Thank you for asking. I’m just annoyed at Everett for choosing such an untactful location to propose.
         Oliver: [sighs] You know him, he has a flair for the extravagant even if he pretends not to.
@@ -564,7 +582,7 @@ tags:
         Oliver: [clears throat]
         Oliver: I would like to hereby announce my betrothal with Alice Langway, the future Saintess of our Kingdom.
         Narrator: ND: The crowd gasps 
-        Catherine: W-w-with Alice? Alice and Oliver are getting... <i>engaged</i>?!
+        Catherine: W-w-with Alice? Alice and Oliver are getting... [i]engaged[/i]?!
         Catherine: Where on Earth did this come from? With that stoic Duke’s heir, to boot...
         Alice: Oh, Oliver! Why here? There are so many people!
         Oliver: I just... wanted everyone to know, Alice. That... we love each other. That I will be the one to protect you, from now on.
@@ -578,9 +596,9 @@ tags:
         Catherine: ...
         Catherine: No, Alice, my dear. Thank you for worrying. I am happy for you both.
         <<triggerCG aliceOliverEngagement>>
-        Catherine: <i>How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...</i>
-        Catherine: <i>But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?</i>
-        Catherine: <i>How dare I wish for more than this? This is the happy ending I wanted, for everyone.</i>
+        Catherine: [i]How strange. I knew this would happen, and I knew they loved each other... and I know Alice and Everett will build a beautiful future together, and for the kingdom...[/i]
+        Catherine: [i]But why... Why do I feel this tightening in my chest? Could it be... The original Catherine’s emotions?[/i]
+        Catherine: [i]How dare I wish for more than this? This is the happy ending I wanted, for everyone.[/i]
         Everett: You okay, Catherine? Your face looks...
         Catherine: I’m... I’m alright, Everett. Thank you for asking. I’m just annoyed at Oliver for choosing such an untactful way to announce their betrothal.
         Everett: [sighs] It can’t be helped, he had to make sure Alice would be acknowledged by the nobles.

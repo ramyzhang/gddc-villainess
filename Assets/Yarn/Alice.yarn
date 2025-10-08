@@ -12,7 +12,7 @@ tags:
         Catherine: Oh, sure, of course! Sorry to lie to you, I really didn't mean it. I just wanted to make sure... uh... that you were really the correct owner! Here...
         <<changeExpression Catherin excited>>
         Catherine: SIKE!
-        MOB: <i>GASP!</i>
+        MOB: [i]GASP![/i]
         MOB 1: Everyone, look! Catherine stole Alice's script!
         Narrator: A crowd has gathered.
         MOB 2: Alice, get her!
@@ -49,10 +49,10 @@ tags:
         <<changeExpression Alice crying>>
         Alice: How... How could you do this?!
     <<changeExpression Catherine worried>>
-    Catherine: <i>Oh, how did I mess up</i> this <i>badly already?! What should I even say?!</i>
+    Catherine: [i]Oh, how did I mess up[/i] this [i]badly already?! What should I even say?![/i]
     Catherine: Uh... Uh.. Actually, it's... it's not what you think!
-    Catherine: <i>I mean, it totally</i> is <i>what she thinks, though?</i>
-    Catherine: <i>Argh, it's not the time! I'm panicking! Quick. Catherine, think!
+    Catherine: [i]I mean, it totally[/i] is [i]what she thinks, though?[/i]
+    Catherine: [i]Argh, it's not the time! I'm panicking! Quick. Catherine, think!
 
     -> Catherine: You know what...? Pull up, Alice! Fight me, I'm not afraid of you!
     -> Catherine: Alice, I'm sorry, but if you want to do your speech, you're gonna have to get through me first.
@@ -60,7 +60,7 @@ tags:
     <<changeExpression Alice worried>>
     Alice: W-w-what? How did it get to this?!
     <<changeExpression Catherine excited>>
-    Catherine: <i>I DON'T KNOW EITHER!!!</i>
+    Catherine: [i]I DON'T KNOW EITHER!!![/i]
     Catherine: I...
     <<changeExpression Alice determined>>
     Alice: Fine, if this is really what you wanted, I have no choice!
@@ -77,7 +77,7 @@ tags:
 <<if battleWon(0) == true>>
     <<changeExpression Catherine sad>>
     Catherine: Alice, I didn’t want to hurt you. That’s why I have the script in the first place. You see... you see...
-    Catherine: <i>Oh, you silly silly idiot, are you really doing this?!</i>
+    Catherine: [i]Oh, you silly silly idiot, are you really doing this?![/i]
     <<changeExpression Catherine blushing>>
     Catherine: ... I’ve reincarnated into this world, so I know how this story goes!
 
@@ -119,7 +119,7 @@ tags:
     Catherine: Damn, how fast does word spread?
     Everett: Sorry everybody, could you all please clear out of the room? Sir Oliver Conrad and I will clean the rubble, won’t we?
     Oliver: Yes, His Highness Everett Aulus and I will make sure everything is in order, so if you may all leave...
-    Catherine: <i>Wow... they’re even introducing their full names as exposition... This really is the world of</i> Saintess!
+    Catherine: [i]Wow... they’re even introducing their full names as exposition... This really is the world of[/i] DDCBTHM!
     <<screenEffect fadeBlack>>
     <<screenEffect fadeIn>>
     Everett: Lady Catherine, you dunce, are you already creating a mess on our first day at the academy?
@@ -148,7 +148,7 @@ tags:
 Alice: Lady Catherine Beckett, you have lost this fight, but I don’t want our first day of the academy to be spoiled. Tell me, why did you do this?
 <<changeExpression Catherine worried>>
 Catherine: You see... Er...
-Catherine: <i>Oh, she leaves me no choice, does she?</i>
+Catherine: [i]Oh, she leaves me no choice, does she?[/i]
 Catherine: ... I’ve reincarnated into this world, so I know how this story goes!
 
 -> Catherine: If you go on stage and perform the speech, then the male leads will fall in love with you and then we’ll have a bitter rivalry and in the end I’ll die because of their defence over you!
@@ -168,7 +168,7 @@ Mob: Do you see those perfectly sculpted muscles and bone structure that could c
 Catherine: Damn, how fast does word spread?
 Everett: Sorry everybody, could you all please clear out of the room? Sir Oliver Conrad and I will clean the rubble, won’t we?
 Oliver: Yes, His Highness Everett Aulus and I will make sure everything is in order, so if you may all leave...
-Catherine: <i>Wow... they’re even introducing their full names as exposition... This really is the world of</i> Saintess!
+Catherine: [i]Wow... they’re even introducing their full names as exposition... This really is the world of[/i] DDCBTHM!
 <<screenEffect fadeBlack>>
 <<screenEffect fadeIn>>
 Everett: Lady Catherine, you dunce, are you already creating a mess on our first day at the academy?
@@ -290,7 +290,7 @@ Love Interest:  Uh, hey...
 Alice: ...Hey...
 Catherine: What brings you two here?
 Love Interest: *ahem* Uh.... so.... [stutters]
-Catherine: <i>Look at how nervous he is... he’s definitely going to kneel for Alice.</i>
+Catherine: [i]Look at how nervous he is... he’s definitely going to kneel for Alice.[/i]
 <<if $romancePoints == 3>>
     Love Interest: [kneels] Catherine. I swear my fealty to you.
     Catherine: [gasp] ...$liName...?
@@ -305,15 +305,15 @@ Catherine: <i>Look at how nervous he is... he’s definitely going to kneel for 
     // TODO: <<triggerCG>> splash art of LI winning tournament. End with a kiss
 <<elseif $romancePoints < 3>>
     Love Interest: [kneels] Alice, I swear my fealty to you.
-    Catherine: <i>Of course... I don’t know why I was expecting anything different...</i>
+    Catherine: [i]Of course... I don’t know why I was expecting anything different...[/i]
     Narrator: $liName kept talking, but everything was swimming around you and you couldn’t focus on what he was saying to Alice. Then out of the corner of your eye, you notice.
     Narrator: $notLIName turned and walked away with hunched shoulders with an air of defeat around him.
-    Catherine: <i>I guess it’s not just me...</i>
+    Catherine: [i]I guess it’s not just me...[/i]
     Narrator: Cheerful sounds from the crowd and the brand new couple burst from beside you. Not wanting to ruin their moment, you also leave.
     // TODO: <<triggerCG>> splash art of li winning tournament. end with a kiss between alice and li
 <<endif>>
 <<screenEffect fadeBlack>>
-???: <i>Sho...d h... b.....een m...</i>>
+???: [i]Sho...d h... b.....een m...[/i]>
 <<completeQuest GameStateManager 3>>
 <<updateState GameStateManager 17>>
 ===
